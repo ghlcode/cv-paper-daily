@@ -1,0 +1,2525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-11-12 · 中文论文摘用 · CV Paper Daily</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin:0; background:#f6f7f9; color:#1f2328;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-size:16px; line-height:1.75; }
+.wrap { max-width: 900px; margin:0 auto; padding: 32px 24px 80px; }
+header { background:#fff; border:1px solid #e3e6ea; border-radius:12px; padding:20px 24px; margin-bottom:20px; }
+header h1 { margin:0 0 8px; font-size:22px; }
+header .meta { color:#57606a; font-size:14px; }
+.notice { background:#fff8e6; border:1px solid #e8c66a; border-left:5px solid #d9a300;
+  border-radius:10px; padding:14px 18px; margin-bottom:20px; color:#5c4708; font-size:15px; }
+.notice strong { color:#5c4708; }
+nav a { color:#0969da; text-decoration:none; margin-right:14px; }
+nav a:hover { text-decoration:underline; }
+.card { background:#fff; border:1px solid #e3e6ea; border-radius:12px; padding: 8px 28px 28px; }
+h1 { font-size:26px; } h2 { font-size:20px; margin-top:36px; padding-top:16px; border-top:1px solid #eaecef; }
+h3 { font-size:17px; }
+blockquote { margin:12px 0; padding:8px 14px; background:#f6f8fa; border-left:4px solid #d0d7de; color:#57606a; }
+a { color:#0969da; } code { background:#f0f1f3; padding:1px 5px; border-radius:4px; font-size:.9em; }
+li { margin:4px 0; } hr { border:0; border-top:1px solid #eaecef; margin:28px 0; }
+strong { color:#111; }
+footer { text-align:center; color:#8c959f; font-size:13px; margin-top:28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>CV Paper Daily · 最新一期中文摘用（2026-11-12）</h1>
+  <div class="meta">每日一期，文件名带日期；本页只展示 2026-11-12 当天运行结果 ｜ 数据源 arXiv cat:cs.CV</div>
+  <nav style="margin-top:10px">
+    <a href="最新-2026-11-12.md">Markdown 版</a>
+    <a href="data/zh/2026-11-12.md">中文摘用归档（2026-11-12）</a>
+    <a href="data/2026-11-12.md">英文摘要日报</a>
+    <a href="README.md">项目说明</a>
+  </nav>
+</header>
+<div class="notice"><strong>提示：</strong>今日新增 145 篇，以下为逐篇独立中文摘用。</div>
+<div class="card">
+<h1>2026-11-12 · 中文论文摘用</h1>
+<blockquote>共 145 篇，每篇独立成节 ｜ 数据源：arXiv <code>cat:cs.CV</code> ｜ 中文内容由 WorkBuddy 定时任务依据英文摘要整理，原文链接见各节</blockquote>
+<h2>目录</h2>
+<ol>
+<li><a href="#1-2611.14519">医学图像分割：DINOv2 基础模型适配与任务专用训练的对比</a></li>
+<li><a href="#2-2611.14518">借 EM-DETR 中示例驱动定位迈向病灶检测基础模型</a></li>
+<li><a href="#3-2611.14498">连接组约束果蝇视觉系统模型的鲁棒性与效率度量：关联对抗扰动与知觉错觉</a></li>
+<li><a href="#4-2611.14496">RS-JEPA：以扫描路径视图实现跨传感器图像检索的联合嵌入预测架构</a></li>
+<li><a href="#5-2611.14483">机制可解释性需要一套推断逻辑</a></li>
+<li><a href="#6-2611.14476">BoviShift：跨个体与跨时间的六年视觉牛只表型多属性审计</a></li>
+<li><a href="#7-2611.14470">TanCRAFT：面向装配任务的上下文推理式预判反馈</a></li>
+<li><a href="#8-2611.14469">C²-Routing：互补裁剪与压缩实现高效视觉语言推理</a></li>
+<li><a href="#9-2611.14451">面向实时皮肤渲染与数字化的轻量可微分方法</a></li>
+<li><a href="#10-2611.14440">UGG：统一生成式几何模型</a></li>
+<li><a href="#11-2611.14436">面向可解释深度伪造检测的指标对齐 GRPO</a></li>
+<li><a href="#12-2611.14432">单一策略应对 100 项家务任务：2026 BEHAVIOR Challenge 方案</a></li>
+<li><a href="#13-2611.14420">OnlyAct：从基础模型提取动作表征用于世界模型</a></li>
+<li><a href="#14-2611.14380">人机协同的集合级计数中哪些因素真正重要</a></li>
+<li><a href="#15-2611.14365">从视频帧到机器人元帧：世界动作模型的统一潜在接口</a></li>
+<li><a href="#16-2611.14311">保留已获正确答案的多模态弃答</a></li>
+<li><a href="#17-2611.14307">TaoMate-R1：面向流式多参考视频生成的时间角色特化</a></li>
+<li><a href="#18-2611.14286">ForeseeDrive：以未来 token 条件实现预判式生成驾驶</a></li>
+<li><a href="#19-2611.14281">UniFlow-RS：面向异构遥感任务的统一生成式预测</a></li>
+<li><a href="#20-2611.14279">AutoThreshold：联合混淆轮廓学习实现自适应掩膜二值化</a></li>
+<li><a href="#21-2611.14257">Elastic-WAM：面向高效机器人控制的自适应时空想象</a></li>
+<li><a href="#22-2611.14254">位置至关重要：面向扩散个性化人脸隐私的稀疏潜在方差攻击</a></li>
+<li><a href="#23-2611.14218">ViGA-FLAME：对齐潜在视觉与几何表征以实现鲁棒的 3D 头部表情估计</a></li>
+<li><a href="#24-2611.14207">DailyWildfireCAN：加拿大次日野火蔓延预测数据集与基准</a></li>
+<li><a href="#25-2611.14176">SpecValley：稠密异配图中的聚合即谱谷</a></li>
+<li><a href="#26-2611.14143">GARD：面向多模态对比学习后门的梯度引导对抗表征防御</a></li>
+<li><a href="#27-2611.14136">HaiRuo：以卫星测高基础模型把海洋涡旋同时作为场与对象预报</a></li>
+<li><a href="#28-2611.14135">Sim(3)-TurboReg：借三尺度一致性实现鲁棒高效的尺度感知配准</a></li>
+<li><a href="#29-2611.14129">以组织学引导的隐式神经表征实现连续三维空间转录组重建</a></li>
+<li><a href="#30-2611.14124">CroCoMAE：面向 SAR-光学遥感数据的跨模态自监督协同表征学习</a></li>
+<li><a href="#31-2611.14118">驯服开放世界个性化：迈向开集个性化 MLLM 助手</a></li>
+<li><a href="#32-2611.14116">成人词语扩展与人工词语学习中的视觉相似度</a></li>
+<li><a href="#33-2611.14113">前瞻一步：面向视频物体状态读取的预期引导智能体 LASER</a></li>
+<li><a href="#34-2611.14076">ZoomGain：挖掘全局到缩放的感知落差以构建细粒度视觉监督</a></li>
+<li><a href="#35-2611.14074">基于逐帧 Transformer 的烟雾模式时空分析检测被遮挡的野火火焰</a></li>
+<li><a href="#36-2611.14060">视觉语言模型从何处获得左右方位：Qwen2.5-VL、Qwen3-VL 与 InternVL3 中的位置编码反事实</a></li>
+<li><a href="#37-2611.14058">CURRENT：面向 4D Flow MRI 空间与时间同步超分辨率的循环神经网络</a></li>
+<li><a href="#38-2611.14046">基于 Fisher 几何的结构化置信度扰动用于对抗训练</a></li>
+<li><a href="#39-2611.14033">基于条件偏移的少步流式视频生成</a></li>
+<li><a href="#40-2611.14025">HiPFuse：面向边缘设备机器人感知的实时 LiDAR 语义分割</a></li>
+<li><a href="#41-2611.14018">交错解剖检视与诊断推理的可解释放射报告生成</a></li>
+<li><a href="#42-2611.14013">面向动静脉管径比估计与视网膜病变筛查的分阶段可解释流程</a></li>
+<li><a href="#43-2611.13997">自定义隐私边界：评测大型视觉语言模型推理时个性化隐私保护能力</a></li>
+<li><a href="#44-2611.13995">LipsFlower：用于鲁棒图像复原的 Lipschitz 受控流匹配</a></li>
+<li><a href="#45-2611.13992">脉搏还是来源：基于 rPPG 的深度伪造检测器究竟学到了什么</a></li>
+<li><a href="#46-2611.13971">TransGHOST：眼科显微手术中器械遮挡区域的实时、无合成重建</a></li>
+<li><a href="#47-2611.13970">视觉语言医学图像分割中标注派生提示的范围泄漏反事实分析</a></li>
+<li><a href="#48-2611.13955">RB-LDC：面向噪声鲁棒扩散潜变量的冗余均衡潜编码</a></li>
+<li><a href="#49-2611.13935">MEOW：医学开放世界交互式分割</a></li>
+<li><a href="#50-2611.13933">英国农场门禁 AI 监测的证据综述：基于 PRISMA 的乡村犯罪、牲畜侵害与农场出入证据评估</a></li>
+<li><a href="#51-2611.13920">CAppleNet：基于坐标注意力 YOLO11 的实时苹果果梗洼与花萼检测</a></li>
+<li><a href="#52-2611.13912">MicroBT：质心引导协同学习的多模态微小脑肿瘤分割与计数</a></li>
+<li><a href="#53-2611.13911">改造视觉基础模型用于声学成像测井中的裂缝表征</a></li>
+<li><a href="#54-2611.13907">EVAThink：以证据充分性引导训练实现视频理解中的自适应思考</a></li>
+<li><a href="#55-2611.13903">由开放词汇三维场景图构建持久化的度量语义海事场景记忆</a></li>
+<li><a href="#56-2611.13892">面向屋顶光伏巡检、带组件级标注的一万张无人机图像数据集</a></li>
+<li><a href="#57-2611.13890">DroneSegEdit：以语言落地验证改造预训练生成编辑器用于无人机分割</a></li>
+<li><a href="#58-2611.13884">面向脑转移瘤分割的区域级 logit 融合与效用门控精修</a></li>
+<li><a href="#59-2611.13883">BRIDGE 数据集：石蜡包埋前列腺穿刺活检脱蜡与 H&amp;E 染色前后的配对明场全切片图像</a></li>
+<li><a href="#60-2611.13870">把空间谱耦合视作注意力：将形状对应扩展到高分辨率曲面</a></li>
+<li><a href="#61-2611.13868">深度神经网络的机制可解释性：方法、框架与视角</a></li>
+<li><a href="#62-2611.13851">经由语义代理走向纯文本遥感场景分类</a></li>
+<li><a href="#63-2611.13849">卫星预训练并非单一效应：通用与地球观测基础模型用于场景分类的配对研究</a></li>
+<li><a href="#64-2611.13820">CASCADE：面向逻辑异常检测的约束感知脚手架式分解</a></li>
+<li><a href="#65-2611.13808">FastWild-GS：通过紧凑逐图外观适配实现分钟级野外高斯泼溅</a></li>
+<li><a href="#66-2611.13807">放宽跨模态对应关系：面向多模态遥感预训练的语义级配对</a></li>
+<li><a href="#67-2611.13785">目标是谓词：面向语义级视频推理分割的谓词状态接地</a></li>
+<li><a href="#68-2611.13784">兼顾容量与精度：高效 2D 高斯图像表示</a></li>
+<li><a href="#69-2611.13776">DisasterAgent：从遥感影像生成可验证灾害报告的证据驱动智能体</a></li>
+<li><a href="#70-2611.13772">RF3DGS：利用自先验实现无反射 3D 高斯泼溅</a></li>
+<li><a href="#71-2611.13769">从深度到安全深度：面向移动机器人导航的不确定性感知单目感知</a></li>
+<li><a href="#72-2611.13759">SyncNet：探索模块化神经网络通信中的同步机制</a></li>
+<li><a href="#73-2611.13752">分区与阅读顺序错误下的 OCR 与真值词级对齐</a></li>
+<li><a href="#74-2611.13739">激光束宽度与测量噪声对激光扫描树径估计的影响</a></li>
+<li><a href="#75-2611.13711">HintErase：把定位当提示而非空洞的视频叠加物移除</a></li>
+<li><a href="#76-2611.13700">CJRR-Net：面向人体姿态估计未来视角选择的候选关节重投影排序</a></li>
+<li><a href="#77-2611.13685">Ego Guidance：用无动作标注的人类第一人称视频增强机器人策略学习</a></li>
+<li><a href="#78-2611.13654">EgoHMP：借助第一人称线索实现 3D 场景中的精确人体运动预测</a></li>
+<li><a href="#79-2611.13649">用病理基础模型从 H&amp;E 图像预测单细胞空间基因表达</a></li>
+<li><a href="#80-2611.13638">picoEmergencyNet：面向应急监测航拍图像分类的注意力增强超小型深度学习模型</a></li>
+<li><a href="#81-2611.13628">DepthGS：带自适应正则化的深度引导高斯泼溅用于高质量表面重建</a></li>
+<li><a href="#82-2611.13626">FlashMotion：超快速长时程 3D 运动生成</a></li>
+<li><a href="#83-2611.13621">PUMA：面向取证定位的概率约束顺序交互</a></li>
+<li><a href="#84-2611.13620">ADE-GVC：何时开始去噪的生成式视频压缩自适应去噪起点</a></li>
+<li><a href="#85-2611.13609">混合文字乌兹别克语文本的 OCR 后校正：字节级 ByT5 与经验同形字噪声矩阵</a></li>
+<li><a href="#86-2611.13596">迈向可靠的 VLM 评判器：状态条件不变性与呈现感知诊断</a></li>
+<li><a href="#87-2611.13581">AstroSeg-vEM：面向正常与应激超微结构状态的星形胶质细胞 3D 重建轻量框架</a></li>
+<li><a href="#88-2611.13576">PhyRubric：基于评分量表的文生视频物理常识诊断评估</a></li>
+<li><a href="#89-2611.13540">AgenticConflictLens：从长时交通视频到可验证的冲突证据</a></li>
+<li><a href="#90-2611.13530">UniWeaver：利用统一多模态模型实现图文交错生成</a></li>
+<li><a href="#91-2611.13528">GEMOR-GS：面向 3D 高斯泼溅 SLAM 的全局外参精化建图与在线重定位</a></li>
+<li><a href="#92-2611.13514">看见微小：面向视网膜病灶分割的可变形对偶 Mamba</a></li>
+<li><a href="#93-2611.13513">带条件熵的证据深度学习用于青光眼检测</a></li>
+<li><a href="#94-2611.13511">TMAL：面向曲线结构分割的保拓扑多偏移亲和度学习</a></li>
+<li><a href="#95-2611.13510">用机器学习模型检测遥感影像中的分布偏移</a></li>
+<li><a href="#96-2611.13504">暗部至关重要：面向 SDR 到 HDR 视频重建的 VAE 感知 HDR 编码</a></li>
+<li><a href="#97-2611.13496">面向开放词汇场景图生成的推理感知关系表征学习</a></li>
+<li><a href="#98-2611.13488">重建何时有助于事件相机的人体触发检测</a></li>
+<li><a href="#99-2611.13486">自我中心视频中的手物接触转换检测</a></li>
+<li><a href="#100-2611.13453">Camera3R：面向异构相机模型的前馈式三维重建</a></li>
+<li><a href="#101-2611.13425">Prompt2Echo：文本提示驱动的单模型多视图超声心动图分割</a></li>
+<li><a href="#102-2611.13384">双曲视觉语言模型究竟有多双曲</a></li>
+<li><a href="#103-2611.13330">Uni-Loc：基于空间 grounding 视觉语言分类的弱监督三维 CT 病理定位</a></li>
+<li><a href="#104-2611.13324">目标损坏与标签噪声下的鲁棒流匹配</a></li>
+<li><a href="#105-2611.13316">视觉分割概率模型解释早期视觉皮层动态</a></li>
+<li><a href="#106-2611.13310">ABRR：以 Wasserstein 自适应细化与精度重排改进时序语句定位</a></li>
+<li><a href="#107-2611.13308">从 MURA 域对抗适配到院内 X 光片以改进成人肘部骨折分类</a></li>
+<li><a href="#108-2611.13304">DUO：扩散模型双读数用于分布外检测</a></li>
+<li><a href="#109-2611.13297">面向超声心动图心衰诊断的视频基础模型域适配</a></li>
+<li><a href="#110-2611.13280">RetinexGS：受 Retinex 启发的高斯泼溅用于低光 RAW 重建</a></li>
+<li><a href="#111-2611.13271">RaMOD：自车运动下从原始毫米波雷达立方体检测运动目标</a></li>
+<li><a href="#112-2611.13262">面向内存高效时序动作分割的自适应残差量化</a></li>
+<li><a href="#113-2611.13245">重思视频胶囊内镜评测：验证协议、源视频多样性与跨数据集偏移</a></li>
+<li><a href="#114-2611.13213">言语之前、超越话语：评测幼儿的非言语社会推理</a></li>
+<li><a href="#115-2611.13200">图像质量与织物密度测量可靠性：透过挑纱镜用手机照片数线</a></li>
+<li><a href="#116-2611.13198">用于多模态归因的结构化核代理模型</a></li>
+<li><a href="#117-2611.13192">基于跨模态图注意力的多模态道路封闭制图</a></li>
+<li><a href="#118-2611.13191">En Face OCT 图像中地理萎缩分割深度学习模型的比较评测</a></li>
+<li><a href="#119-2611.13180">X 标记此处：用位置表征做扩散式图像地理定位</a></li>
+<li><a href="#120-2611.13178">多模态评判标注、人类定夺：AI 生成商品视频广告的复核与编辑框架</a></li>
+<li><a href="#121-2611.13177">GroundCascade：面向 GUI grounding 的选择性二次意见</a></li>
+<li><a href="#122-2611.13172">用几何 token 编码实现文生图的连续角度控制</a></li>
+<li><a href="#123-2611.13150">VIGOR：基准化多模态大语言模型的视觉理据正确性</a></li>
+<li><a href="#124-2611.13120">纯图像 Transformer 加后期像素细化</a></li>
+<li><a href="#125-2611.14097">风格化即扩散流形上的测地线导航</a></li>
+<li><a href="#126-2611.13046">SpatialSR：以空间分辨率为核心的任意尺度遥感超分辨率流程</a></li>
+<li><a href="#127-2611.13045">MICRO：手术分期视网膜图像刚性配准基准与一步式频率结构相似性配准学习</a></li>
+<li><a href="#128-2611.13028">GTAGym：面向评测与强化学习的真实 AAA 游戏任务环境</a></li>
+<li><a href="#129-2611.13027">TypedInk：懂得何时不该绘制</a></li>
+<li><a href="#130-2611.13014">当已有胸部 X 光基础模型时，CNN-Transformer 集成还值得吗</a></li>
+<li><a href="#131-2611.13010">保护文化记录：面向古籍图像复原的大规模基准与视觉先验路由网络</a></li>
+<li><a href="#132-2611.13009">面向手术动作三元组的实例保留分级语义报告</a></li>
+<li><a href="#133-2611.13006">眼见未必为实：反事实病灶擦除让小型医学视觉语言智能体只报告图像所见</a></li>
+<li><a href="#134-2611.13004">G-STAR：面向深度压缩自回归生成的组缩放 token 容量</a></li>
+<li><a href="#135-2611.13000">PhysMoE：模态解耦 VLM 中基于单 token 坐标表示的快速空间定位</a></li>
+<li><a href="#136-2611.12997">TIB：超越对齐假设、用于多模态归因的样本级缓和信息瓶颈</a></li>
+<li><a href="#137-2611.12981">面向弥漫性囊性肺病诊断的证据接地迭代推理</a></li>
+<li><a href="#138-2611.12978">面向一步生成的轨迹正则化分布蒸馏</a></li>
+<li><a href="#139-2611.12977">选择性手术动作中心定位：用监督式打分守住定位增益</a></li>
+<li><a href="#140-2611.12976">分区、细化与检测：在开放词汇目标检测中保留新类容量</a></li>
+<li><a href="#141-2611.12975">面向广义类别发现的属性证据学习与多模态提示</a></li>
+<li><a href="#142-2611.12969">历史手稿字体分类的评估协议：手稿级泄漏的代价与软标签的作用</a></li>
+<li><a href="#143-2611.12934">EarthRecord：用多模态智能体把四十年卫星影像从像素推向土地变化</a></li>
+<li><a href="#144-2611.12932">URL-Sim：面向动态驾驶场景高保真重建的统一受调控 LiDAR 仿真</a></li>
+<li><a href="#145-2611.12930">面向全六面体网格化的拓扑感知强化学习 CAD 分解</a></li>
+</ol>
+<hr>
+<a id="1-2611.14519"></a>
+<h2>1. 医学图像分割：DINOv2 基础模型适配与任务专用训练的对比</h2>
+<ul>
+<li><strong>原题</strong>：Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training</li>
+<li><strong>作者</strong>：Emre Kutlusan, Yongmin Li ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14519">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14519">PDF</a></li>
+<li><strong>关键词</strong>：医学图像分割、基础模型、DINOv2、跨域泛化、微调</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对基础模型能否取代医学图像分割中按任务训练的模型，将 DINOv2 以不同适配强度与从头训练的任务专用网络对照，并在跨机构外部数据上评测。结果表明适配后的基础模型在外部站点泛化更优，任务专用模型在分布内边界更精确，而所需适配容量取决于成像域而非适配方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：多数比较只在同一分布数据和配置缺乏论证的单一任务专用基线上进行，难以证明基础模型在新临床站点的价值，且不清楚需要适配多少。</li>
+<li>方法：以从仅调偏置到全量微调的多种策略适配 DINOv2，与从头训练的 U-Net、ResU-Net 在结肠镜、乳腺超声、皮肤镜及跨机构独立数据集上对照评测。</li>
+<li>结果/结论：适配后的基础模型在每个外部数据集泛化更佳，训练分布内任务专用模型在训练数据充足时仍具竞争力且边界更精确、基础模型更常漏掉小病灶，所需适配容量由成像域而非适配方法决定，还发现一个常用息肉测试集与另一基准存在重复图像。</li>
+<li>局限或适用：当模型必须跨临床站点工作时值得采用基础模型适配，且适配容量应依据目标成像域选取。</li>
+</ol>
+<a id="2-2611.14518"></a>
+<h2>2. 借 EM-DETR 中示例驱动定位迈向病灶检测基础模型</h2>
+<ul>
+<li><strong>原题</strong>：Toward Foundation Detection Models via Example-Based Grounding in EM-DETR</li>
+<li><strong>作者</strong>：Sheethal Bhat, Bogdan Georgescu, Awais Mansoor et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14518">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14518">PDF</a></li>
+<li><strong>关键词</strong>：病灶检测、基础模型、EM-DETR、student-teacher、异构标签空间</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对医学病灶检测标注稀缺、标签空间异构难以训练鲁棒基础模型的问题，以学生—教师策略融合异构标注并改造 EM-DETR 联合多域学习，实现示例驱动的细粒度检测。结果表明该多域方案取得领先性能，说明利用异构数据可在保持泛化的同时构建可扩展的医学影像基础模型。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：深度学习 CAD 系统性能依赖大规模良好标注，而医学病灶检测中标准化标注稀缺、现有数据集异质，限制了鲁棒基础模型的开发。</li>
+<li>方法：提出 student-teacher 训练策略合并标签空间异构的数据集以缓解灾难性遗忘，并适配 example-based EM-DETR 从多域数据集联合学习示例驱动的细粒度检测。</li>
+<li>结果/结论：达到当前最优，CXR 四个关键征象的图像级 AUC 超此前最优 1 个百分点，CXR 与乳腺摄影取得领先 mAP50、比单数据集训练的 EM-DETR 高 2-3 个百分点。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="3-2611.14498"></a>
+<h2>3. 连接组约束果蝇视觉系统模型的鲁棒性与效率度量：关联对抗扰动与知觉错觉</h2>
+<ul>
+<li><strong>原题</strong>：Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion</li>
+<li><strong>作者</strong>：Alexandre Garcia-Duran, Alejandro Rodriguez-Garcia, Manuel Molano-Mazón et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, q-bio.NC</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14498">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14498">PDF</a></li>
+<li><strong>关键词</strong>：连接组约束、FlyNet、对抗鲁棒性、连续时间循环网络、reverse-phi 错觉</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文探究类脑布线能否以更低算力换来更强鲁棒性，在碰撞检测任务上把受突触连接组约束的果蝇视觉循环网络与人工网络对照，并分析对抗扰动下的表征变化。结果显示连接组约束主要带来计算效率而非鲁棒性收益，且对抗纹理与知觉错觉扰乱同一低层运动统计量，指向共同的回路脆弱性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：生物视觉系统在严苛的代谢与布线约束下仍可靠计算，人工视觉系统能耗更高且对对抗扰动敏感，类脑布线是否更省算力且更鲁棒尚不清楚。</li>
+<li>方法：在可微分 3D 渲染管线的碰撞检测任务上，将受突触连接组约束的任务优化连续时间循环网络 FlyNet 与 CNN、RAFT、sCTRNN、CTRNN 做鲁棒性与算力基准对比，并分析表征与低层运动统计量。</li>
+<li>结果/结论：CTRNN 在几乎所有扰动下比 FlyNet 更鲁棒，说明连接组约束通过低边数带来效率而非鲁棒性；FlyNet 所用 FLOPs 最多比 RAFT 低五个数量级，对抗纹理与 reverse-phi 错觉可归因于同一回路脆弱性，连接组约束模型能把对抗失败机制转化为关于生物感知脆弱性的可检验假设。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="4-2611.14496"></a>
+<h2>4. RS-JEPA：以扫描路径视图实现跨传感器图像检索的联合嵌入预测架构</h2>
+<ul>
+<li><strong>原题</strong>：RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval</li>
+<li><strong>作者</strong>：Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14496">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14496">PDF</a></li>
+<li><strong>关键词</strong>：跨传感器检索、RS-JEPA、Vision Mamba、scan-path views、自监督</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对跨异构传感器、无需人工标注的遥感图像检索，提出基于共享状态空间编码器的紧凑联合嵌入预测框架，将同一图像的两种读取顺序视作互补视图，由一序可见块预测另一序的隐藏块。实验表明该轻量模型在多个基准上检索精度更高，印证读取顺序可充当自监督信号。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：跨异构传感器检索需无人工标注地匹配同内容场景，现有自监督方法或重建传感器专属像素、或仅对齐配准孪生、或依赖参数量达 118-173M 乃至 398M 的大型 Transformer。</li>
+<li>方法：以共享 Vision Mamba 编码器构建 RS-JEPA，提出把同一图像两种读取顺序当作两视图的 scan-path views，并用 Adversarial View Coupling 学习最难划分、邻域一致性损失对齐两传感器场景相似度。</li>
+<li>结果/结论：在 BEN-14K、CBRSIR-VS、DSRSID 上取得十二个复现方法中最高 F1@5（72.92、80.35、94.43），检索网络仅 3.88M 参数、训练时 14.57M，比此前 JEPA 检索器少 8-16 倍，凸显读取顺序可作自监督视图来源。</li>
+<li>局限或适用：与先前方法一样，RS-JEPA 仍需在配准图像对上训练。</li>
+</ol>
+<a id="5-2611.14483"></a>
+<h2>5. 机制可解释性需要一套推断逻辑</h2>
+<ul>
+<li><strong>原题</strong>：Mechanistic Interpretability Needs a Logic of Inference</li>
+<li><strong>作者</strong>：Zhimin Hu, Chen Jiang, Hanbo Xie et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CL, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14483">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14483">PDF</a></li>
+<li><strong>关键词</strong>：机制可解释性、机制推断、推断瓶颈、神经科学、可检验假设</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对机制可解释性从「能观察什么」转向「观察如何支撑解释」的推断难题，对照神经科学梳理从复杂神经系统推断机制时的反复瓶颈，提出若干原则并组织为递归逻辑以规范机制推断。该框架把局部发现累积为对模型机制的知识，并让机制精确得足以对模型之外领域生成可检验假设。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：神经网络日益被当作内部计算本身即科学研究对象的复杂系统，随着工具进步，关注点从模型内部能观察到什么转向这些观察如何支撑机制性解释。</li>
+<li>方法：考察神经科学与机制可解释性回答该问题的并行努力，识别从复杂神经系统推断机制时反复出现的推断瓶颈，提出五条原则并组织为递归逻辑以形成更严谨的机制推断流程。</li>
+<li>结果/结论：该框架在两种意义上支持科学发现，既把局部可解释性发现转化为对模型内机制的累积知识，又让机制足够精确以对模型之外领域生成可检验假设；确立模型机制揭示了关于世界的什么，最终需要机制可解释性之外的证据。</li>
+<li>局限或适用：确立模型机制对世界的揭示，最终需要机制可解释性之外的证据。</li>
+</ol>
+<a id="6-2611.14476"></a>
+<h2>6. BoviShift：跨个体与跨时间的六年视觉牛只表型多属性审计</h2>
+<ul>
+<li><strong>原题</strong>：BoviShift: A Six-Year Multi-Attribute Audit of Visual Cattle Phenotyping Across Animals and Time</li>
+<li><strong>作者</strong>：Mobasshir Bhuiya Shagor, Nilambar Halder Tonmoy, Md Saef Ullah Miah ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14476">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14476">PDF</a></li>
+<li><strong>关键词</strong>：牛只表型、BoviShift、数据划分、跨年度迁移、ResNet-50</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对牲畜视觉表型评估中相关图像与视频帧造成的泄漏、以及跨年度迁移的难题，重构跨连续年度队列的牛只多属性语料库，并以固定多任务基线比较多种数据划分与未来队列评估。结果显示划分差异因任务而异而非普遍泄漏惩罚，未来表现随属性与队列变化，且静态图到视频存在明显域差距。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：相关图像与视频帧使可靠评估变难，图像随机划分会把同一动物的视图同时放入训练集与测试集，而部署还要求迁移到未来年份采集的动物。</li>
+<li>方法：构建连续六个年度队列的 BoviShift，用固定 ResNet-50 多任务基线，在图像随机、按牛不相交、独立未来 2025 与锁定未来 2026 四种配置下评估体重、年龄、体高、品种、毛色五个性状。</li>
+<li>结果/结论：图像随机与按牛不相交划分的差异是任务相关而非普遍泄漏惩罚，未来队列行为随属性与队列而异（品种下降、2025 年体重年龄不及常量基线、体高仍高于基线、毛色 2025 良好但 2026 退化），多任务训练改善全部五个点估计，零样本视频帧聚合暴露静态到视频域差距，BoviShift 是跨度最长的牛视觉资源。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="7-2611.14470"></a>
+<h2>7. TanCRAFT：面向装配任务的上下文推理式预判反馈</h2>
+<ul>
+<li><strong>原题</strong>：TanCRAFT: Context-Reasoned Anticipatory Feedback for Assembly Tasks</li>
+<li><strong>作者</strong>：Sassan Mokhtar, Lars Doorenbos, Marius Bock et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.RO, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14470">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14470">PDF</a></li>
+<li><strong>关键词</strong>：装配辅助、预测反馈、TanCRAFT、人机协作、七巧板</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对物理装配中需在错误发生前干预、而用户可自由决定构建顺序的难题，提出四阶段实时预测辅助系统，先跟踪场景并推理当前部分装配，再预测部件近未来运动并在放置不兼容时介入。离线基准与用户研究表明，预测反馈相较无引导与事后反应能减少失误，并降低感知工作负荷与完成时间。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：防止物理装配中的人为失误需要能在犯错前干预的辅助系统，而用户可自由选择构建顺序、正确性取决于不断演化的装配而非固定下一步时尤其具挑战。</li>
+<li>方法：提出四阶段实时预测辅助系统 TanCRAFT，跟踪场景状态、推理当前部分装配、预测被操作部件的近未来运动、在预测放置与目标不兼容时干预，并在受控七巧板装配任务中以离线基准与组内用户研究验证。</li>
+<li>结果/结论：预测反馈相对无引导与反应式会话显著减少失误，同时带来最低的平均感知工作负荷与最短的平均完成时间，证明预测反馈对错误预防的价值。</li>
+<li>局限或适用：验证在受控七巧板装配任务中完成，并朝自动化与人机协作工作单元的成本感知辅助迈进一步。</li>
+</ol>
+<a id="8-2611.14469"></a>
+<h2>8. C²-Routing：互补裁剪与压缩实现高效视觉语言推理</h2>
+<ul>
+<li><strong>原题</strong>：C$^2$-Routing: Complementary Cropping and Compression for Efficient Vision-Language Inference</li>
+<li><strong>作者</strong>：Guorui Lu, Qinyu Chen ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14469">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14469">PDF</a></li>
+<li><strong>关键词</strong>：视觉问答、视觉语言模型、输入缩减、C²-Routing、安全门</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对视觉问答给视觉语言模型带来的计算开销，指出裁剪利于局部细节、整图压缩利于保留全局上下文，据此提出按图像与问题自适应二选一的输入缩减策略，并以安全门在可能丢失关键信息时回退。实验表明在同等视觉预算下还能进一步降低计算量与视觉标记数，而任务分数仅轻微下降。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：VQA 给视觉语言模型带来巨大计算开销，简单限制视觉 token 上限会丢弃答题所需信息，且单一缩减策略难适配不同场景。</li>
+<li>方法：基于裁剪与压缩互补的观察提出按输入图像与问题自适应二选一的 C²-Routing，并设计用原始与缩减输入下预测联合正确率分布指导回退的安全门，以同样 1,024 视觉 token 上限的全图基线衡量增益。</li>
+<li>结果/结论：在三个 VLM、涵盖局部细节、全局场景、场景文字与文档的 18 个数据集上，于既有视觉预算上限下进一步平均减少端到端 FLOPs 36.53%、视觉 token 42.36%，平均相对任务分数仅下降 0.77%。</li>
+<li>局限或适用：面向可跨多种 VLM 包括黑盒设置应用的模型无关输入缩减，训练与评估均在 RTX 3090 消费级 GPU 上运行。</li>
+</ol>
+<a id="9-2611.14451"></a>
+<h2>9. 面向实时皮肤渲染与数字化的轻量可微分方法</h2>
+<ul>
+<li><strong>原题</strong>：A Lightweight Differentiable Method for Real-Time Skin Rendering and Digitization</li>
+<li><strong>作者</strong>：Mario Marquez-Balduque, Carlos Rodriguez-Pardo, Jorge Lopez-Moreno ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.GR</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14451">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14451">PDF</a></li>
+<li><strong>关键词</strong>：皮肤渲染、次表面散射、可微分渲染、SSSS、实时着色器</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对离线路径追踪得到的皮肤物理属性难以直接用于实时着色器的问题，提出可微分的屏幕空间次表面散射框架，按面部区域联合优化基底纹理与散射距离以生成可投产贴图。方法以低成本单光源采集和掩码损失驱动，实验表明能从轻量输入恢复散射参数，得到与标准实时着色器兼容的逼真外观。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：皮肤逆向渲染通常依赖离线路径追踪估计物理属性，这些属性无法直接映射到游戏引擎等交互应用所用的近似着色器。</li>
+<li>方法：提出可微分 SSSS 框架联合优化空间变化的基底纹理与散射距离，按不同面部区域估计参数以考虑皮肤厚度局部变化并生成混合 profile 贴图，采用低成本单光源单视角采集装置与针对散射主导区域的掩码损失驱动优化。</li>
+<li>结果/结论：在覆盖 Monk Skin Tone Scale 的 45 人真实数据集，以及合成数据、验证单光源假设的多光源装置、确认角度一致性的倾斜视角配置上验证，能从轻量输入有效恢复散射参数，得到与标准实时着色器直接兼容的逼真皮肤外观。</li>
+<li>局限或适用：面向实时渲染管线与生产级运行时引擎的皮肤外观数字化，验证覆盖不同肤色人群以确保人口统计学泛化。</li>
+</ol>
+<a id="10-2611.14440"></a>
+<h2>10. UGG：统一生成式几何模型</h2>
+<ul>
+<li><strong>原题</strong>：UGG: Unified Generative Geometry Model</li>
+<li><strong>作者</strong>：Amani Kiruga, Zhiyi Li, Ruojin Cai et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG, cs.RO</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14440">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14440">PDF</a></li>
+<li><strong>关键词</strong>：4D 场景理解、UGG、统一生成模型、条件补全、相机位姿</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对四维场景理解需从部分观测同时捕捉几何、外观与动态、而现有方法把几何预测与视觉生成割裂的问题，提出统一生成框架，联合建模彩色视频与深度、相机位姿，把两类任务化为单一模型内的条件补全。该表述能从标注不齐的异构数据学习，并支持推理时多假设搜索，在多项任务上优于非统一基线。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：理解 4D 场景需从部分观测中联合捕捉场景几何、外观与动态，现有方法却分裂为直接几何预测的前馈模型与视觉合成的生成模型。</li>
+<li>方法：提出 UGG 联合建模 RGB 视频与深度、相机位姿等几何表征，通过跨模态与时间分配不同噪声水平，把视觉生成与几何预测表述为单一生成模型内的条件补全，并支持推理时基于观测 RGB 帧几何证据的多假设搜索。</li>
+<li>结果/结论：在相机可控视频生成、深度估计、相机位姿预测上相对非统一基线验证有效，包括具有挑战性的稀疏观测设置；灵活表述使其能从几何与视觉标注子集各异的异构数据集学习，并在无几何真值情况下改进预测。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="11-2611.14436"></a>
+<h2>11. 面向可解释深度伪造检测的指标对齐 GRPO</h2>
+<ul>
+<li><strong>原题</strong>：Metric-Aligned Group Relative Policy Optimization for Explainable Deepfake Detection</li>
+<li><strong>作者</strong>：Luka Dragar, Peter Peer, Vitomir Štruc et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14436">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14436">PDF</a></li>
+<li><strong>关键词</strong>：可解释深度伪造检测、先预测后解释、GRPO、Qwen3-VL-8B、BERTScore-F1</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对深度伪造检测只评真假分类、缺乏视觉证据解释，且视觉语言模型会为篡改图像生成「真实」叙述的问题，提出解耦的先预测后解释流水线：由视觉模型集成判定真伪，再由语言模型给出决策条件化的证据解释并压缩为通俗摘要。结果表明解释质量与证据定位同步提升。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：深度伪造检测器通常只以真假分类评估，而真实应用需要解释每次预测背后的视觉证据，且视觉语言联合模型在真实性判断上会为被篡改图像生成「真实」叙述。</li>
+<li>方法：提出解耦的先预测后解释流水线作为 ACM Multimedia 2026 挑战赛方案并在 XPlainVerse 基准上训练评估，由视觉基础模型集成分类、Qwen3-VL-8B 生成决策条件化解释、第二个 Qwen3-VL-8B 不使用图像压缩出非专业摘要，再用指标对齐的 GRPO 按赛题标准优化两个解释器。</li>
+<li>结果/结论：在同等条件下 GRPO 把 complex BERTScore-F1 从 0.686 提升到 0.712 并改善实体与证据 F1 的 grounding，方案在 complex BERTScore-F1 上排名第一、总榜第七。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="12-2611.14432"></a>
+<h2>12. 单一策略应对 100 项家务任务：2026 BEHAVIOR Challenge 方案</h2>
+<ul>
+<li><strong>原题</strong>：One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge</li>
+<li><strong>作者</strong>：Ilia Larchenko, Gleb Zarin, Atindra Nair et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.RO, cs.AI, cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14432">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14432">PDF</a></li>
+<li><strong>关键词</strong>：BEHAVIOR Challenge、VLA、π0.5、长时程家务任务、GPT-6 Astra</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文介绍了面向大量长时程家务任务的参赛方案，核心是以单一视觉语言动作模型、一个检查点覆盖全部任务。针对上届模型欠训练的判断，作者以延长训练、扩展任务规模与减少梯度噪声改进，并把部分任务交由编码智能体操控。结果显示该统一策略在共有任务与全部任务上均较上届明显提升。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：需在 OmniGibson 仿真器中以单一策略应对 100 个长时程家务任务，而上届方案的主要结论是模型欠训练。</li>
+<li>方法：以基于 π0.5 的 2025 年第一名方案为基础，用单一 VLA checkpoint 覆盖全部任务，通过 200k 步训练、从 50 迁移到 100 任务（语义阶段、任务与阶段嵌入热启动、21 维动作空间）、方差缩减的多采样 flow matching 及云评测基础设施延长训练并降低梯度噪声，另把 14 个任务路由给 GPT-6 Astra 编码 agent。</li>
+<li>结果/结论：最终排行榜第九且为前十中唯一独立团队，与 2025 共有的 50 个任务 Q 从 0.260 升至 0.371、全部 100 任务 Q 为 0.392，Astra 在 14 个任务上平均 Q 0.639 远高于学习策略的 0.108，公开提交得 0.446 Q 与 27.3% 全任务成功率。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="13-2611.14420"></a>
+<h2>13. OnlyAct：从基础模型提取动作表征用于世界模型</h2>
+<ul>
+<li><strong>原题</strong>：OnlyAct: Extracting Action Representations from Foundation Models for World Models</li>
+<li><strong>作者</strong>：Runjia Li, Minghao Chen, Junyu Xie et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14420">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14420">PDF</a></li>
+<li><strong>关键词</strong>：世界模型、动作表征、V-JEPA 2、对比适配、场景不变性</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对视频世界模型动作标签稀缺、常见潜在动作编解码器又需从头学动作空间的问题，改从预训练基础模型的帧对嵌入出发，提出无标签对比适配：把不同场景下同运动的帧对拉近、同场景不同运动的帧对推远。结果表明表征表达力更强，场景不变性相当，演示动作迁移到新场景更忠实。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：视频世界模型训练受动作监督限制（标签稀缺、分散在不兼容规范中、无法随无标注视频语料扩展），常见的潜在动作编解码器联合训练需从头学动作空间，且瓶颈在表达力与场景泄漏之间取舍。</li>
+<li>方法：改从预训练基础模型 V-JEPA 2 的帧对嵌入出发，提出无标签对比适配框架，拉近不同场景下相同运动的帧对、推远同场景下不同运动的帧对，重塑预训练空间几何而不施加重建瓶颈。</li>
+<li>结果/结论：沿动作表达力、场景不变性、动作条件视频生成质量三轴，在机器人操作、相机导航、游戏、驾驶等多数适配时未见的基准上统一评测，相比无标注潜在动作方法表征表达力显著更强且场景不变性相当，所得世界模型把演示动作迁移到新场景更忠实。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="14-2611.14380"></a>
+<h2>14. 人机协同的集合级计数中哪些因素真正重要</h2>
+<ul>
+<li><strong>原题</strong>：What Factors Matter for Collection-Level Counting with Human-AI Collaboration?</li>
+<li><strong>作者</strong>：Seoyun Jeong, Logan Lawrence, Owen L. Martin et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14380">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14380">PDF</a></li>
+<li><strong>关键词</strong>：集合级计数、人机协同、估计器选择、优先标注、域偏移</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对大图像集合目标总数估计中穷尽人工标注不可行、模型预测在域偏移下有偏且缺乏选型指导的问题，在统一的人在环计数框架下比较模型、估计器与适配策略。结果表明多模态模型是许多任务上强的免训练起点，微调检测器更适合较大标注预算与重复部署，而按模型预测优先挑选标注单元比均匀采样更高效。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：许多科学与政策决策需估计大图像集合中目标对象的总数，穷尽人工标注常不可行、原始模型预测尤其在域偏移下有偏，而现有工作缺少新部署中模型、估计器与适配策略的选型指导。</li>
+<li>方法：在统一的人在环计数框架下比较模型、估计器与适配策略，覆盖生物医学显微、地面与航空野生动物调查、城市结构俯视影像共 12 个任务，并用小试点集估计各模型的排序质量。</li>
+<li>结果/结论：现代多模态模型为许多任务提供强的免训练起点，微调检测器在较大标注预算与重复部署下更有优势，按模型预测优先决定人工标注单元比均匀采样更高效；航空叉角羚调查实地部署中，任务特定适配仅复核中位数 3.2% 的采集图像即满足调查 ±5% 容差。</li>
+<li>局限或适用：微调检测器的优势依赖较大标注预算与重复部署，现代多模态模型则适用于许多任务的免训练冷启动。</li>
+</ol>
+<a id="15-2611.14365"></a>
+<h2>15. 从视频帧到机器人元帧：世界动作模型的统一潜在接口</h2>
+<ul>
+<li><strong>原题</strong>：From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models</li>
+<li><strong>作者</strong>：Guoqiang Liang, Yiqi Lin, Yanzhe Chen et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.RO</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14365">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14365">PDF</a></li>
+<li><strong>关键词</strong>：世界动作模型、视频扩散模型、MetaWAM、逆 DCT、meta-frame</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对世界动作模型需把低维机器人信号注入视频扩散模型潜空间、而现有方案为每个信号单设潜帧的问题，把信号注入视为与预训练先验的分布对齐，据冻结去噪器重建误差的诊断发现频域打包更贴合先验，进而把全部信号折叠进单一可解码元帧。在仿真与真实任务上取得领先控制性能并降低推理延迟。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：构建世界动作模型需把本体感知、动作、价值等低维机器人信号注入由自然视频塑造的 VDM 潜空间，现有方案把接口当作格式细节，为每个信号单设潜帧或外挂专用编解码器。</li>
+<li>方法：把信号注入视为分布对齐问题，以冻结 VDM 去噪器的相对重建误差为探针诊断编码与预训练先验的匹配度，提出 MetaWAM 把各信号分配到不相交频域通道带并经逆 DCT 抬升折叠进单一 meta-frame，配合固定频带布局与 slot-aware routing 支持多类预测。</li>
+<li>结果/结论：常规空间编码远离预训练先验而频域打包得到的潜变量被去噪器修正得更少；MetaWAM 无需新增模块或架构改动，在 RoboCasa 达 68.9% 成功率、把逐信号帧合并为一并使推理延迟降低 39%，在三个真实 Franka 任务上达 85.0% 成功率。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="16-2611.14311"></a>
+<h2>16. 保留已获正确答案的多模态弃答</h2>
+<ul>
+<li><strong>原题</strong>：Multimodal Abstention That Preserves Acquired Correct Answers</li>
+<li><strong>作者</strong>：Jinyuan Zhang ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.AI, cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14311">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14311">PDF</a></li>
+<li><strong>关键词</strong>：多模态弃答、回归无损、ReFrain、阈值校准、Qwen2.5-VL-3B</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对给任务适配后的多模态模型加入弃答会丢失正确答案的问题，把弃答修复表述为带丢失答案预算的约束优化，提出结合线性探针、阈值校准与确定性否决的免回归方案，把被拒输出替换为固定弃答选项而保留其它回复。实验表明该方案在零预算下不损失已获正确答案，并提升不可回答问题的正确弃答。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：给任务适配后的多模态模型加入弃答会丢弃正确答案，包括适配期间获得的能力，需在限制新增丢失正确答案的预算下提升对不可回答问题的正确弃答。</li>
+<li>方法：把弃答修复表述为带丢失正确答案预算的约束优化，提出 ReFrain 结合首 token logits 线性探针、留出图像簇上的阈值校准与确定性否决，把被拒输出替换为「none of the above」并保留所有其它回复，主比较均从同一 answering-SFT checkpoint 出发。</li>
+<li>结果/结论：在 Qwen2.5-VL-3B 上零预算保留全部 57 个 SFT 增益答案且无损失、正确弃答提升 7.30 个百分点；0.5% 校准预算下达 74.05% 正确弃答（8 个损失、保留 55 个增益），优于 CLIP-UP EmbLoRA 的 64.65%，228 个独立问题簇冻结确认得 66.05% 正确弃答且无损失、超 EmbLoRA 32.72 个百分点，普通拒绝 SFT 则以更大回归代价换得更高正确弃答。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="17-2611.14307"></a>
+<h2>17. TaoMate-R1：面向流式多参考视频生成的时间角色特化</h2>
+<ul>
+<li><strong>原题</strong>：TaoMate-R1: Temporal Role Specialization for Streaming Multi-Reference Video Generation</li>
+<li><strong>作者</strong>：Qijun Gan, Chenwei Zhang, Xinyang Li et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14307">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14307">PDF</a></li>
+<li><strong>关键词</strong>：流式视频生成、多参考生成、时间角色特化、低秩适配器、Self Gradient Forcing</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对流式多参考视频生成需先建立场景再随变化指令延续、长流易在片段边界跳变的问题，提出以时间角色特化组织适配参数：在冻结骨干上为场景建立与延续分设低秩适配器，各自兼任去噪与上下文写入并联合训练。与按操作切分的特化方案对照表明，该分配使边界过渡更平滑、时序一致性更高。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：流式多参考视频生成需先由指定人物与物体建立场景、再在变化指令下延续，如何组织适配参数以稳定长流生成尚待解决。</li>
+<li>方法：提出 TaoMate-R1 在冻结骨干上按时间角色特化，为场景建立与延续分配各自的低秩适配器，每个适配器兼任去噪与上下文写入，用 Self Gradient Forcing 通过共同构建的历史联合训练，并以固定回放梯度分析与操作式特化对照。</li>
+<li>结果/结论：在 32 个多参考案例的相同双适配器预算下比较，十条约两分钟、指令变化且共享 teacher-audio 条件的流上平均边界亮度跳变从 1.96 降到 0.613 且边界特征相似度更高，短交互、长流与公开参考组合上平均 CLIP 与 DINO 时间相似度也更高，支持按场景建立与延续分组适配参数。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="18-2611.14286"></a>
+<h2>18. ForeseeDrive：以未来 token 条件实现预判式生成驾驶</h2>
+<ul>
+<li><strong>原题</strong>：ForeseeDrive: Future-Token Conditioning for Anticipatory Generative Driving</li>
+<li><strong>作者</strong>：Shaokai Wu, Xunchu Zhou, Pinzhi Wang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.RO, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14286">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14286">PDF</a></li>
+<li><strong>关键词</strong>：生成式驾驶规划、未来条件、预判、TTC 余量、NAVSIM</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对生成式驾驶规划器只能从采样候选中挑选、无法补回缺失动作的问题，提出把未来场景演化变为可部署的候选生成接口：从驾驶日志派生面向查询的未来标记，部署时由当前上下文预测同一标记空间，在候选成形前约束轨迹几何。基准与机制测试共同表明，未来条件生成可作为预判的实用接口。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：生成式驾驶规划器能表示多样的自车未来，但下游打分器只能在采样得到的候选中选择，无法恢复未被采到的驾驶动作。</li>
+<li>方法：提出 ForeseeDrive 从日志的 actor 运动、占据演化、路线交互与 TTC 余量派生查询索引 token，部署时从当前上下文预测同一 token 空间以在候选成形前约束轨迹几何，辅以零 token 门控残差路径、候选保持损失与 TTC 余量护栏。</li>
+<li>结果/结论：在各自基准协议下，NAVSIM navtest 达 89.2 PDMS、nuScenes 验证集达 0.41 m 平均 L2 与 0.05% 碰撞率、Bench2Drive 达 76.50 driving score；受控 DiffusionDrive/NAVSIM 诊断显示零 token 精确 no-op、保持条件下 aligned-over-shuffled selected-PDM 有小幅优势、oracle-best 质量混合及局部 TTC 边界失效。</li>
+<li>局限或适用：诊断显示 oracle-best 质量表现混合且存在局部 TTC 边界失效，说明接口在脆弱的安全到不安全边界穿越上仍有局限。</li>
+</ol>
+<a id="19-2611.14281"></a>
+<h2>19. UniFlow-RS：面向异构遥感任务的统一生成式预测</h2>
+<ul>
+<li><strong>原题</strong>：UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks</li>
+<li><strong>作者</strong>：Jianlong He, Liang Liao, Jing Xiao et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14281">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14281">PDF</a></li>
+<li><strong>关键词</strong>：遥感基础模型、UniFlow-RS、flow matching、统一预测、TMAS</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对遥感基础模型虽统一表征、预测机制却仍按任务分离的问题，提出以单一共享的潜在流匹配预测器统一异构任务：把各任务输出投射为公共潜空间中的结构化视觉目标，用统一目标优化并以动态时间步采样缓解跨任务失配。结果表明单模型可覆盖多项任务与数据集，在若干基准上超过任务专属方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：遥感基础模型日益统一跨传感模态与下游任务的表征，但分离的解码器、预测头与目标函数使预测机制仍按任务碎片化，异构任务能否共享预测过程尚待回答。</li>
+<li>方法：提出 UniFlow-RS 以单一共享潜在 flow-matching 预测器统一预测，把异构任务输出投射成公共潜空间的结构化视觉目标并加入任务相关条件，用统一 Flow Matching 目标优化所有任务，并以 Task-Modality Adaptive Timestep Sampling 按各任务-模态组在线学习状态动态分配训练时间步。</li>
+<li>结果/结论：单一共享模型处理六个任务、十三个数据集，在若干基准上超过近期任务专属 SOTA 方法、其余保持竞争力；同一 checkpoint 在未见过的数据集、任务设置、遮挡条件与近红外假彩色影像上展现强零样本迁移。</li>
+<li>局限或适用：适用于无需目标特定适配的零样本迁移，覆盖未见过的数据集、任务设置、遮挡条件与近红外假彩色影像。</li>
+</ol>
+<a id="20-2611.14279"></a>
+<h2>20. AutoThreshold：联合混淆轮廓学习实现自适应掩膜二值化</h2>
+<ul>
+<li><strong>原题</strong>：AutoThreshold: Joint Confusion-Profile Learning for Adaptive Mask Binarization</li>
+<li><strong>作者</strong>：Shaokai Wu, Xunchu Zhou, Pinzhi Wang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14279">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14279">PDF</a></li>
+<li><strong>关键词</strong>：掩膜二值化、自适应阈值、混淆轮廓、Fβ 目标、后处理</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对稠密分数分布偏移时单一验证阈值易失效的问题，提出后处理策略：预测分数分箱上正负像素的联合质量，直接参数化阈值索引的混淆计数，经归一化与累积解码得到单调混淆轮廓，再由插件解码器为任意目标选阈值而无需重训预测头。实验表明联合混淆预测相比传统阈值与标量回归带来更稳定的增益。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：当稠密分数分布发生偏移时，单一由验证集调出的阈值会变得脆弱，需要可自适应、可按指标重定向的掩膜二值化策略。</li>
+<li>方法：提出后处理 AutoThreshold 预测分数分箱上正负像素的联合质量以直接参数化阈值索引的混淆计数，用 softmax 归一化与累积解码生成连贯单调的混淆轮廓，再由插件式解码器为任意 Fβ 目标选阈值而无需重训预测头。</li>
+<li>结果/结论：三条独立训练 Kvasir 流水线迁移到四个息肉数据集，Joint 比连续 Otsu 高 0.0080 ± 0.0046 外部 macro Dice 且 3/3 次运行为正增益，参考流水线三个头种子达 0.6324 ± 0.0027、比 Otsu 高 0.0085，direct-utility Ridge 达 0.6342 但配对差区间跨零，同一 Joint checkpoints 在 F0.5、Dice、F2 上均优于 Otsu；KITTI Road 留一损坏族评估上 Joint 比标量回归高 0.0082 [0.0064, 0.0101]，direct utility 再高 0.0022。</li>
+<li>局限或适用：作者明确不宣称得到 Bayes 最优的 Fβ 决策，仅把联合混淆预测确立为有用、可指标重定向的归纳偏置。</li>
+</ol>
+<a id="21-2611.14257"></a>
+<h2>21. Elastic-WAM：面向高效机器人控制的自适应时空想象</h2>
+<ul>
+<li><strong>原题</strong>：Elastic-WAM: Adaptive Spatiotemporal Imagination for Efficient Robot Control</li>
+<li><strong>作者</strong>：Haitian Li, Tianfu Li, Xuxi Zhao et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.RO, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14257">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14257">PDF</a></li>
+<li><strong>关键词</strong>：世界动作模型、自适应细化、Elastic-WAM、时空需求场、推理效率</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对世界动作模型迭代去噪开销大、现有方法依赖固定细化预算的问题，基于细化需求随任务与状态变化的观察，提出以统一的时空需求场在时间与空间两维自适应分配计算，决定何时停止细化、每步推进多远与刷新哪些区域。实验表明稀疏细化在仿真与真实操作上控制性能领先、推理延迟更低。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：世界-动作模型靠预测未来视觉动态改善机器人控制，但迭代视频去噪带来可观推理开销，而近期部分未来去噪方法通常依赖固定的细化预算。</li>
+<li>方法：提出 Elastic-WAM，用统一时空细化需求场在时间去噪与空间未来两个维度自适应分配计算，决定何时停止世界细化、每步推进多远与刷新哪些区域，以共享时间基与空间幅度参数化，并经三阶段动作接地监督过程学习，推理时引导循环稀疏世界细化。</li>
+<li>结果/结论：跨多样仿真基准与真实世界长时程操作的评估显示达到当前最优控制性能，同时降低推理延迟与开销。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="22-2611.14254"></a>
+<h2>22. 位置至关重要：面向扩散个性化人脸隐私的稀疏潜在方差攻击</h2>
+<ul>
+<li><strong>原题</strong>：Location Matters: Sparse Latent-Variance Attacks for Face Privacy against Diffusion Personalization</li>
+<li><strong>作者</strong>：Shuting Yang, Shuxin Li, Linyan Dai et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.CR</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14254">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14254">PDF</a></li>
+<li><strong>关键词</strong>：人脸隐私、对抗扰动、SEAL、扩散个性化、稀疏攻击</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对文生图扩散模型仅凭少数照片即可复现个人身份、现有主动防御的稠密扰动又易产生可见失真或牺牲防护的问题，提出只改动少量空间位置的稀疏对抗防护框架：以可微分掩码联合优化扰动位置与数值，用面向编码器潜在分布方差的目标破坏身份一致表征。实验表明该框架兼顾高视觉质量与强身份保护。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：文生图扩散模型仅凭少数参考照片就能学习并复现个人身份，带来未授权与误导性内容生成风险，而现有稠密 L∞ 有界扰动会在面部结构周围累积可见失真，改善图像质量的方法又常以降低防护效果为代价。</li>
+<li>方法：提出 SEAL 只修改面部图像 5% 的空间位置，把可微分 top-k 掩码（联合优化扰动位置与数值）与面向冻结 VAE 编码器潜在分布方差的目标结合以破坏身份一致表征，并加入显著性引导的分散惩罚避免扰动集中在感知显著区域。</li>
+<li>结果/结论：在 CelebA-HQ 与 VGGFace2 上取得对比方法中最佳受保护图像质量，PSNR 超过 41 dB、SSIM 0.97、LPIPS 至多 0.07，同时把扩散个性化后的身份相似度降至至多 0.15，说明稀疏位置优化能兼顾强身份保护与高视觉质量。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="23-2611.14218"></a>
+<h2>23. ViGA-FLAME：对齐潜在视觉与几何表征以实现鲁棒的 3D 头部表情估计</h2>
+<ul>
+<li><strong>原题</strong>：ViGA-FLAME: Aligning Latent Visual and Geometric Representations for Robust 3D Head Expression Estimation</li>
+<li><strong>作者</strong>：Wen Hao He, Jiacheng Wu, Jie Chen ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14218">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14218">PDF</a></li>
+<li><strong>关键词</strong>：3D 头部表情估计、ViGA-FLAME、PG-VAE、FLAME、视觉几何对齐</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对单张图像估计三维头部表情需把视觉外观映射到底层面部几何的问题，提出两阶段框架：先以参数化几何变分自编码器学习规范头部表面与参数的统一表征，再由可训练适配器借非对称注意力把预训练语义视觉特征对齐进该几何潜空间。方法在严重形变与大视角下仍稳健，优于对比的前馈方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：从单张图像估计 3D 头部表情需要把视觉外观映射到底层面部几何，在严重面部形变与大视角下保持鲁棒具挑战。</li>
+<li>方法：提出两阶段 ViGA-FLAME，先由 PG-VAE 学习规范头部表面与 FLAME 参数的统一表征并以几何、参数监督及双解码分支一致性连接表面细节与参数结构，再由可训练 ViGA 借非对称注意力把预训练语义视觉编码器特征映射进该潜空间而不改动原始视觉流。</li>
+<li>结果/结论：把图像证据锚定到结构化几何潜在先验后，在严重面部形变与大视角下实现鲁棒的 3D 头部表情估计，并高效地优于对比的前馈方法。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="24-2611.14207"></a>
+<h2>24. DailyWildfireCAN：加拿大次日野火蔓延预测数据集与基准</h2>
+<ul>
+<li><strong>原题</strong>：DailyWildfireCAN: A Dataset and Benchmark for Next-Day Wildfire Spread Prediction in Canada</li>
+<li><strong>作者</strong>：Mahacine Ettahri, Hager Radi Abdelwahed, Toluwaleke Olutayo et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14207">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14207">PDF</a></li>
+<li><strong>关键词</strong>：野火蔓延预测、DailyWildfireCAN、多模态数据集、次日预测、加拿大</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对现有野火蔓延深度学习研究主要依赖美国数据集、加拿大火环境代表性不足的问题，构建面向全加拿大次日蔓延预测的多模态多时相数据集与基准：以较高时空分辨率追踪多日事件连续火势进展，整合地形、气象、土地覆盖与卫星影像等多类特征，并比较单时相与多时相预测模型、配套多维评估框架。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：野火是加拿大关键的生态与社会经济挑战，次日蔓延预测需捕捉天气、燃料与地形的复杂交互，而现有深度学习研究主要依赖以美国为中心的数据集，加拿大火环境代表性不足。</li>
+<li>方法：构建多模态多时相数据集 DailyWildfireCAN，以 90 米空间与 24 小时时间分辨率追踪多日事件连续火势进展，整合 33 个跨模态特征，并建立比较单时相与多时相预测模型的综合基准及多维评估框架。</li>
+<li>结果/结论：数据集覆盖 2017-2024 八个火季的 2,440 次野火事件，高分辨率保留火缘几何、局部燃料变化与地形效应等细尺度信息；基准配多维评估框架，考察跨野火特征、地理区域与时间条件的鲁棒性、空间预测质量及对参考标签变化的敏感性。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="25-2611.14176"></a>
+<h2>25. SpecValley：稠密异配图中的聚合即谱谷</h2>
+<ul>
+<li><strong>原题</strong>：SpecValley: Aggregation as Spectral Valley in Dense Heterophilic Graphs</li>
+<li><strong>作者</strong>：Christoph Jahn, Delvin Bacho, Urs Waldmann et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14176">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14176">PDF</a></li>
+<li><strong>关键词</strong>：异配图、节点分类、谱谷、度归一化、可学习聚合</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对异配图节点分类中邻域聚合会削弱携带标签信号、而现有工作只改进传播算子的问题，指出度归一化本身即衰减固定中间频带的谱谷。作者改从表征入手，先为每张图学习谱谷形貌再接普通谱滤波器，并以谱能量预算证明被聚合移除的频带无法由线性滤波器恢复。消融实验表明增益来自聚合而非滤波器。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：异配图节点分类中邻域聚合会恰好削弱携带标签的那部分信号，现有工作只设计更强表达力的传播算子，却让前置的聚合步骤被度归一化固定。</li>
+<li>方法：从表征而非传播入手，提出两阶段方案，先由 SpecValley 为每张图学习谱谷的位置、锐度与侧翼增益，再接普通谱滤波器，并形式化分析聚合算子与下游滤波器的交互及谱能量预算。</li>
+<li>结果/结论：确立度归一化响应 1 减 lambda 恰在稠密图特征值聚集点消失，证明聚合从某频带移除的内容任何线性谱滤波器都无法恢复、收益由谱谷移除的标签能量决定；SpecValley 在异配基准上取得强结果，受控消融把增益归因于聚合而非滤波器。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="26-2611.14143"></a>
+<h2>26. GARD：面向多模态对比学习后门的梯度引导对抗表征防御</h2>
+<ul>
+<li><strong>原题</strong>：GARD: Gradient-Guided Adversarial Representation Defense against Backdoors in Multimodal Contrastive Learning Models</li>
+<li><strong>作者</strong>：Yuhong Wang, Yujun Cai, Lei Feng et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CR, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14143">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14143">PDF</a></li>
+<li><strong>关键词</strong>：后门防御、多模态对比学习、CLIP、GARD、对抗表征探测</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对多模态对比模型易受多样触发器后门攻击、现有后验防御或留后门或依赖估计攻击目标的问题，依据被投毒编码器对不同扰动结构敏感度各异的观察，提出与目标和触发器无关的防御：以互补的全局与局部对抗探针位移干净表征，再与干净锚点重对齐并保持图文对齐。实验表明该方案大幅压低攻击成功率。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：CLIP 等多模态对比学习模型易受触发器结构多样（局部补丁到全局分布扰动）且愈发在表征空间优化的后门攻击，现有干净微调后验防御可能留后门活跃，触发器反演又依赖准确估计攻击目标与触发器。</li>
+<li>方法：提出目标与触发器无关的后验防御 GARD，优化互补的全局与局部对抗探针以最大限度位移干净图像表征，再把扰动表征与分离的干净锚点重新对齐并保留图文对齐，所得模型推理时无需额外计算。</li>
+<li>结果/结论：跨六种视觉后门攻击与两种 CLIP 视觉骨干，GARD 在全部 12 个攻击-骨干组合中把攻击成功率降到 1% 以下，同时保持有竞争力的干净准确率，证明对抗表征探测可有效修复被投毒的多模态对比编码器。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="27-2611.14136"></a>
+<h2>27. HaiRuo：以卫星测高基础模型把海洋涡旋同时作为场与对象预报</h2>
+<ul>
+<li><strong>原题</strong>：HaiRuo: Forecasting Ocean Eddies as Fields and Objects with a Satellite-Altimetry Foundation Model</li>
+<li><strong>作者</strong>：Xukun Qin, Haochen Sun, Yuyang Tian et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.LG, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14136">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14136">PDF</a></li>
+<li><strong>关键词</strong>：海洋中尺度涡、卫星测高、HaiRuo-1B、基础模型、拉格朗日对象解码器</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对中尺度涡两周后位置仍依赖海洋模型加事后追踪启发式读出的问题，提出把涡同时作为场与对象预报：由历史卫星海平面图一次前向给出未来物理场、逐日涡掩膜与现存涡轨迹，以预训练基础模型提供物理场、对象解码器精化路径。预注册全海洋评估显示其预报误差全面低于多种对比方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：中尺度涡携带海洋大部分动能并跨海盆输送热、盐与营养，但两周后涡的位置仍依赖海洋模型加事后追踪启发式读出，需要直接把涡作为场与对象预报。</li>
+<li>方法：提出 HaiRuo，由 30 天卫星海平面图一次前向返回 15 天海平面与地转流速、逐日涡掩膜及每个现存涡轨迹；以 24 年全球卫星测高观测上无标签预训练的 10.5 亿参数 HaiRuo-1B 提供物理场与掩膜，拉格朗日对象解码器 XuanJi 在共移动极坐标框架中经三轮前瞻精修路径。</li>
+<li>结果/结论：HaiRuo-1B 在同一解码器下带来 +0.14 field skill 与 +1.1 mIoU 点、冻结下把 15 天中心误差再降 1.2 km（从头训练 1.35 km），XuanJi 在其上再降 2.5 km（联合微调 2.9 km）、对象注意力跨六个已发表骨干降 2.5-3.3 km；预注册全海洋评估在十四个方法的每个端点均改进（15 天中心误差 25.2 对 30.6 km，-18%），标注区外与 ENSO 两相位保持优势，复现西向漂移、南纬 50-60 度东向反转与向极偏转；固定追踪器十天预报场把 WenHai、XiHe 涡中心误差降 37-43%，对象轨迹把流水线误差降 77-78%。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="28-2611.14135"></a>
+<h2>28. Sim(3)-TurboReg：借三尺度一致性实现鲁棒高效的尺度感知配准</h2>
+<ul>
+<li><strong>原题</strong>：Sim(3)-TurboReg: Robust and Efficient Scale-Aware Registration via Tri-Scale Consistency</li>
+<li><strong>作者</strong>：Zijun Zhou, Shaocheng Yan, Zhenjun Zhao et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14135">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14135">PDF</a></li>
+<li><strong>关键词</strong>：Sim(3) 配准、尺度歧义、三尺度一致性、流式重建、离群鲁棒</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对前馈三维基础模型受显存限制无法原生处理长序列、流式滑窗分块又引入单目尺度歧义的问题，提出以严格的三尺度一致性判据替换绝对距离约束来重构配准的兼容性图。分析表明该判据可同时抑制误匹配与坐标畸变离群点，在强离群污染下精度与经典鲁棒估计相当而延迟显著更低。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：前馈 3D 基础模型能高保真恢复几何，但推理显存限制使其无法原生处理长序列，现有流式系统用滑窗分块绕过限制却引入严重单目尺度歧义，需在离群污染下仍准确高效的 Sim(3) 配准。</li>
+<li>方法：提出 Sim(3)-TurboReg，用严格的 Tri-Scale Consistency 判据替换绝对距离约束以重构 TurboReg 的兼容性图构建，并把所得求解器集成进现有流式系统。</li>
+<li>结果/结论：分析表明 TSC 同时抑制误匹配与坐标畸变离群点，为前馈模型获得高保真、公里级重建；在 90% 离群点的受控未知尺度配准上精度与 RANSAC 相当而中位延迟低 92.5%，在 DA3-Streaming 的 KITTI 上平均 ATE RMSE 改善 22.2%、平均端到端时间减少 16.6%。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="29-2611.14129"></a>
+<h2>29. 以组织学引导的隐式神经表征实现连续三维空间转录组重建</h2>
+<ul>
+<li><strong>原题</strong>：Continuous 3D Spatial Transcriptomics Reconstruction via Histology-Informed Implicit Neural Representations</li>
+<li><strong>作者</strong>：Kaito Shiku, Ryoma Bise, Ahtisham Fazeel Abbasi et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14129">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14129">PDF</a></li>
+<li><strong>关键词</strong>：空间转录组学、隐式神经表征、HIM-INR、连续三维重建、组织学图像</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对三维空间转录组测量取自离散二维切片、因采集成本高常稀疏采样的问题，提出组织学引导的多任务隐式神经表征：以共享骨干联合重建基因表达谱与组织学表征，借密集采样的组织学图像提供辅助空间监督，训练后即可在任意三维坐标预测基因表达而无需组织学图像。实验表明重建优于现有方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：三维空间转录组学能分析跨组织深度的基因表达模式，但测量取自离散的二维组织切片，且因采集成本高常稀疏采样，难以连续重建。</li>
+<li>方法：提出 HIM-INR，以共享骨干的隐式神经表征联合重建基因表达谱与组织学表征，利用密集采样的组织学图像作为辅助空间监督，训练完成后可在任意三维坐标预测基因表达而无需组织学图像。</li>
+<li>结果/结论：在两个 3D ST 数据集上的实验表明相比现有方法重建更优，尤其当缺失的 ST 切片数量增加时改进更明显。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="30-2611.14124"></a>
+<h2>30. CroCoMAE：面向 SAR-光学遥感数据的跨模态自监督协同表征学习</h2>
+<ul>
+<li><strong>原题</strong>：CroCoMAE: Cross-modal self-supervised collaborative representation learning for SAR-optical remote sensing data</li>
+<li><strong>作者</strong>：Vito Recchia, Giuseppe Guarino, Cássio Fraga Dantas et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14124">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14124">PDF</a></li>
+<li><strong>关键词</strong>：跨模态自监督、SAR-光学、CroCoMAE、掩码图像建模、对比学习</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对遥感标注稀缺、现有跨模态自监督多只做全局图像级对齐、细粒度互补结构未充分利用的问题，提出统一对比学习与掩码图像建模的跨模态框架：图像级以模态内对比得到全局判别表征，块级以掩码建模驱动细粒度表征并对齐两模态共享子空间。实验表明该框架优于单模态基线，并超过现有跨模态方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：遥感通过 SAR 与光学等互补传感器捕捉地表，但真值标注稀缺限制监督方法，而现有跨模态自监督框架多通过全局图像级表征对齐模态或把它们视为大体冗余，细粒度互补结构未充分开发。</li>
+<li>方法：提出 CroCoMAE 在 ViT 架构内统一对比学习与掩码图像建模，图像级对 class token 施加模态内对比损失，块级用掩码图像建模驱动细粒度单模态表征并以跨模态对比目标对齐 SAR 与光学块 token 的共享子空间、保留互补子空间不受约束。</li>
+<li>结果/结论：在两个覆盖场景分类与语义分割的 SAR-光学基准上优于单模态 SSL 基线，并在多数配置下超过当前最优跨模态框架，单模态与多模态评估在不同标注规模下均有增益，语义分割改进最大。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="31-2611.14118"></a>
+<h2>31. 驯服开放世界个性化：迈向开集个性化 MLLM 助手</h2>
+<ul>
+<li><strong>原题</strong>：TAMEing the Open-World Personalization: Towards Open-Set Personalized MLLM Assistant</li>
+<li><strong>作者</strong>：Rongpei Hong, Jian Lang, Ting Zhong et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14118">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14118">PDF</a></li>
+<li><strong>关键词</strong>：开集个性化、多模态大语言模型、TAME-O、概念协调、长上下文</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对现有多模态大模型个性化只在静态预定义概念集上进行、需用户手动频繁扩展、在动态场景不可行的问题，把个性化重述为开集问题，并提出长上下文开集个性化助手：以免训练、即插即用的概念协调技能在长时交互中自动解锁新概念。实验表明该助手能持续掌握更多概念并逐步精化已知概念的建模。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：把 MLLM 个性化为智能助手需生成基于用户专属物体、实体与概念的回应，但现有研究主要在静态预定义概念集上个性化，要求用户手动且频繁扩展该集合以容纳新涌现概念，在动态世界场景中不可行。</li>
+<li>方法：把传统 MLLM 个性化重述为开集问题，提出首个长上下文开集个性化 MLLM 助手 TAME-O，引入免训练、即插即用的概念协调技能（CR Skill）在长时人机交互中自动解锁新概念并避免与已解锁概念混淆。</li>
+<li>结果/结论：CR Skill 使助手能持续掌握越来越多概念并逐步精化已知概念的建模，开集个性化设置下的大量实验强调了方法的有效性。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="32-2611.14116"></a>
+<h2>32. 成人词语扩展与人工词语学习中的视觉相似度</h2>
+<ul>
+<li><strong>原题</strong>：Visual Similarity in Adult Word Extension and Artificial Word Learning</li>
+<li><strong>作者</strong>：Patricio M. Vera ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CL, cs.AI, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14116">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14116">PDF</a></li>
+<li><strong>关键词</strong>：词语扩展、视觉相似度、DINOv2、人工词语学习、示例构成</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文追问物体共名时视觉相似度能解释多少、教学示例又补充了什么：重分析成人词语扩展数据，用冻结的自监督视觉编码器计算测试图到示例的距离，并检验采用同一编码器的人工学习器。结果显示距离与扩展及学习难度相关；视觉相似度只部分解释泛化组织，教学示例的构成补上距离未捕捉的部分。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：当两个物体共用一个名字时，需要厘清视觉相似度能解释多少词语扩展，以及教学示例额外贡献了什么。</li>
+<li>方法：重新分析大型成人词语扩展研究（Lewis &amp; Frank, 2018）的试次级数据，用冻结自监督视觉编码器 DINOv2 计算测试图到示例的距离，并在采用同一编码器的人工学习器中检验跨类别词语学习，另比较编码器距离与三份人类相似度、混淆度测量。</li>
+<li>结果/结论：距离与扩展相关（每标准差 log odds -3.23；520 人），三个示例为下位时成人仅扩展到 1.1% 的上位项目、为上位时达 77.5%，人工学习器近、中、远类别对命名准确率为 84.7%、65.4%、53.0%；编码器距离与人类测量相关（rho = .501-.795），但未转化为人类距离可预测学习难度的确凿证据，第二个以一名儿童经验训练的编码器复现层级排序却未复现配对级效应；视觉相似度部分解释泛化组织，示例构成贡献所用距离未捕捉的部分。</li>
+<li>局限或适用：次要人类数据按确证分析前固定的内部计划分析、未作外部预注册，探索性事后分析与表征对齐也仅给出提示性而非确凿结论。</li>
+</ol>
+<a id="33-2611.14113"></a>
+<h2>33. 前瞻一步：面向视频物体状态读取的预期引导智能体 LASER</h2>
+<ul>
+<li><strong>原题</strong>：Looking One Step Ahead: An Anticipation-guided Agent for Object State Readout in Videos</li>
+<li><strong>作者</strong>：Yuanhe Tian, Yan Song ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14113">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14113">PDF</a></li>
+<li><strong>关键词</strong>：物体状态读取、预期引导智能体、多模态大模型、视觉提问、状态转换</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对视频物体状态读取中多模态大模型描述难以区分相邻状态的问题，提出预期引导智能体 LASER，把预判的下一步变化转成针对性视觉问题检查当前帧，再以后续帧观察校验并细化状态记录。实验表明其稳定优于强基线，验证了预期引导思路的有效性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：理解活动进展需跟踪物体状态随时间的变化，而多模态大模型生成的视觉描述常把区分相邻状态所需属性刻画得不够明确。</li>
+<li>方法：LASER 把预判的下一步变化转成针对性视觉问题检查当前帧，用后续帧的独立观察校验状态读数与预测、细化状态记录并生成描述，文本观察技能通过追溯与参考字幕的差异修订。</li>
+<li>结果/结论：在 OSCaR 与 PLM RCap 上的实验及进一步分析显示，LASER 稳定优于强基线与现有方法，验证了预期引导思路的有效性。</li>
+<li>局限或适用：适配与推理全程冻结模型参数，修订技能在独立视频上依字幕质量选定后于评估期固定，适用于不更新模型权重的场景。</li>
+</ol>
+<a id="34-2611.14076"></a>
+<h2>34. ZoomGain：挖掘全局到缩放的感知落差以构建细粒度视觉监督</h2>
+<ul>
+<li><strong>原题</strong>：ZoomGain: Mining Global-to-Zoom Perception Gaps for Fine-Grained Visual Supervision</li>
+<li><strong>作者</strong>：Haozhan Shen, Liangbo He, Jun Lan et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14076">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14076">PDF</a></li>
+<li><strong>关键词</strong>：细粒度视觉感知、视觉语言模型、数据构造、双语基准、干扰项</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对细粒度视觉监督难以自动构造合格问题的困难，利用视觉语言模型整图难辨而放大可识别的感知落差，提出数据构造流程 ZoomGain，仅凭放大区域信息为整图构造问题并核验答案。所建基准令最强模型表现仍有限，而少量样本训练即可提升小模型感知能力。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：细粒度视觉监督要求问题答案正确、无歧义且依赖真实视觉细节，人工标注费力，而模型自身又难以自动核验这类细节。</li>
+<li>方法：利用全局到缩放的感知落差，仅凭放大视图信息为整图构造问题，用多个模型核验答案、排除语言先验可答的情况，并专门生成高质量选择题干扰项。</li>
+<li>结果/结论：据该流程配合纯人工筛选构建的 1000 题双语基准 ZoomGainBench 上，28 个视觉语言模型中最佳者仅得 61.08；仅用 9K 样本训练便使 4B/9B 模型在多项感知基准上超越若干千亿参数模型，9B 模型在 HR-Bench 4K 取得 90.25 的当前最佳。</li>
+<li>局限或适用：该流程既可产出评测基准也可产出训练数据，仅需人工筛选而不必人工改写问答；失败分析还发现模型答错选择题时偏好某一类干扰项。</li>
+</ol>
+<a id="35-2611.14074"></a>
+<h2>35. 基于逐帧 Transformer 的烟雾模式时空分析检测被遮挡的野火火焰</h2>
+<ul>
+<li><strong>原题</strong>：Obscured Wildfire Flame Detection by Spatio-temporal Analysis of Smoke Patterns Using Frame-wise Transformers</li>
+<li><strong>作者</strong>：Uma Meleti, Abolfazl Razi, Fatemeh Afghah ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14074">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14074">PDF</a></li>
+<li><strong>关键词</strong>：野火检测、烟雾运动、时空分析、逐帧 Transformer、无人机航拍</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对逐帧独立分析难以发现被烟雾遮挡火焰的问题，提出同时检测可见火与遮挡火的新范式，依据烟雾运动的时间模式做时空联合分析，以逐帧Transformer在帧间施加注意力并保留帧内空间信息。仅以彩色视频训练即取得较高的分割检测分类表现，验证了方法的泛化性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：传统做法独立分析单张图像或单帧，难以发现被烟雾遮挡的火焰，而连续帧中烟雾运动的时间模式恰可指示遮挡火的存在。</li>
+<li>方法：提出逐帧 Transformer，在连续帧间施加注意力、同时在帧内保留空间信息，而非像非局部块那样把时空信息压成单一向量；并针对不同空间分辨率优化时间模式长度以提效降本。</li>
+<li>结果/结论：在含 RGB 与红外双模视频的 FLAME2 整理版上，红外仅用于提取真值、模型仅以 RGB 训练，取得分割 Foreground Dice 92.61%、检测 Precision 93.21% 与 Recall 91.73%、片段级分类准确率 98.02%，并通过消融考察有效性与泛化性。</li>
+<li>局限或适用：红外视频仅用于生成真值，模型只用 RGB 训练，以维持对仅配备普通相机的低成本商用无人机的适用性，并便于复用既有纯 RGB 数据集。</li>
+</ol>
+<a id="36-2611.14060"></a>
+<h2>36. 视觉语言模型从何处获得左右方位：Qwen2.5-VL、Qwen3-VL 与 InternVL3 中的位置编码反事实</h2>
+<ul>
+<li><strong>原题</strong>：Where Do Vision-Language Models Get Left and Right? Position-Code Counterfactuals in Qwen2.5-VL, Qwen3-VL and InternVL3</li>
+<li><strong>作者</strong>：Enhao Cui, Junzhi Yang, Yaoshun Lin et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14060">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14060">PDF</a></li>
+<li><strong>关键词</strong>：左右方位、位置编码、反事实消融、视觉 Transformer、CV-Bench</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文研究视觉语言模型的左右方位判断究竟来自图像内容、视觉位置编码还是语言侧词元顺序。作者仅镜像视觉位置编码做反事实测试，发现它能复现翻转图像后的答案，而语言侧改动几乎不改变结果，说明方位判断主要由视觉位置编码决定。事后分析进一步限定了上述结论。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：视觉语言模型的左右方向可能源自图像块内内容朝向、ViT 位置编码或语言模型中的词元位置与顺序，消融已表明 ViT 编码必要，本文进一步检验其充分性。</li>
+<li>方法：在 Qwen2.5-VL-7B、Qwen3-VL-4B 与 InternVL3-2B 上只镜像 ViT 宽度方向的位置编码，另做半格平移及语言侧 id 与词元顺序镜像，并在 CV-Bench、What'sUp 上做对照与随机置换分析。</li>
+<li>结果/结论：镜像 ViT 宽度位置可在 84.3-93.2% 的 CV-Bench 左右问题上复现翻转图像答案（Qwen2.5-VL-3B 为 87.5%，部分源于向左回退），完整 ViT 编码下语言侧改动几乎不影响答案，效应主要位于 Qwen2.5-VL-7B 的全局注意力 ViT 块且多在末层。</li>
+<li>局限或适用：作者指出事后分析限定了上述结论，What'sUp 上左右关系支持对比仅 InternVL3-2B 清晰，随机置换在倒序物体时多翻转 18.9-31.0 个百分点，剩余错误多与询问哪个物体无关，提示修复应针对关系绑定、物体定位或参照物使用。</li>
+</ol>
+<a id="37-2611.14058"></a>
+<h2>37. CURRENT：面向 4D Flow MRI 空间与时间同步超分辨率的循环神经网络</h2>
+<ul>
+<li><strong>原题</strong>：CURRENT: A Recurrent Neural Network for Concurrent Spatial and Temporal Super-Resolution of 4D Flow MRI</li>
+<li><strong>作者</strong>：Luuk Jacobs, Pietro Dirix, Sebastian Kozerke ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, physics.med-ph</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14058">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14058">PDF</a></li>
+<li><strong>关键词</strong>：4D flow MRI、超分辨率、循环神经网络、相对压强估计、合成到活体泛化</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对主动脉四维血流磁共振重建速度场分辨率不足的问题，提出循环网络 CURRENT，以单一架构完成空间与时间超分辨率，并用嵌入活体背景的血流仿真构造配对数据训练。实验显示其空间超分优于专用模型、同步时空超分的相对压强估计更准，且能由合成数据泛化到活体采集。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：需以统一的采集后超分辨率框架提升主动脉 4D flow MRI 重建速度矢量场的空间与时间分辨率，以支撑物理感知分析。</li>
+<li>方法：CURRENT 以单一网络架构同时做空间与时间超分，把主动脉血流计算流体力学仿真嵌入活体胸段 MRI 背景并经受控时空下采样构造配对高低分辨率数据做监督训练，采用图像域与 k 空间域指标并以常规插值为基线。</li>
+<li>结果/结论：两倍空间超分优于专用 4DFlowNet、时间超分与之相当；同步时空超分得到比单独空间或时间超分更准的相对压强估计，并优于基于 4DFlowNet 的串行超分流程，整体表现优于现有做法。</li>
+<li>局限或适用：模型完全在合成数据集上训练，向活体 4D flow MRI 的泛化被表述为有前景的初步结果，作者以其有潜力增强物理分析、拓展加速 4D flow MRI 的适用性作结。</li>
+</ol>
+<a id="38-2611.14046"></a>
+<h2>38. 基于 Fisher 几何的结构化置信度扰动用于对抗训练</h2>
+<ul>
+<li><strong>原题</strong>：Structured Confidence Perturbation via Fisher Geometry for Adversarial Training</li>
+<li><strong>作者</strong>：Chenlong Wei, Hanling Wang, Chong Zhang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.LG, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14046">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14046">PDF</a></li>
+<li><strong>关键词</strong>：对抗训练、伪攻击、置信结构、KL 散度、Fisher 信息矩阵</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对对抗训练中损失上升却未改变置信结构的伪攻击问题，提出两条互补思路：在损失最大化之外引入混合目标，并从几何上重构训练，生成使置信流形上分布距离最大的扰动。理论分析表明最优扰动方向对齐Fisher信息矩阵主特征向量，实验显示其对抗鲁棒性与鲁棒迁移性优于现有方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：对抗训练常受伪攻击困扰，这类扰动虽明显抬高损失值，却并未真正改变模型的置信结构。</li>
+<li>方法：其一在传统损失最大化之外引入融合交叉熵与 KL 散度的混合目标，同时破坏预测精度与分布一致性；其二在置信流形上最大化分布距离来生成扰动，并给出避免高维矩阵计算的高效算法。</li>
+<li>结果/结论：理论分析表明最优扰动方向与 Fisher 信息矩阵的主特征向量一致；在多个数据集与模型架构上的实验显示，该方法在对抗鲁棒性与鲁棒迁移性上优于现有方法，尤其擅长高置信区域内的结构扰动。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="39-2611.14033"></a>
+<h2>39. 基于条件偏移的少步流式视频生成</h2>
+<ul>
+<li><strong>原题</strong>：Few-Step Streaming Video Generation via Condition Shifting</li>
+<li><strong>作者</strong>：Deyuan Liu, Jungang Li, Kaiwen Zheng et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14033">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14033">PDF</a></li>
+<li><strong>关键词</strong>：流式视频生成、少步采样、条件偏移、分布匹配蒸馏、速度场</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对少步流式视频生成中分布匹配蒸馏需额外维护伪分数网络的问题，把 APEX 扩展为用条件偏移在生成器内部估计速度场，以原文本条件负责生成、偏移条件复用同套参数负责伪估计，从而去掉独立网络。长视频实验显示该方法在指令遵循与视觉美感上优于基线，且训练开销更低。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：少步采样虽降低流式视频生成成本，但分布匹配蒸馏需额外维护一个伪分数网络，增加训练显存与计算且须持续跟踪变化的生成器。</li>
+<li>方法：以条件偏移在生成器内部估计生成分布的速度场，原始文本条件选定生成、偏移条件复用同一套参数选定伪估计，同时保留 S2-Avatar 的冻结参考教师、Self-Replay Forcing 与感知正则。</li>
+<li>结果/结论：在 180 秒视频、每块三次骨干评测与一步空间 Refiner 的设置下，70 例人工研究与 320 例 StreamAV-Bench 对比显示，APEX 在 Progressive track 的指令完成度达 3.856 对 3.831、两赛道视觉美感 0.641898 对 0.632606，人工在指令遵循上净偏好 +30.0%、一致性与视频质量各 +4.3%，匹配训练设置下每卡峰值显存低 4.4%、平均迭代时间短 9.2%。</li>
+<li>局限或适用：运动质量仍偏向 S2-Avatar，音视同步多为持平、可用性无变化，方法优势集中在指令遵循与视觉美感；这些增益是在长视频与特定骨干评测设置下测得。</li>
+</ol>
+<a id="40-2611.14025"></a>
+<h2>40. HiPFuse：面向边缘设备机器人感知的实时 LiDAR 语义分割</h2>
+<ul>
+<li><strong>原题</strong>：HiPFuse: Real-Time LiDAR Semantic Segmentation for Robotic Perception on Edge Devices</li>
+<li><strong>作者</strong>：Haiyang Wu, George Vosselman, Ville Lehtola ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.RO</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14025">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14025">PDF</a></li>
+<li><strong>关键词</strong>：LiDAR 语义分割、点—BEV 融合、高度分区、边缘设备、实时感知</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对边缘设备实时 LiDAR 语义分割中鸟瞰聚合易混标的问题，提出点—BEV 融合框架 HiPFuse，在水平尺度间交换点特征与按高度分区的鸟瞰特征，兼顾点级细节与二维上下文。实验显示其以超过扫描帧率的速度取得较高精度，替换语义前端还能改善里程计与闭环表现。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：机器人实时感知需在有限算力下获得准确的 LiDAR 语义，而鸟瞰视角聚合虽高效却会把标注不同的表面混入同一列。</li>
+<li>方法：HiPFuse 在水平尺度间交换点特征与按高度分区的 BEV 特征，结合单次扫描的点级细节与二维空间上下文；固定高度分配保留独立竖直聚合组，以同一三维单元目标辅助监督初始 BEV 特征，并由双尺度 BEV 上下文模块补充更粗网格的广域上下文。</li>
+<li>结果/结论：在 SemanticKITTI 与 MCD 上于 Jetson AGX Orin 分别取得 63.7% 与 62.5% mIoU、14.2 与 22.4 FPS，均超过 10 Hz 扫描帧率；仅替换固定机器人系统的基线语义前端，里程计绝对轨迹误差 RMSE 平均降低 10.6%，SemanticKITTI 上被接受的闭环召回提升 8.7 个百分点，语义地图的道路标注更连续。</li>
+<li>局限或适用：另有独立训练与评估显示室内适用性；里程计与闭环增益是在固定机器人系统、两条户外序列与特定数据集上测得。</li>
+</ol>
+<a id="41-2611.14018"></a>
+<h2>41. 交错解剖检视与诊断推理的可解释放射报告生成</h2>
+<ul>
+<li><strong>原题</strong>：Interleaving anatomical inspection and diagnostic reasoning for explainable radiology report generation</li>
+<li><strong>作者</strong>：Chentao Huang, Runlong Lin, Zhijun Wang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14018">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14018">PDF</a></li>
+<li><strong>关键词</strong>：放射报告生成、可解释性、多模态思维链、解剖区域、诊断可追溯</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对自动放射报告生成中视觉证据到结论的路径不透明、报告难以复核的问题，提出可解释框架 ARIVE，在成稿前交错进行解剖检视与诊断推理，并以多模态思维链轨迹和临床内容奖励优化。实验显示其临床效能优于强基线，报告在专家评分中可比肩领先模型，诊断依据更可追溯。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：自动放射报告生成虽能起草临床可信的报告，但从视觉证据到所报发现的通路仍不透明，诊断依据未获解释，报告难以复核或修订。</li>
+<li>方法：ARIVE 在最终成稿前交错进行解剖检视与诊断推理，从 MIMIC-CXR 构建 159,416 条多模态思维链轨迹，以被检视解剖区域的视觉证据支撑后续临床解读，并配合解剖与临床内容奖励做进一步优化。</li>
+<li>结果/结论：在 MIMIC-CXR 与以异常为中心的 MIMIC-ABN 上，ARIVE 的临床效能优于强基线，报告在盲法专家评分中与领先模型相当，思维链轨迹获高诊断可追溯性评分，配对复核评估还提示查阅思维链有助于发现生成报告中的错误。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="42-2611.14013"></a>
+<h2>42. 面向动静脉管径比估计与视网膜病变筛查的分阶段可解释流程</h2>
+<ul>
+<li><strong>原题</strong>：A Stage-Wise Explainable Pipeline for Arteriolar-to-Venular Ratio Estimation and Retinopathy Screening</li>
+<li><strong>作者</strong>：Sharan Sharmeela Karuppannan, Yoga Sri Varshan, Subin Sahayam et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14013">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14013">PDF</a></li>
+<li><strong>关键词</strong>：动静脉管径比、眼底图像、可解释流程、视网膜病变筛查、血管口径</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对眼底图像动静脉管径比估计与视网膜病变筛查缺少可复核流程的问题，提出五阶段可解释流程，逐步完成血管口径测量与管径比计算，各阶段均给出可检视中间结果，并以显式阈值规则产出筛查决策。探索性队列上的结果表明其具有较高精度，且误差可追溯到具体阶段。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：动静脉管径比是临床上有依据的视网膜血管健康标志物，需要一个各阶段可检视、错误可定位的估计与筛查流程。</li>
+<li>方法：五阶段流程依次结合血管与动静脉掩码、视盘定位、以最小弦边界游走估计血管口径、由主导动静脉分支计算管径比，并以显式阈值规则产出筛查决策，保证中间输出可逐阶段检查。</li>
+<li>结果/结论：在 30 张 HRF 图像的探索性队列上报告 96.7% 准确率、F1 0.968 与 ROC-AUC 0.978；消融研究与同 VascX 的探索性比较考察了血管配对、口径测量与聚合方式的作用。</li>
+<li>局限或适用：作者说明结论解读受限于小样本队列、代理疾病标签以及缺少独立参照口径测量，需在更大规模、经临床分级的队列上进一步验证，因此定位为研究视网膜血管生物标志物的透明框架。</li>
+</ol>
+<a id="43-2611.13997"></a>
+<h2>43. 自定义隐私边界：评测大型视觉语言模型推理时个性化隐私保护能力</h2>
+<ul>
+<li><strong>原题</strong>：Specify Privacy Yourself: Assessing Inference-Time Personalized Privacy Preservation Ability of Large Vision-Language Models</li>
+<li><strong>作者</strong>：Xingqi Wang, Xiaoyuan Yi, Xing Xie et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI, cs.CL, cs.CY, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13997">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13997">PDF</a></li>
+<li><strong>关键词</strong>：个性化隐私、推理时保护、视觉语言模型、SPY-Bench、噪声对比对齐</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文指出隐私本质上是个性化且依赖语境的，提出推理时个性化隐私保护任务，让用户以语言动态指定隐私边界，并构建系统评测基准与基于用户规格的新指标。评测显示现有模型合规率普遍偏低、语境隐私理解有限；作者实现的初步对齐方法可在保持通用性能的同时提升合规表现。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：大型视觉语言模型能从图像高精度推断敏感个人信息，现有对齐只保护信用卡数据等普适隐私，而隐私本质上个性化且依语境变化，需让用户以语言动态指定边界。</li>
+<li>方法：提出推理时个性化隐私保护任务与首个系统评测基准 SPY-Bench，含 32,700 个图文问答案例、覆盖 67 个类别与 24 个真实场景的个性化隐私指令，并配套基于用户规格与语境感知的新指标；随后实现初步对齐方法。</li>
+<li>结果/结论：对 21 个先进视觉语言模型的评测显示多数模型表现不佳，即便最佳的 o4-mini 合规准确率也仅约 24%，语境隐私理解十分有限；所提噪声对比对齐变体达到 96.88% 准确率且维持合理通用性能，为更可控模型的伦理部署迈出初步一步。</li>
+<li>局限或适用：作者把结果定位为朝可控视觉语言模型伦理部署迈出的初步一步，现有模型在该任务上的合规率与语境理解能力均明显不足。</li>
+</ol>
+<a id="44-2611.13995"></a>
+<h2>44. LipsFlower：用于鲁棒图像复原的 Lipschitz 受控流匹配</h2>
+<ul>
+<li><strong>原题</strong>：Lipschitz-Controlled Flow Matching for Robust Image Restoration</li>
+<li><strong>作者</strong>：Sedjro Salomon Hotegni, Konstantin Sonntag, Paul-Christian Bürkner et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13995">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13995">PDF</a></li>
+<li><strong>关键词</strong>：流匹配、图像复原、Lipschitz 稳定性、扩散 Transformer、对抗鲁棒性</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对流匹配复原模型可能放大微小输入扰动、导致重建不稳的问题，提出 LipsFlower：先为不同采样形式推导稳定性界，据此设计 Lipschitz 感知的向量场架构，并以增益正则抑制过高敏感度。盲人脸复原实验表明，该方法降低扰动放大且保持与基线相当的重建质量。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：流匹配模型虽能产出高质量复原，但其学到的动力学可能放大微小输入扰动，使重建结果不稳定。</li>
+<li>方法：为 Flow-from-Y 与观测条件后验采样两类形式推导稳定性界，据此设计 Lipschitz 感知的沙漏扩散 Transformer 作为向量场架构，采用稳定的近似谱归一化、有界调制与凸残差混合，并在采样的插值状态上用对抗式有限半径增益正则抑制对状态及观测的过度敏感。</li>
+<li>结果/结论：在盲人脸复原上同时衡量对抗鲁棒性与重建感知质量，LipsFlower 降低了扰动放大，且复原质量与所评估基线保持相当，说明 Lipschitz 感知的流匹配可提升生成式图像复原的稳定性。</li>
+<li>局限或适用：两种形式均在盲人脸复原任务上检验，以对抗鲁棒性与重建感知质量为衡量指标，结论建立在该任务与被评估基线范围内。</li>
+</ol>
+<a id="45-2611.13992"></a>
+<h2>45. 脉搏还是来源：基于 rPPG 的深度伪造检测器究竟学到了什么</h2>
+<ul>
+<li><strong>原题</strong>：Pulse or Provenance? What rPPG-Based Deepfake Detectors Learn</li>
+<li><strong>作者</strong>：Othmane Harraq, Tamer Aldwairi ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.CR, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13992">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13992">PDF</a></li>
+<li><strong>关键词</strong>：深度伪造检测、rPPG、色度信号、高频线索、数据划分泄漏</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文检验基于远程光电容积脉搏波的深度伪造检测器实际学到什么。对照实验显示简单色度线索即可取得很高判别力，但该信号并非生理来源，可从背景或全帧提取、打乱帧序即消失。作者据此指出检测器主要编码视频来源而非篡改痕迹，官方数据划分也存在身份重叠。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：远程光电容积脉搏波被当作深伪检测的生理线索，前提是合成人脸缺少真实心跳信号，本文检验这类检测器实际学到的到底是什么。</li>
+<li>方法：在 Celeb-DF++ 与 FaceForensics++ 上对真伪视频各取一个同采样窗口，比较色度轨迹与专用 rPPG 提取器，并通过背景/全帧提取、频带分析、帧序打乱、分辨率帧率编码归一化、高频去留、注入合成脉搏及自重塑对照实验追溯信号来源。</li>
+<li>结果/结论：口语化伪造上简单色度轨迹 AUC 达 0.998、超过专用 rPPG 提取器的 0.87，信号集中在 0.7 至 4 Hz 心率带之外；在 Celeb-DF++ 上训练的色度检测器把超过 99% 的真实 FF++ 视频判为假，冻结 CLIP 骨干不逊于 CLIP 与 rPPG、频率特征的融合，表明编码的是视频来源而非篡改。</li>
+<li>局限或适用：官方 Celeb-DF 与 Celeb-DF++ 划分在训练与测试间共享身份和源视频内容，复用测试视频与身份的自定义协议会把较弱检测器虚高最多 0.30 AUC，独立复现实验也支持这些发现。</li>
+</ol>
+<a id="46-2611.13971"></a>
+<h2>46. TransGHOST：眼科显微手术中器械遮挡区域的实时、无合成重建</h2>
+<ul>
+<li><strong>原题</strong>：TransGHOST: Real-Time, Synthesis-Free Reconstruction of Instrument-Occluded Regions in Ophthalmic Microsurgery</li>
+<li><strong>作者</strong>：Niran Nataraj, Maina Sogabe, Masamichi Yamashita et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：eess.IV, cs.AI, cs.CV, cs.RO</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13971">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13971">PDF</a></li>
+<li><strong>关键词</strong>：器械遮挡、眼科显微手术、因果重建、像素级溯源、实时安全模式</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对眼科显微手术中器械遮挡、而生成式修补以合成内容替代且依赖未来帧无法在线运行的问题，提出因果参考引导的重建流程 TransGHOST：每个恢复值仅由可见区域几何变换对已记录帧重采样获得，并给出逐像素置信度与溯源。非生成安全模式在临床语料上实时取得较高重建质量。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：高倍视野中器械进入会遮挡组织，生成式修补会用合成内容替代缺失像素、在需要视觉溯源时不可取，且许多视频修补器依赖未来帧无法在线运行。</li>
+<li>方法：TransGHOST 为因果、参考引导的重建流程，其非生成安全模式实时运行，每个恢复值都由仅拟合可见区域的几何变换对已记录帧重采样获得，并给出逐像素置信度与溯源、把无支撑像素标为弃权。</li>
+<li>结果/结论：在带有像素级器械与解剖标注的犬白内障手术新临床语料上，仅评分遮挡区且每个评分目标均经验证不同于所给参考，安全模式达 31.89 dB masked PSNR 与 0.915 masked SSIM、中位 51.7 ms 与 95 分位 85.5 ms 延迟；预声明留出队列达 29.83 dB，验证集匹配掩码评估比 LaMa 高 3.45 dB，区域感知参考选择比就近取帧高 3.60 dB。</li>
+<li>局限或适用：参考帧时效分析界定了该方法针对短暂、重复遮挡的运行区间，无支撑像素以弃权标记，安全模式为非生成、实时可用。</li>
+</ol>
+<a id="47-2611.13970"></a>
+<h2>47. 视觉语言医学图像分割中标注派生提示的范围泄漏反事实分析</h2>
+<ul>
+<li><strong>原题</strong>：Counterfactual Analysis of Extent Leakage from Annotation-Derived Prompts in Vision-Language Medical Image Segmentation</li>
+<li><strong>作者</strong>：Niran Nataraj, Ankita Das, C. Krishna Mohan et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：eess.IV, cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13970">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13970">PDF</a></li>
+<li><strong>关键词</strong>：文本引导分割、范围泄漏、反事实分析、标注派生提示、评估协议</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文考察文本引导分割模型从提示词中究竟获取了什么，发现部分公开基准里描述尺寸与位置的词由后来评分用的掩码算出。反事实测试显示模型主要借用的是病灶范围，作者称之为范围泄漏。重训练表明该习惯来自训练字幕并削弱纯图像分割，据此提出区分图像信息与标签拷贝的评估协议。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：文本引导分割在公开基准上因字幕大幅提升精度，但结肠镜与乳腺超声字幕中的尺寸、数量、位置词由后来评分用的掩码计算得到，胸片字幕由标注者撰写，需检验模型究竟从中获取了什么。</li>
+<li>方法：对两个已发表模型做反事实测试，分别只保留或去掉尺寸词与肺区短语、把息肉改称石头，并在三个数据集上重训练观察习惯来源，另用字幕词预测病灶面积以量化泄漏。</li>
+<li>结果/结论：结肠镜与胸片上主要借用的是病灶范围，仅留尺寸词或肺区短语即可恢复相对空字幕增益的 84% 至 98%，去掉则损失 52% 至 77%，其余词影响很小；乳腺超声近半字幕还含诊断名并带来部分收益，字幕词单独即可预测病灶面积，七个测试集中六个的决定系数为 0.54 至 0.77；无测试掩码时最佳图像估计方法在结肠镜达 74.59 Dice，低于已发表的 77.23。</li>
+<li>局限或适用：作者指出重训练显示模型从训练字幕习得该习惯并削弱纯图像分割，据此提出把字幕对图像的描述与对标签的拷贝分开的评估协议，以纠正公开基准上的增益失真。</li>
+</ol>
+<a id="48-2611.13955"></a>
+<h2>48. RB-LDC：面向噪声鲁棒扩散潜变量的冗余均衡潜编码</h2>
+<ul>
+<li><strong>原题</strong>：RB-LDC: Redundancy-Balanced Latent Coding for Noise-Robust Diffusion Latents</li>
+<li><strong>作者</strong>：Hyunseok Jeong, Jaeho Jeon, Young-Sik Kim ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.LG, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13955">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13955">PDF</a></li>
+<li><strong>关键词</strong>：潜扩散、潜编码、解码器敏感度、LMMSE 风险、FID</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对白化后前向扩散以相同信噪比破坏各方向、却与解码器敏感度不均不匹配的问题，研究在编码器与扩散过程间加入可逆线性层平移各方向对数信噪比，在能量预算下最小化按敏感度加权、沿扩散调度积分的恢复风险，得到唯一最优分配。实例化后改善了含噪潜变量重建且保持干净重建。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：潜扩散模型解码的是近似正确的潜变量，解码器对扰动的敏感度因而直接影响图像质量；白化后前向扩散以相同信噪比破坏每个方向，却与各方向不等的解码器敏感度不匹配。</li>
+<li>方法：在编码器与扩散过程间加入可逆线性层平移各方向对数信噪比，给出任意白化潜分布下线性最小均方误差恢复风险的精确谱表达式，在能量预算与可逆性下限下最小化按解码器敏感度加权、沿扩散调度积分的风险，得到唯一最优分配并由确定性谱求解器计算，再以基于雅可比的敏感度估计实例化为 RB-LDC。</li>
+<li>结果/结论：大预算下分配服从以敏感度为底的幂律，噪声预测与数据预测在余弦调度下指数分别为二分之一与三分之二；在 ImageNet 256 x 256 上以 SD-VAE 与 VA-VAE 训练，四项指标、五种编码配置、15 个 SNR 与三个流水线种子上均优于预算匹配的各向同性编码，VA-VAE 块局部编码的平均扰动 FID 降低 17.1，且冻结扩散模型下 12 种采样进度与通道 SNR 组合的 FID 点估计全部更低。</li>
+<li>局限或适用：作者报告在部分中间 SNR 处扰动 FID 反而变差，且结论建立在保持干净重建质量与所测编码配置、SNR 范围内。</li>
+</ol>
+<a id="49-2611.13935"></a>
+<h2>49. MEOW：医学开放世界交互式分割</h2>
+<ul>
+<li><strong>原题</strong>：MEOW: Medical Open-World Interactive Segmentation</li>
+<li><strong>作者</strong>：Philip Matthias Winter, Maria Wimmer, Bernhard Schäfl et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, stat.ML</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13935">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13935">PDF</a></li>
+<li><strong>关键词</strong>：开放世界学习、交互式分割、免参数转导推理、记忆巩固、零样本迁移</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文指出开放世界识别既要预测未知结构也要随预测持续学习改进，而交互式分割虽有用户反馈仍局限于开放集设定。提出 MEOW：把非交互式分割骨干转为交互式开放世界学习者，且不更新可学习参数，仅以转导推理与记忆巩固累积知识。实验显示其持续改进未见类别的预测，并零样本迁移到陌生域。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：开放世界识别要求模型既预测未知结构又随时间从预测中持续学习改进，而交互式分割虽有用户反馈，此前仍停留在开放集设定。</li>
+<li>方法：MEOW 是首个把非交互式分割骨干转为交互式开放世界学习者的框架，不更新任何可学习参数，结合免参数转导推理与记忆巩固来累积知识并改进后续表现。</li>
+<li>结果/结论：聚焦医学数据的实验显示，MEOW 能持续改进自身在训练中从未见过类别上的预测，并零样本迁移到陌生域，包括 micro-CT 数据与其他成像模态。</li>
+<li>局限或适用：框架无需更新可学习模型参数，聚焦医学数据，并具备向陌生成像模态与域零样本迁移的适用性。</li>
+</ol>
+<a id="50-2611.13933"></a>
+<h2>50. 英国农场门禁 AI 监测的证据综述：基于 PRISMA 的乡村犯罪、牲畜侵害与农场出入证据评估</h2>
+<ul>
+<li><strong>原题</strong>：The Case for AI-Enabled Gate Monitoring as Farm Security in the UK: A PRISMA-Guided Review of the Evidence on Rural Crime, Livestock Predation and Farm Access</li>
+<li><strong>作者</strong>：Steve Symes, Paul Fergus, Mark Carr et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13933">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13933">PDF</a></li>
+<li><strong>关键词</strong>：PRISMA 综述、农场安全、乡村犯罪、门禁监测、证据缺口</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文以系统综述评估英国农场安全的证据基础，检索数据库与灰色文献并做叙述性综合，发现同行评议证据很少、官方统计难以单独识别农业犯罪，也缺乏对监控设备与门禁状态的独立研究。作者据此推断持续的门级智能监测大有裨益，但强调这是基于证据缺口的推断而非已证实效果。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：英国农场安全所依赖的证据远比其成本所暗示的薄弱，需系统核查乡村犯罪、牲畜侵害与农场出入方面的现有证据。</li>
+<li>方法：以 PRISMA 指引开展综述，在 Web of Science 与 Scopus 上做十二次检索并对灰色文献与手工检索结果做叙述性综合，比对保险理赔、官方统计、威慑干预与相机陷阱 AI 论文。</li>
+<li>结果/结论：检索返回 1,183 条记录（761 条去重），灰色与手工检索补充 35 份，综合 96 条数据库记录与 24 份灰色来源；英国同行评议证据仅 16 条，主要犯罪与农民心理健康调查仅 80 份回复，NFU Mutual 估 2025 年英国乡村犯罪为 4,150 万英镑、牲畜盗窃涨近 30% 至约 450 万英镑、犬袭损失 195 万英镑，Home Office 无法单独识别农业犯罪；相机陷阱 AI 无一在农场大门评测，某比较中机器学习检出 41% 野生动物而分析员为 81%。</li>
+<li>局限或适用：作者明确说明门级 AI 监测的益处是基于证据缺口的推断而非已证实效果，尚无研究表明其能降低损失，并列出为证明效果所需的评估设计。</li>
+</ol>
+<a id="51-2611.13920"></a>
+<h2>51. CAppleNet：基于坐标注意力 YOLO11 的实时苹果果梗洼与花萼检测</h2>
+<ul>
+<li><strong>原题</strong>：CAppleNet: A Coordinate Attention-Based YOLO11 for Real-Time Apple Stem Cavity and Calyx Detection</li>
+<li><strong>作者</strong>：Alican Güneş, Robert Selim Hill, Gökhan Hasanoğlu et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13920">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13920">PDF</a></li>
+<li><strong>关键词</strong>：苹果形态标志点、YOLO11、坐标注意力、单因素消融、实时检测</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文面向自动水果分级与定向对果梗洼、花萼等细粒度标志点的实时检测需求，构建自采自标的苹果图像数据集，并以检测基线做单因素消融，考察分辨率、增强与架构改动的影响。结果表明多数调参都未超过未调基线，唯有坐标注意力架构在持平精度的同时减少参数，且架构与增强的效果并不叠加。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：自动水果分级、分拣与定向系统需要实时准确检测果实级形态标志点，而非仅定位果实边界，且面临品种间颜色与纹理差异大的困难。</li>
+<li>方法：构建 1506 张自采自标苹果图像（1054 训练、301 验证、151 测试，标注果体、果梗洼、花萼三类），以默认超参数的 YOLO11s 为基线，对输入分辨率、六种增强变体、优化器配置与轻量架构增强做单因素逐一消融。</li>
+<li>结果/结论：提高分辨率、六种增强与手动调优化器均未超过未调基线 F1 0.9047；仅把骨干 C2PSA 块同位换成坐标注意力在整体 F1 0.9038 持平的同时减少 10.2% 参数，并取得最佳 mAP@0.5 0.935 与果梗洼 F1 0.8217，置信阈值扫描确定 0.15 为部署工作点。</li>
+<li>局限或适用：数据集在受控、固定相机条件下采集；确认实验显示坐标注意力架构与最佳增强组合效果不可加，反而抵消架构增益，故设计建议为仅用该架构并配 0.15 置信阈值，面向定向感知的工业分拣与对齐系统。</li>
+</ol>
+<a id="52-2611.13912"></a>
+<h2>52. MicroBT：质心引导协同学习的多模态微小脑肿瘤分割与计数</h2>
+<ul>
+<li><strong>原题</strong>：MicroBT: Centroid-Guided Synergistic Learning for Multi-Modal Micro Brain Tumor Segmentation and Counting</li>
+<li><strong>作者</strong>：Zhenye Lou, Qing Xu, Stefanie Thust et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13912">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13912">PDF</a></li>
+<li><strong>关键词</strong>：脑肿瘤分割、微病灶、质心锚定、实例计数、尺寸不平衡</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对基于重叠的分割目标偏袒大区域、使微病灶被抑制且病灶计数不可靠的问题，提出统一分割与计数框架 MicroBT。它以每个病灶均有明确质心为依据，用预测质心作共享锚点同时约束稠密分割与实例定位，并配合损失与课程策略缓解尺寸不平衡。实验显示其优于现有方法，微病灶改善尤为明显。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：现有多模态脑肿瘤分割依赖基于重叠的目标，天然偏袒大区域，使 3 毫米以下微病灶在训练中被系统性抑制，且像素级框架缺少显式实例建模，导致影响临床分期与治疗决策的病灶计数不可靠。</li>
+<li>方法：MicroBT 利用每个病灶无论大小都有明确质心这一尺度不变几何性质，设计质心锚定协同范式，以预测质心为共享锚点同时约束稠密分割与实例定位；并引入体校准损失自适应放大微病灶梯度贡献，配合尺寸感知课程优化先建立全局表征再逐步解锁细粒度定位。</li>
+<li>结果/结论：大量实验显示 MicroBT 优于当前最佳方法，尤其在转移瘤上，3 毫米及以下微病灶定位精度提升约 7%、计数估计误差下降约 26%。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="53-2611.13911"></a>
+<h2>53. 改造视觉基础模型用于声学成像测井中的裂缝表征</h2>
+<ul>
+<li><strong>原题</strong>：Adapting a Vision Foundation Model for Fracture Characterization in Acoustic Image Logs</li>
+<li><strong>作者</strong>：Guangyu Wang, Xiaodong Ma, Xinming Wu ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13911">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13911">PDF</a></li>
+<li><strong>关键词</strong>：声学成像测井、天然裂缝、视觉基础模型、DINOv3、少标注微调</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文研究在专家标注稀缺的条件下，改造预训练视觉基础模型是否优于从零训练的任务专用模型，用于声学成像测井裂缝的自动表征。作者以少量标注微调基础模型并在未参与训练的井孔上评估，发现其参数估计可与人工判读相当，假阳性与假阴性更少、计数与方位更准，并指出该优势随训练样本减少而收窄。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：声学成像测井中的天然裂缝与钻井诱导张性裂缝可揭示岩体结构与地应力，但人工表征耗时，深度学习虽可自动化却受限于专家标注稀缺。</li>
+<li>方法：用 80 个标注声学图像样本微调在卫星影像上预训练的 DINOv3，在四口未参与微调的井孔上评估，并与从零训练的 U-Net、YOLOv8、Swin Transformer 比较，另考察解码器架构、微调策略与图像增强。</li>
+<li>结果/结论：改造后的模型对天然裂缝与钻井诱导张性裂缝参数的估计可与人工判读相当，假阳性与假阴性更少、裂缝计数与方位更准确；渐进上采样解码器配合全量微调在被测 DINOv3 配置中表现最好，作者据此提出可迁移到其它标注稀缺地球科学影像任务的工作流程。</li>
+<li>局限或适用：其相对从零训练模型的性能优势一般随训练样本量减少而收窄，面向裂缝的图像增强并未稳定提升精度，结论建立在有限标注样本与特定井孔评估上。</li>
+</ol>
+<a id="54-2611.13907"></a>
+<h2>54. EVAThink：以证据充分性引导训练实现视频理解中的自适应思考</h2>
+<ul>
+<li><strong>原题</strong>：EVAThink: Evidence Sufficiency-Guided Training for Adaptive Thinking in Video Understanding</li>
+<li><strong>作者</strong>：Changti Wu, Ruizhe Fan, Bin Wang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13907">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13907">PDF</a></li>
+<li><strong>关键词</strong>：视频理解、证据充分性、自适应思考、强化学习、帧预算</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文指出固定帧预算下的视频理解取决于采样帧证据是否充分，充分时宜直接作答、不足时更需推理串联线索。据此提出 EVAThink，以证据差挖掘构造共享问题与帧预算的密集、稀疏视图来监督响应模式选择，再以分阶段奖励强化学习训练。仅用少量样本即在多个基准上稳定提升。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：固定帧预算下视频理解取决于所采样帧是否为问题提供充分证据，证据充分宜直接作答，观测信息不足则可能受益于连接可用线索的推理。</li>
+<li>方法：先以可恢复证据差挖掘构造共享问题答案与帧预算的证据密集、稀疏视图，保留稀疏视图直接作答准确率较低但显式推理有收益的配对作为响应模式选择监督；再以证据引导的两阶段强化学习用阶段专属奖励先引导模式偏好后精炼响应效率，并加首词元优势正则缓解模式塌缩。</li>
+<li>结果/结论：仅用 6.7K 条精选样本训练，EVAThink 在 32 帧与 64 帧预算下于多个视频理解基准上稳定优于基座模型，平均表现也超过强基线。</li>
+<li>局限或适用：方法设定于固定帧预算的视频理解，已在 32 与 64 帧两种预算及仅 6.7K 精选训练样本的条件下验证。</li>
+</ol>
+<a id="55-2611.13903"></a>
+<h2>55. 由开放词汇三维场景图构建持久化的度量语义海事场景记忆</h2>
+<ul>
+<li><strong>原题</strong>：Persistent Metric-Semantic Maritime Scene Memory from Open-Vocabulary 3D Scene Graphs</li>
+<li><strong>作者</strong>：Kim Alexander Christensen, Dina Zimmermann, Martin Steinert et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.RO</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13903">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13903">PDF</a></li>
+<li><strong>关键词</strong>：三维场景图、开放词汇、海事环境、度量语义整合、场景记忆</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文考察面向室内与陆地设计的开放词汇三维场景图迁移到海事环境所需的适配，发现代表性户外方法虽与真值大体一致，却存在实体碎片化且陆地高层假设不契合海事需求。作者保留底层建图、对累积证据做后处理，把碎片归并为实体并聚合为局部场所与宏区。所得表示降低碎片化并改善上下文检索。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：三维场景图可为机器人提供持久的度量语义表征以支撑空间推理，但现有方法主要面向室内与陆地环境，需研究其向海事环境的迁移与必要适配。</li>
+<li>方法：保留底层建图方法、对其累积证据做后处理，先以度量语义整合再借几何支撑的多视角视觉语言模型推理把残余碎片归并成物理实体、经观测分组为局部场所；同时用地图先验与艇载水面、结构观测构建海事宏区并与局部场所关联。</li>
+<li>结果/结论：所得表征比基线与单独的几何语义整合更降低物理实体碎片化，支持固定局部场所在重复海事航行间的对应，并在复核查询上相对被测基线改善上下文检索。</li>
+<li>局限或适用：代表性户外方法的零样本描述仅对自有数据中多数几何可支撑物体与标注真值一致，其陆地高层假设不契合海事空间组织需求，结论基于自有数据与经复核的查询。</li>
+</ol>
+<a id="56-2611.13892"></a>
+<h2>56. 面向屋顶光伏巡检、带组件级标注的一万张无人机图像数据集</h2>
+<ul>
+<li><strong>原题</strong>：A 10K drone image dataset with component-level annotations for rooftop photovoltaic inspection</li>
+<li><strong>作者</strong>：Penglei Zhang, Wan Zhang, Ruizhe Deng et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13892">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13892">PDF</a></li>
+<li><strong>关键词</strong>：屋顶光伏、无人机影像、组件级标注、实例分割、站点互斥划分</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文指出组件级信息能支撑屋顶光伏巡检，但复杂场景中识别单个组件仍具挑战，为此发布带组件级标注的大规模无人机图像数据集。高分辨率彩色影像以多角度斜视采集，涵盖尺度变化与遮挡，经三维勾画与逐图复核得到大量多边形标注；站点互斥划分支持对未见站点的评估，并给出多个模型基准。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：组件级信息能支撑屋顶光伏巡检，但在复杂场景中识别单个组件仍具挑战，需要带组件级标注的大规模数据。</li>
+<li>方法：发布 PVIS-10K，含 10,065 张无人机高分辨率 RGB 图像、覆盖 22 处屋顶装机与 63,632 块实体组件，采自宁波、绍兴与深圳，多角度斜视涵盖安装高度与尺度变化、密集排布、遮挡、阴影与反射；经三维勾画、重投影与逐图复核得到 3,516,675 个图像级多边形标注并以 COCO 格式存储。</li>
+<li>结果/结论：以四个监督模型与文本提示零样本 SAM 3 给出全分辨率下实例匹配与前景覆盖的基准，数据集支持组件定位、轮廓勾画与基于图像的计数，供无人机屋顶光伏巡检研究使用。</li>
+<li>局限或适用：站点互斥划分支持对城市内与跨城市未见站点的评估，结论与基准建立在自有采集数据与所测模型范围内。</li>
+</ol>
+<a id="57-2611.13890"></a>
+<h2>57. DroneSegEdit：以语言落地验证改造预训练生成编辑器用于无人机分割</h2>
+<ul>
+<li><strong>原题</strong>：DroneSegEdit: Adapting Pretrained Generative Editors for UAV Segmentation with Language-Grounded Verification</li>
+<li><strong>作者</strong>：Dehua Chen, Long Xin, Jiangtao Wei ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13890">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13890">PDF</a></li>
+<li><strong>关键词</strong>：指代表达分割、无人机影像、生成编辑器、落地渲染落差、LoRA</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文指出把预训练图像生成器直接用于语言引导的无人机分割时，看似合理的掩码可能对应小目标中的错误实例，作者称之为落地渲染落差。为此提出 DroneSegEdit，把候选渲染与语言落地、候选约束的验证结合，在保留渲染几何的同时选出有依据的前景。实验表明该方法取得新的最优。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：预训练图像生成器虽能支撑多种视觉任务，但直接用于语言引导的无人机分割时，看似合理的掩码可能对应小而重复目标中的错误实例，作者称这种掩码渲染与表达式级目标选择的错配为落地渲染落差。</li>
+<li>方法：DroneSegEdit 把 RGB 候选渲染与语言落地、候选约束的验证结合，在保留渲染几何的同时选出有依据的前景；以任务专用 LoRA 与固定颜色到标签解码改造开放权重 LongCat-Image-Edit 模型，指代表达分割中由语言落地空间验证器读取冻结多模态大模型骨干的层级状态、导出依表达式的空间证据并映射回渲染候选，不引入候选之外的前景。</li>
+<li>结果/结论：在 RIS-LAD 上以 52.78 mIoU 达到新的当前最佳、高出此前最佳 7.16 个点，在 UAVid-RIS 与 VDD-RIS 上整体保持竞争力，类别增益以车辆、人类等紧凑且应用相关的类别最明显；另有免验证器实验把 RGB 接口扩展到全场景解析，用一条任务级指令联合渲染所有类别而无需枚举类名或调色板颜色。</li>
+<li>局限或适用：方法优势在紧凑、应用相关的目标类别上最清晰，在另两个基准上仅为整体有竞争力；其改造依赖开放权重编辑模型与固定颜色到标签解码这一设定。</li>
+</ol>
+<a id="58-2611.13884"></a>
+<h2>58. 面向脑转移瘤分割的区域级 logit 融合与效用门控精修</h2>
+<ul>
+<li><strong>原题</strong>：Region-Wise Logit Fusion and Utility-Gated Refinement for Brain Metastasis Segmentation</li>
+<li><strong>作者</strong>：Zhenye Lou, Qing Xu, Wenting Duan et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13884">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13884">PDF</a></li>
+<li><strong>关键词</strong>：脑转移瘤、nnU-Net 集成、区域概率锚、层级保持、效用门控</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文面向多参数磁共振上脑转移瘤与术后切除腔的分割，提出把多个配置汇成对齐的区域概率集成的方法，以结构化概率锚做区域级组件决策与层级保持，并依组件置信度恢复漏检的强化肿瘤候选，再由效用门控筛选。分阶段分析显示主要几何增益来自结构化概率构造，精修可挽回小病灶检出损失。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：BraTS-METS 2026 任务一需在异质多参数 MRI 上分割脑转移瘤与术后切除腔，既要检出小的强化灶，又要保持强化肿瘤、肿瘤核心、全肿瘤与切除腔的几何与层级关系。</li>
+<li>方法：COMPASS-METS 把三个五折 nnU-Net 配置汇成对齐的区域概率集成，以结构化概率锚做区域级组件决策、肿瘤核心边界补全、切除腔过滤与层级保持转换；对遗漏的强化肿瘤候选按学习到的组件置信度与确定性多训练器支持做加性恢复，最后由效用门控只接纳具备足够病灶存在与几何安全概率的离散候选。</li>
+<li>结果/结论：在复用的 179 例挑战开发队列上取得 Small F1 0.354、病灶级 DSC 0.712、NSD 0.714、All F1 0.779 与 HD95 56.6 mm；相对 ResEncXL 改善 DSC、NSD 与 All F1 并降低 HD95，但 Small F1 由 0.367 降至 0.354，分阶段分析把主要几何增益归于结构化概率构造，并表明受门控的强化肿瘤精修可挽回大部分小病灶检出损失。</li>
+<li>局限或适用：作者明确说明这些 179 例结果是选择感知的开发集估计，且相对基线在 Small F1 上略有下降，尚非独立测试结论。</li>
+</ol>
+<a id="59-2611.13883"></a>
+<h2>59. BRIDGE 数据集：石蜡包埋前列腺穿刺活检脱蜡与 H&amp;E 染色前后的配对明场全切片图像</h2>
+<ul>
+<li><strong>原题</strong>：The BRIDGE dataset: paired brightfield whole-slide images of prostate core-needle biopsies in paraffin, after deparaffinization and H&amp;E staining</li>
+<li><strong>作者</strong>：Julia A. Mielcarz, Justyna Durślewicz, Marek Zdrenka et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13883">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13883">PDF</a></li>
+<li><strong>关键词</strong>：全切片图像、虚拟染色、配对数据、前列腺活检、Gleason 评分</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对无标记虚拟染色等方法受限于配对且带临床标注的全切片图像稀缺的问题，发布一个前列腺穿刺活检数据集。每张玻片在切片、脱蜡与染色后依次数字化，形成大量配对全切片图像，并附有癌症分级评分。该数据可支撑虚拟染色与配准分割方法的开发与外部验证，染色图像也可用于颜色归一化等研究。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：计算病理流程日益探索无标记方法以减少化学染色依赖，但模型开发与验证受限于配对的、带临床标注的全切片图像数据集稀缺。</li>
+<li>方法：发布 BRIDGE 数据集，样本为波兰比得哥什某肿瘤中心采集的前列腺穿刺活检，含 169 位患者的 869 张玻片，每张在切片、脱蜡与苏木精伊红染色后依次数字化，共得 2607 张全切片图像，图像均去标识并以原生扫描仪格式分发。</li>
+<li>结果/结论：数据集支持无标记虚拟染色、虚拟去染、图像配准与分割方法的开发与外部验证，每张玻片附 Gleason 评分以支持癌症分类与分级一致性分析，染色图像也可独立用于颜色归一化与跨扫描仪鲁棒性研究，将通过 BioImage Archive 提供。</li>
+<li>局限或适用：数据集定位为方法开发与外部验证的资源，图像以其原生扫描仪格式分发，并说明将经由 BioImage Archive 开放获取。</li>
+</ol>
+<a id="60-2611.13870"></a>
+<h2>60. 把空间谱耦合视作注意力：将形状对应扩展到高分辨率曲面</h2>
+<ul>
+<li><strong>原题</strong>：Spatial-Spectral Coupling as Attention: Scaling Shape Correspondence to High-Resolution Surfaces</li>
+<li><strong>作者</strong>：Bence Demeter, Kilian Ehrenreich, Amelie Kleber et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13870">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13870">PDF</a></li>
+<li><strong>关键词</strong>：形状对应、函数映射、空间谱耦合、注意力、高分辨率网格</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文指出高分辨率三维形状稠密对应的困难源于空间谱耦合随网格分辨率平方增长。作者观察到该耦合等价于缩放点积注意力，因而可借用高效注意力实现来扩展形状匹配，并据此提出把精确计算限制在几何选取曲面面片上的方法。实验表明优化实现能扩展到大网格并保持对应精度，次二次近似则会引入误差。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：高分辨率三维形状间建立稠密对应仍困难，因为许多函数映射方法核心的空间谱耦合随网格分辨率平方增长。</li>
+<li>方法：把空间谱耦合等价为缩放点积注意力形式，以学习描述子作查询与键、谱基函数作值，从而直接套用高效注意力实现；进而提出 Geo-FlashAttention，把精确 softmax 限制在几何选取的曲面面片上。</li>
+<li>结果/结论：优化的二次注意力实现可把现代深度函数映射流程扩展到大网格并改善运行时间与显存，而次二次方法会引入误差；在六个标准基准与三个函数映射流程上，高效耦合保持对应精度，60k 顶点时峰值训练显存从 106.08 降至 5.67 GiB，Geo-FlashAttention 每训练步比 FlashAttention 快 1.5 倍，使皮层表面等大网格上的端到端学习成为可能。</li>
+<li>局限或适用：作者指出次二次方法尤其对非等距形状对引入误差，此时精确耦合最为必要；方法面向需以高分辨率保留疾病相关曲面细节的大网格场景。</li>
+</ol>
+<a id="61-2611.13868"></a>
+<h2>61. 深度神经网络的机制可解释性：方法、框架与视角</h2>
+<ul>
+<li><strong>原题</strong>：Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives</li>
+<li><strong>作者</strong>：Lorenzo Cirillo, Irene Amerini, Andrea Cavallaro ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.LG, cs.AI, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13868">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13868">PDF</a></li>
+<li><strong>关键词</strong>：机制可解释性、因果推断、内部激活、综述、深度神经网络</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文是一篇综述，讨论图像、音频与语言等信号域中深度神经网络内部机制难以解释的问题。作者指出内部激活是跨层变换的结构化信号，可能编码相互依赖关系且单个神经元常表征多个概念；机制可解释性通过定位对行为具因果责任的组件揭示内部机理。文章围绕因果推断分析梳理了方法、框架与视角进展。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：深度神经网络支撑图像、音频与语言等广泛信号域的基础任务，但其内部机制尤其难以解释，内部激活可能编码大量相互依赖的关系，单个神经元常表征多个概念。</li>
+<li>方法：以综述方式梳理机制可解释性，即通过识别其激活对特定行为具有因果责任的组件来揭示网络内部机制，并围绕深度神经网络中的因果推断分析组织方法、框架与视角。</li>
+<li>结果/结论：文章给出机制可解释性在深度神经网络因果推断分析上的研究进展概览，指出内部激活是跨层变换的结构化信号，为理解网络内部机制提供整体视角。</li>
+<li>局限或适用：本文定位为综述性概览，覆盖图像、音频、语言等信号域，侧重方法、框架与视角的梳理而非提出新实验或新模型。</li>
+</ol>
+<a id="62-2611.13851"></a>
+<h2>62. 经由语义代理走向纯文本遥感场景分类</h2>
+<ul>
+<li><strong>原题</strong>：Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy</li>
+<li><strong>作者</strong>：Xianping Ma, Kunlin Wu, Xiaofeng Liu et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13851">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13851">PDF</a></li>
+<li><strong>关键词</strong>：遥感场景分类、纯文本分类、语义代理、视觉语言模型、文本嵌入</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文重新审视遥感场景分类依赖图像视觉表征的前提，提出仅凭文本语义表征识别场景的纯文本分类新设定。为此提出以视觉语言模型把遥感图像转成文字描述作为语义代理，再由文本嵌入模型编码用于分类，形成统一可复现的基准。实验显示语义代理能保留较多判别信息，也揭示了纯文本场景理解的固有局限。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：遥感场景分类历来被表述为以视觉为中心的问题，推理依赖从图像提取的丰富视觉表征，本文重新审视这一前提，考察能否仅用文本语义表征识别场景。</li>
+<li>方法：提出 SeProRS，先用视觉语言模型把遥感图像转为文字描述即语义代理，再由文本嵌入模型编码用于场景分类，形成解耦、统一且可复现的基准；并研究代表性提示策略与代理生成器对分类性能、文本嵌入行为、跨生成器迁移性与效率的影响。</li>
+<li>结果/结论：在三个知名遥感场景分类数据集上的大量实验显示语义代理能保留相当多的判别信息，同时揭示纯文本场景理解的固有局限；所提基准与分析为高效、模态精简的遥感场景理解研究提供基础。</li>
+<li>局限或适用：作者说明本文不旨在取代基于图像的遥感场景分类，而是量化基于语义代理的场景识别的可行性与边界，且纯文本场景理解存在固有局限。</li>
+</ol>
+<a id="63-2611.13849"></a>
+<h2>63. 卫星预训练并非单一效应：通用与地球观测基础模型用于场景分类的配对研究</h2>
+<ul>
+<li><strong>原题</strong>：Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification</li>
+<li><strong>作者</strong>：Sandarbh Agrawal, Rakshith Sathish, Ashwathi Nambiar ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13849">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13849">PDF</a></li>
+<li><strong>关键词</strong>：地球观测基础模型、配对研究、少标签场景分类、冻结编码器、轮廓系数</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对以往比较很少隔离预训练数据、难以判断卫星影像预训练是否优于强通用编码器的问题，以共享目标与架构的成对编码器做配对研究，在冻结编码器上评测多种探针与检索。结果显示卫星预训练并非普遍有利，部分配对显著改善、部分反而受损，说明候选检查点必须在目标数据上验证。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：地理空间基础模型在卫星与航空影像上预训练，但其编码器在少标签土地利用土地覆盖制图上是否胜过强通用编码器尚不清楚，因以往比较很少隔离预训练数据。</li>
+<li>方法：研究五对共享目标与架构的地球观测与通用编码器，在 14 个冻结编码器、五个 RGB 场景分类数据集（0.06 至 30 m GSD）上以原生预处理评测 k 近邻、线性与注意力探针及图像检索，覆盖六个低标签划分并用逐图配对显著性检验。</li>
+<li>结果/结论：地球观测预训练并非普遍有利，多数数据集与指标上显著改善 SatDINO、Scale-MAE 与 RemoteCLIP 三对，却显著损害两对（线性探针下 DINOv3-SAT 最多降 22.5 点、SatMAE 最多降 8.8），即便同在 fMoW-RGB 影像上预训练的两个 MAE 结论也相反；效应集中于小型人造物体、在 1 至 5% 标签时最大，冻结嵌入的轮廓系数在五个数据集之四上以 Spearman ρ 不低于 0.96 几乎完美预测 k 近邻准确率与检索 mAP。</li>
+<li>局限或适用：作者指出在卫星影像上预训练并非可靠的选择标准，候选检查点必须在目标数据上验证；RemoteCLIP 仅在未见数据集上评测，结论基于所测 RGB 数据集与冻结编码器设置。</li>
+</ol>
+<a id="64-2611.13820"></a>
+<h2>64. CASCADE：面向逻辑异常检测的约束感知脚手架式分解</h2>
+<ul>
+<li><strong>原题</strong>：CASCADE: Constraint-Aware SCAffolded DEcomposition for Logical Anomaly Detection</li>
+<li><strong>作者</strong>：Jinchan Kim, Jinhee Im, Hyunsouk Cho ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13820">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13820">PDF</a></li>
+<li><strong>关键词</strong>：逻辑异常检测、清单验证、约束特定感知、视觉脚手架、免训练</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文指出逻辑异常检测的清单验证虽把判定拆成独立文本检查，但每项仍读同一张未改动的查询图，造成图文错配与感知缺口。作者在免训练设定下对比推理引导与感知引导，发现同一图像上的推理几无收益，而按约束调整视觉输入可大幅提升核验精度；据此提出以约束特定视觉脚手架扩展清单分解的免训练框架。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：逻辑异常检测需在仅给少量正常参考时核验类别专属约束，而基于大型视觉语言模型的清单验证分解是纯文本的，每项仍读同一张未改动的查询图，导致实例混淆与尺度漂移两类失败。</li>
+<li>方法：先在免训练设定下对比文本推理引导与视觉感知引导以判定失败源于推理还是感知不足；据此提出 CASCADE，以约束特定视觉脚手架扩展清单分解，并给出按对象级从约束结构与参考分布推导脚手架配置的 CASCADE++。</li>
+<li>结果/结论：分析显示对同一图像做推理几乎无收益，而按每项约束调整视觉输入可大幅提升核验精度；在 MVTec-LOCO 与 VID-AD 上，CASCADE++ 仅用三张参考就比全量监督当前最佳高出 3.9 个 AUROC 点，比最强 VID-AD 基线高 11.4，且无需训练即可跨多个大型视觉语言模型骨干迁移。</li>
+<li>局限或适用：框架为免训练设定，仅用三张正常参考即可工作，并可在多种大型视觉语言模型骨干间迁移，结论建立在这两个逻辑异常检测基准上。</li>
+</ol>
+<a id="65-2611.13808"></a>
+<h2>65. FastWild-GS：通过紧凑逐图外观适配实现分钟级野外高斯泼溅</h2>
+<ul>
+<li><strong>原题</strong>：FastWild-GS: Minutes-Scale In-the-Wild Gaussian Splatting via Compact Per-Image Appearance Adaptation</li>
+<li><strong>作者</strong>：Donghun Ryu, Seokhyun Kim, Minhyeok Lee ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13808">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13808">PDF</a></li>
+<li><strong>关键词</strong>：野外高斯泼溅、外观适配、Photo Appearance Token、3D Gaussian Splatting、分钟级重建</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：互联网照片在曝光、光照与瞬态物体上差异显著，单组高斯颜色难以统一建模。FastWild-GS 用紧凑外观令牌与逐通道变换描述每张图，由小型网络预测颜色并把变换用于打分，避免外观差异被误计为误差。实验表明它把优化压到分钟级并取得最优重建质量。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：互联网照片在曝光、光照和瞬态物体上各异，单组高斯颜色无法统一解释所有照片，且现有野外高斯泼溅方法每场景往往需数小时优化。</li>
+<li>方法：用 128 维 Photo Appearance Token 与逐通道缩放加偏移共六个参数描述每张照片，小型 MLP 由令牌和逐高斯特征预测颜色替代球谐颜色，并把同一变换应用于为稠密化与剪枝打分的渲染。</li>
+<li>结果/结论：在 PhotoTourism 上每场景训练 8.8 分钟即取得对比方法中最低的 LPIPS，比 LPIPS 次优的 AsymGS 快 23 倍；在 NeRF-OSR 上 9.7 分钟每场景取得最佳平均 PSNR、SSIM 与 LPIPS。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="66-2611.13807"></a>
+<h2>66. 放宽跨模态对应关系：面向多模态遥感预训练的语义级配对</h2>
+<ul>
+<li><strong>原题</strong>：Relaxing Cross-Modal Correspondence for Multimodal Remote Sensing Pretraining</li>
+<li><strong>作者</strong>：Xianping Ma, Yu Zhang, Mingzhe Jiang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13807">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13807">PDF</a></li>
+<li><strong>关键词</strong>：多模态遥感预训练、语义配对、SemPair、跨模态对应、可迁移表示</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：多模态遥感预训练常默认依赖跨模态的精确实例级对应。本文把对应关系放宽到语义级，提出以类别一致的跨实例配对替代精确实例对的 SemPair，并用潜在因子模型证明它保留共享语义结构。实验显示其迁移性能与精确配对相当，说明精确对应并非有效预训练的前提。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：现有方法隐含地把严格配对的实例级观测当作多模态遥感预训练学习可迁移表示的必要前提。</li>
+<li>方法：提出语义配对 SemPair，以类别一致的跨实例配对替代精确实例对；用潜在因子模型把跨模态依赖拆为共享语义结构与实例特有相关，并引入在语义配对与精确配对间连续插值的 MixPair 以研究对应粒度。</li>
+<li>结果/结论：SemPair 取得与精确配对 ExaPair 相当的迁移性能，MixPair 揭示下游迁移与实例配对比例呈非单调关系，表明精确实例对应并非前提。</li>
+<li>局限或适用：结论指向一条降低对昂贵实例对齐数据依赖、规模化多模态预训练的实用路径，并把跨模态对应粒度确立为可迁移表示学习的重要设计维度。</li>
+</ol>
+<a id="67-2611.13785"></a>
+<h2>67. 目标是谓词：面向语义级视频推理分割的谓词状态接地</h2>
+<ul>
+<li><strong>原题</strong>：The Target Is a Predicate: Predicate-State Grounding for Semantic-Level Video Reasoning Segmentation</li>
+<li><strong>作者</strong>：Yuhuan Hong, Yiming Ren, Zhiqiang Lin et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13785">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13785">PDF</a></li>
+<li><strong>关键词</strong>：视频推理分割、谓词状态接地、PSG、SAM2、PS-Bench</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：现有视频推理分割把目标视为一旦识别便持续活跃，导致空缺时段过度输出掩码、难以处理目标切换。本文提出谓词状态视频推理分割，让查询定义随时间变化的动态谓词而非固定身份，并以状态绑定发射管线预测状态令牌、仅对活跃状态发射掩码。实验显示其明显优于基线并减少误报。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：现有方法把目标视为一旦识别便永久活跃，在空缺时段过度发射掩码且无法应对目标切换。</li>
+<li>方法：提出 PS-VRS 任务与 PSG 的 State-Bind-Emit 管线，预测 ACTIVE 与 VACANT 状态令牌、用稠密跨模态相似度对齐到视频帧、仅对活跃状态经 SAM2 发射掩码，并构建带显式活跃与空缺状态、时间区间及像素掩码标注的 PS-Bench。</li>
+<li>结果/结论：PS-Bench 含 2,077 段视频与 16,250 条查询；PSG 在 PS-Bench 上比现有基线高 9.32 J&amp;F，并显著降低假阳性掩码发射。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="68-2611.13784"></a>
+<h2>68. 兼顾容量与精度：高效 2D 高斯图像表示</h2>
+<ul>
+<li><strong>原题</strong>：Marrying Capacity and Precision for Efficient 2D Gaussian Image Representation</li>
+<li><strong>作者</strong>：Lin Dong, Qi Ming, Liuqian Wang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13784">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13784">PDF</a></li>
+<li><strong>关键词</strong>：2D 高斯、率失真、容量精度联合优化、量化、图像表示</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：2D 高斯在有限预算下的率失真性能取决于高斯容量与参数精度如何分配，而现有方法往往把二者分开优化。本文提出 CP-GS，在共享码率约束下联合优化容量重分配与属性精度量化，并依解码失真和序列化尺寸挑选工作点。实验表明它取得更优的率失真性能。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：有限预算下 2D 高斯的率失真依赖容量与参数精度的分配，现有方法分开优化二者，忽视了内容相关的容量需求与异质的量化敏感度。</li>
+<li>方法：CP-GS 动态把固定高斯预算从冗余区重分配到需求更高的区域，引入分层失真感知表示量化并以高效渲染校准分配各属性及属性组内的精度，再构造不同高斯数与精度配置的候选表示、按解码失真与实际序列化尺寸选择工作点。</li>
+<li>结果/结论：在 DIV2K 与 Kodak 上，CP-GS 在一系列预算下相比代表性 2D 高斯与隐式神经表示取得更优的率失真性能，同时保持固定总表示预算与低优化成本。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="69-2611.13776"></a>
+<h2>69. DisasterAgent：从遥感影像生成可验证灾害报告的证据驱动智能体</h2>
+<ul>
+<li><strong>原题</strong>：DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery</li>
+<li><strong>作者</strong>：Zhijian Li, Jiawei Song, Chao Ren et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13776">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13776">PDF</a></li>
+<li><strong>关键词</strong>：灾害评估、可验证报告、证据驱动智能体、双时相遥感、时空感知图</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：遥感灾害评估正从损毁分类走向报告级分析，救援方不仅需要损毁描述，还需要可验证证据。本文提出 DisasterAgent，以感知增强生成流程从双时相影像构建时空感知图并抽取带内联引用的证据，形成从陈述回溯到视觉证据的闭环。实验表明它优于通用与遥感专用模型。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：灾害评估转向报告级分析，救援方需要可验证证据，而通用视觉语言模型与工具增强智能体难以提供高风险核查所需证据。</li>
+<li>方法：DisasterAgent 采用感知增强生成工作流，感知阶段调用专用视觉专家工具箱从双时相光学影像构建时空感知图 STPG 作为结构化记忆，证据增强 EA 从 STPG 抽取证据并附内联引用形成闭合证据环。</li>
+<li>结果/结论：在 DisasterM3 与 RSCC 上持续优于通用 VLM、遥感专用模型与现有遥感智能体；相比原模型把 DisasterM3 报告生成平均分提升 13.5%、RSCC 的 ST5-SCS 提升 15.34%。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="70-2611.13772"></a>
+<h2>70. RF3DGS：利用自先验实现无反射 3D 高斯泼溅</h2>
+<ul>
+<li><strong>原题</strong>：RF3DGS: Reflection-Free 3D Gaussian Splatting with Self-Priors</li>
+<li><strong>作者</strong>：Qiang Wen, Guotao Meng, Junhong Ruan et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13772">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13772">PDF</a></li>
+<li><strong>关键词</strong>：3D 高斯泼溅、反射去除、光度先验、自监督伪标签、Adaptive Twin Rendering</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：3D 反射去除对高保真可视化很关键。本文提出 RF3DGS，利用多视图最小像素强度与无反射信息强相关的光度先验，先估计无反射深度图，再经 3D 扭曲从辅助视图聚合信息构造干净透射伪标签作为自监督信号。实验显示其去反射性能达到当前最优。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：高保真可视化应用如博物馆展陈需要 3D 反射去除，而把同一 3D 点在多视图中最小像素强度与无反射信息强相关的光度先验推广到多视图 3DGS 并不简单。</li>
+<li>方法：先用几何先验优化普通 3DGS 估计每视图粗无反射深度图，再借 3D 扭曲从辅助视图聚合无反射信息构造干净透射伪标签作为自监督信号，并引入自适应孪生渲染 ATR 损失在利用伪标签同时保留原退化图的高频细节。</li>
+<li>结果/结论：融合内部 3D 自先验与 ATR 损失后，RF3DGS 在合成与真实场景均达到当前最优反射去除性能，并建立了首个基于 Unity 渲染引擎的 3D 反射去除基准用于严格定量评估。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="71-2611.13769"></a>
+<h2>71. 从深度到安全深度：面向移动机器人导航的不确定性感知单目感知</h2>
+<ul>
+<li><strong>原题</strong>：From Depth to Safe Depth: Uncertainty-Aware Monocular Perception for Mobile Robot Navigation</li>
+<li><strong>作者</strong>：Saeid Firouzi Daghigh, Saeed Ayat ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.RO, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13769">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13769">PDF</a></li>
+<li><strong>关键词</strong>：单目深度、安全深度、不确定性感知、共形校准、机器人导航</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：直接用单目深度基础模型替换移动机器人的深度传感器并不安全，它会系统性高估近处障碍物距离、导致碰撞。本文提出轻量插件，在冻结模型上加小型预测头输出深度校正与不确定性，让导航栈消费单侧安全下界。实验表明它大幅降低碰撞、提升导航成功率。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：直接把单目深度基础模型用于移动机器人导航不安全，在仿真室内基准中由 Depth Anything V2（metric）驱动的 Nav2 在 120 回合中有 63% 碰撞，因模型系统性高估近处障碍物距离。</li>
+<li>方法：在冻结深度模型上加 0.58M 参数预测头，逐像素预测对数深度校正 μ 与不确定性 σ，用 β 加权高斯负对数似然训练；导航栈消费由二者与共形校准系数 k 构成的单侧安全下界，不确定性还决定哪些像素可视为地面。</li>
+<li>结果/结论：校正把深度误差 AbsRel 从 0.262 降到 0.134、近距高估从 59.8% 降到 12.0%；导航成功率由 37% 升到 70%、碰撞率由 63% 降到 3%（接近真值深度的 2%），校准到相同像素覆盖的固定安全裕度只达 30% 成功率，不确定性感知安全在 52/56 个不一致配对回合中胜出。</li>
+<li>局限或适用：增益在玻璃、无纹理墙面与暗区等挑战区域依然保持，且方法依赖在留出世界上做共形校准来设定安全系数。</li>
+</ol>
+<a id="72-2611.13759"></a>
+<h2>72. SyncNet：探索模块化神经网络通信中的同步机制</h2>
+<ul>
+<li><strong>原题</strong>：Exploring Synchrony for Communication in Modular Neural Networks</li>
+<li><strong>作者</strong>：Nikolas Willems, Qiyang Sun, Björn W. Schuller ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.NI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13759">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13759">PDF</a></li>
+<li><strong>关键词</strong>：模块化神经网络、同步、Kuramoto 动力学、组合泛化、SyncNet</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：模块化神经网络希望把计算分给可复用组件以支持组合泛化，但模块化本身不保证分工，无限制通信还会破坏特化。本文提出 SyncNet，分离模块内容与动态相位状态，用习得的 Kuramoto 动力学演化相位并据相位对齐决定通信。实验显示收益似来自模块化分解而非同步。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：模块化结构本身不保证模块学到可复用的分工，无限制的模块间通信还会破坏已形成的特化，因此需要回答模块通信应如何组织，可类比为知觉绑定问题。</li>
+<li>方法：提出 SyncNet，把模块内容与动态相位状态分离，用习得的 Kuramoto 动力学演化相位，由相位对齐决定经共享通道的通信；在 Sort-of-CLEVR 与 SQOOP 上评估，并配合测试时相位覆盖实验。</li>
+<li>结果/结论：在 SQOOP 最低三档配对多样性上取得对比模型最佳留出准确率，最难一档领先 5.1 个百分点；测试时覆盖显示固定相位的代价与完全无寻址相当，置换模块所掌区域几乎同样受损。</li>
+<li>局限或适用：在 Sort-of-CLEVR 上虽有竞争力但低于最强注意力基线，且从头训练的内容寻址变体也能追平，说明收益似来自模块化分解而非同步机制本身。</li>
+</ol>
+<a id="73-2611.13752"></a>
+<h2>73. 分区与阅读顺序错误下的 OCR 与真值词级对齐</h2>
+<ul>
+<li><strong>原题</strong>：Word-Level Alignment of OCR and Ground Truth under Zoning and Reading-Order Errors</li>
+<li><strong>作者</strong>：Fonseca Cacho, Jorge Ramón ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CL, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13752">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13752">PDF</a></li>
+<li><strong>关键词</strong>：OCR 后处理、词级对齐、分区问题、阅读顺序、RETAS</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：OCR 后处理需要 OCR 文本与真值逐词对齐，但数据集很少提供该映射，分区错误打乱阅读顺序时单调对齐器会丢失位置。本文重访这一分区问题，用施加阅读顺序置换、以词级金标打分的协议比较多种对齐方法。实验揭示大位移下局部跟踪与唯一锚稀缺时锚点法的失效边界。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：OCR 后处理依赖 OCR 文本与真值的逐词对齐，但数据集很少提供该映射，且分区错误置换阅读顺序时单调对齐器会丢失位置。</li>
+<li>方法：沿用 2019 年论文的分区问题设定，在 OCR 侧施加阅读顺序置换、以构造时词级金标评估正确匹配 F1、级联长度与恢复，并比较 2019 位置感知对齐器及其重锚定扩展、RETAS-lite、结合唯一词与唯一 n-gram 锚及块到窗分配的多区域对齐器、genalog 的 RETAS 与原始 Java RETAS。</li>
+<li>结果/结论：合成测试定位了局部跟踪在大位移后失效、唯一锚方法在锚点稀缺时崩溃的情形；在合成样板页上 2019 年方法取得所测方法中最高 F1，历史报纸与几何派生评估受近似金标与文章顺序约定限制。</li>
+<li>局限或适用：局部跟踪在大阅读顺序变化下仍脆弱，锚点法在唯一锚稀缺时失效；首个多区域版本有二次复杂度，近似金标、文章顺序约定、缺失的残留标注与现代多栏词级真值缺乏仍是局限。</li>
+</ol>
+<a id="74-2611.13739"></a>
+<h2>74. 激光束宽度与测量噪声对激光扫描树径估计的影响</h2>
+<ul>
+<li><strong>原题</strong>：Effects of Laser Beam Width and Measurement Noise on Tree Diameter Estimation in Laser Scanning</li>
+<li><strong>作者</strong>：Jesse Muhojoki, Nuutti Ervasti, Eric Hyyppä et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13739">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13739">PDF</a></li>
+<li><strong>关键词</strong>：移动激光扫描、树径估计、异方差噪声、激光束宽、偏差补偿</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：激光扫描长期用于测量树木结构，但传感器与测量条件的误差始终存在，激光束宽尤其会引入系统与随机误差。本文研究移动激光扫描中的误差主因及其对树干直径估计的影响，发现异方差噪声与束宽使直径偏差既依赖距离也依赖树径。文中证明仅凭传感器规格即可预测并抵消该偏差。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：激光扫描测树虽已用数十年，但传感器特性与测量条件带来的不确定性仍是重要误差源，激光束直径会同时引入系统误差与随机误差。</li>
+<li>方法：在移动激光扫描 MLS 中量化误差对树干曲线即直径估计的影响，通过仿真与实验确认测距与扫描角方差不同的异方差测量噪声及激光雷达束宽是造成偏差依赖距离与树径的关键，并据此提出仅用传感器技术规格即可预测并抵消的偏差补偿方法。</li>
+<li>结果/结论：对胸径大于 10 cm 的树，该偏差无需额外标定即可可靠预测与抵消；在北方森林试验地，补偿把茎干直径估计的均方根误差降到亚厘米级。</li>
+<li>局限或适用：胸径低于 10 cm 的小树偏差对未知的树径本身及树皮、树干不圆度等因素敏感，限制了激光雷达测量树木几何的精度与本方法的适用性。</li>
+</ol>
+<a id="75-2611.13711"></a>
+<h2>75. HintErase：把定位当提示而非空洞的视频叠加物移除</h2>
+<ul>
+<li><strong>原题</strong>：Hint, Not Hole: Localization-Robust Video Overlay Removal</li>
+<li><strong>作者</strong>：Dongyang Zhang, Wei Zhang, Renjie Zou et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13711">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13711">PDF</a></li>
+<li><strong>关键词</strong>：视频叠加物移除、定位鲁棒、提示通道、HintErase、流式管线</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：视频叠加物移除要恢复字幕与水印下方的场景，但检测器给出的区域常双向出错，把掩码当空洞的擦除器会继承这些错误。本文提出 HintErase 视定位为提示而非空洞，让模型看到完整视频与提示通道并按定位失败方式训练。实验得到能移除漏检叠加、保留误盖背景的单一模型。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：视频叠加物移除要恢复烧入的字幕、歌词、标题、片尾、标志与水印下方场景，但区域通常由检测器或分割器给出，存在漏检笔画、光晕、整帧整物与误盖字符间、框周背景及真实场景文字的双向错误。</li>
+<li>方法：提出 HintErase，把定位视为提示而非空洞，让模型同时看到完整未掩码视频与提示通道，训练时按真实定位器的失败方式破坏提示、监督却遵循真实叠加物。</li>
+<li>结果/结论：得到单一模型，既能移除提示漏掉的叠加、保留提示误盖的背景，还被训练成即便提示落在真实场景文字上也保留该文字；报告给出方法、交付管线与定性结果，并排的输入、提示与输出视频放在项目页。</li>
+<li>局限或适用：面向全长影片发布，配套流式管线处理隔行源、镜头切换、漏检与抖动提示、贴回和音频，内存占用与视频长度无关。</li>
+</ol>
+<a id="76-2611.13700"></a>
+<h2>76. CJRR-Net：面向人体姿态估计未来视角选择的候选关节重投影排序</h2>
+<ul>
+<li><strong>原题</strong>：CJRR-Net: A Candidate-Joint Reprojection Ranking for Future-View Selection in Human Pose Estimation</li>
+<li><strong>作者</strong>：Huiting Xi, Marsha Mariya Kappan, Eduardo Benitez Sandoval et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13700">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13700">PDF</a></li>
+<li><strong>关键词</strong>：人体姿态估计、视角选择、重投影、CJRR-Net、MPI-INF-3DHP</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：多相机系统支撑动作记录与人体运动分析，选信息量高的视角对可靠姿态估计很关键。本文提出 CJRR-Net，在未来视角选择中结合当前姿态观测、相机配置，以及把估计的 3D 姿态与不确定性重投影到各候选视角所得的几何特征。实验显示所选视角的姿态误差低于对比策略。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：多相机系统用于动作记录、体育与人体运动分析，选择信息量高的视角对可靠的人体姿态估计很重要。</li>
+<li>方法：提出 CJRR-Net，在 MPI-INF-3DHP 的八台已标定相机中做未来视角选择，结合当前视角姿态观测、相机配置与把估计的 3D 姿态及其不确定性重投影到每个候选视角得到的候选专属几何特征，并给出一段推演展示重复的相机选择。</li>
+<li>结果/结论：所选视角的 2D 平均每关节位置误差 MPJPE 为 105.18 像素，优于共享输入 MLP 的 114.64 像素与经改造 PoseErrNet 的 117.56 像素，并在每个评估的遮挡组中取得所列策略里最低的平均误差。</li>
+<li>局限或适用：结论支持在所评估的固定八相机设定下用候选专属几何做单视角选择，验证范围限于该设定。</li>
+</ol>
+<a id="77-2611.13685"></a>
+<h2>77. Ego Guidance：用无动作标注的人类第一人称视频增强机器人策略学习</h2>
+<ul>
+<li><strong>原题</strong>：Ego Guidance: Enhancing Robot Policy Learning with Action-Free Human Egocentric Videos</li>
+<li><strong>作者</strong>：Lin Long, Tianren Ma, Zhong Chu et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.RO, cs.AI, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13685">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13685">PDF</a></li>
+<li><strong>关键词</strong>：机器人策略学习、第一人称视频、动作无关学习、SPAR、MoT</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文研究在完全没有动作标注的情况下，人类第一人称视频如何帮助机器人策略学习。作者基于预训练视觉语言模型提出 SPAR，让未来视觉状态预测与动作预测并列提供独立且互补的学习信号。实验发现所学表示能提升分布外机器人任务表现，且随视频规模增大收益进一步增加。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：希望在不使用动作监督的前提下，利用人类第一人称视频辅助机器人策略学习。</li>
+<li>方法：基于预训练 VLM 提出 SPAR（Shared Prediction on Action and Representation），采用 MoT 架构，使未来视觉状态预测与动作预测并列提供独立且互补的学习信号，并研究目标选择与数据策划的影响。</li>
+<li>结果/结论：从第一人称视频学到的表示提升了分布外机器人任务的下游表现，且随视频数据规模扩大收益进一步增加，为利用无动作视频做可扩展机器人学习提供洞见。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="78-2611.13654"></a>
+<h2>78. EgoHMP：借助第一人称线索实现 3D 场景中的精确人体运动预测</h2>
+<ul>
+<li><strong>原题</strong>：EgoHMP: Achieving Precise Human Motion Prediction in 3D Scenes via Egocentric Cues</li>
+<li><strong>作者</strong>：Xin Zhao, Pengzhan Zhou, Ziyi Li et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13654">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13654">PDF</a></li>
+<li><strong>关键词</strong>：人体运动预测、第一人称线索、交互意图、接触感知解码器、EgoHMP</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：人体行为与 3D 场景的复杂交互让准确预测意图成为人体运动预测的难题，用注视推断又受歧义与眼动硬件限制。本文指出第一人称视角天然编码潜在交互、头部运动是运动规划前兆，提出 EgoHMP 以二者为交互意图载体并据此生成合理运动。实验表明其达到当前最优。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：人体行为与 3D 场景的复杂交互依赖使准确预测意图成为人体运动预测 HMP 的主要挑战，而用注视推断意图存在歧义、漂移并依赖眼动追踪硬件。</li>
+<li>方法：提出 EgoHMP，以第一人称视角与头部运动作为交互意图的稳健载体，用视觉运动对齐编码器对齐视觉与运动特征空间，以带模态感知调制的自我中心意图预测器自适应抑制无效交互线索并预测交互概率图；接触感知运动解码器先预测全局轨迹作为自提示以缓解扩散模型优化冲突，再经引入人体接触建模的多阶段去噪器减轻伪影，最后由基于 GCN 的解码器合成运动。</li>
+<li>结果/结论：大量实验表明 EgoHMP 达到当前最优性能。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="79-2611.13649"></a>
+<h2>79. 用病理基础模型从 H&amp;E 图像预测单细胞空间基因表达</h2>
+<ul>
+<li><strong>原题</strong>：Predicting Single-Cell Spatial Gene Expression from H&amp;E using Pathology Foundation Models</li>
+<li><strong>作者</strong>：Ashley P. Tsang, Evan Liu, Conrad Foo et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13649">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13649">PDF</a></li>
+<li><strong>关键词</strong>：空间基因表达、H&amp;E、病理基础模型、Xenium 5K、单细胞</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：从 H&amp;E 图像预测基因表达是获取空间分子洞见的低成本途径，但病理基础模型多以切片块级目标预训练，未必能捕捉单细胞所需的细粒度特征。本文确立领域知情、任务专用的适配策略，显著提升预测并达到任务最优。结果表明它能恢复空间表达模式，也揭示形态分子推断的机遇与局限。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：从 H&amp;E 图像直接预测基因表达可低成本、可扩展地获取空间分子洞见，但以切片块级目标预训练的病理基础模型未必能捕捉单细胞分子预测所需的细粒度细胞特征。</li>
+<li>方法：系统评估并确立领域知情、任务专用的策略，把病理基础模型适配到单细胞空间基因表达预测，使用配对的 H&amp;E 与 Xenium 5K 数据。</li>
+<li>结果/结论：平均逐基因 Pearson 相关比标准零样本基线提升 2.67 倍并达到该任务当前最优，全基因面板基因检测 AUROC 为 0.800，对空间可变基因相关最高（r = 0.643）。</li>
+<li>局限或适用：预测性能随生物学语境显著变化，稀疏单细胞测量仍是挑战，作者明确指出基于形态的分子推断在细胞分辨率上既有机遇也有局限。</li>
+</ol>
+<a id="80-2611.13638"></a>
+<h2>80. picoEmergencyNet：面向应急监测航拍图像分类的注意力增强超小型深度学习模型</h2>
+<ul>
+<li><strong>原题</strong>：picoEmergencyNet : Attention-Enhanced Ultra-Small Deep Learning Model for Aerial Image Classification in Emergency Monitoring</li>
+<li><strong>作者</strong>：Christos Kyrkou ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13638">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13638">PDF</a></li>
+<li><strong>关键词</strong>：航拍灾害识别、超轻量 CNN、通道注意力、TinyML、UAV</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：实时航拍灾害识别要求模型在严格的算力与时延约束下运行，而现有高精度方法难以部署到资源受限平台。本文提出超轻量网络 picoEmergencyNet，结合空洞卷积、通道注意力与通道混洗实现多尺度特征提取。实验表明它可匹配更大的轻量模型，说明结构特化即可实现高效准确的识别。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：实时航拍灾害识别需在严格内存、算力与时延约束下运行，而现有高精度方法计算成本高，难以部署到资源受限的 UAV 平台。</li>
+<li>方法：提出 picoEmergencyNet，把深度可分离空洞卷积、高效通道注意力与通道混洗结合，以极低计算代价实现多尺度特征提取。</li>
+<li>结果/结论：仅 23k 参数、7M FLOPs、0.1 MB 存储；在 AIDER 与 AIDERv2 上最高达 96.1% 准确率，匹配或超过体量大数个量级的先进轻量模型；在 NVIDIA Jetson AGX Orin 上未做硬件专属优化即达 GPU 258 FPS、CPU 46 FPS，激活内存比对比模型低 7 倍。</li>
+<li>局限或适用：面向资源受限 UAV 平台与 TinyML 级实时应急监测，部署验证在 Jetson AGX Orin 且未使用硬件专属优化，表明架构特化优于模型规模放大。</li>
+</ol>
+<a id="81-2611.13628"></a>
+<h2>81. DepthGS：带自适应正则化的深度引导高斯泼溅用于高质量表面重建</h2>
+<ul>
+<li><strong>原题</strong>：DepthGS: Depth-Guided Gaussian Splatting with Adaptive Regularization for High-Quality Surface Reconstruction</li>
+<li><strong>作者</strong>：Xiao Ren, Yu Liu, Ning An et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13628">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13628">PDF</a></li>
+<li><strong>关键词</strong>：3D 高斯泼溅、表面重建、深度引导、自适应正则化、DepthGS</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：3D 高斯泼溅已扩展到表面重建，但深度与重建误差的关系仍缺乏探索，限制了几何优化的原则性设计。本文提出 DepthGS，先在单视图与多视图下推导深度差异与重建误差的理论关系并建立误差上界，据此设计自适应正则化策略。实验表明其表面重建与新视图合成均具竞争力。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：3DGS 已越来越多地用于表面重建，但深度信息与重建误差之间的关系仍缺乏充分探索，限制了几何优化策略的原则性设计。</li>
+<li>方法：提出 DepthGS，推导单视图与多视图下深度差异与重建误差的理论关系并严格建立误差上界；单视图采用深度差异引导的自适应法向正则，用局部深度差异计算的几何可靠性权重调节法向约束强度，多视图引入跨视图深度一致性正则，促进邻视图深度图与当前视图深度预测变换到邻视图的结果一致。</li>
+<li>结果/结论：在 DTU、Mip-NeRF360 与 Tanks and Temples 上的大量实验表明 DepthGS 在表面重建与新视图合成两方面均取得有竞争力的性能。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="82-2611.13626"></a>
+<h2>82. FlashMotion：超快速长时程 3D 运动生成</h2>
+<ul>
+<li><strong>原题</strong>：FlashMotion: Ultra-Fast Long-Term 3D Motion Generation</li>
+<li><strong>作者</strong>：Kaixing Yang, Xulong Tang, Ronghui Li et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13626">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13626">PDF</a></li>
+<li><strong>关键词</strong>：3D 运动生成、MeanFlow、BiMamba、少步生成、FlashMotion</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：3D 人体运动生成在游戏与数字人等场景中作用关键，绑定、重定向与渲染使超快速长时程生成对实时交互很有价值。紧推理预算下的生成受多步采样与每步开销两个瓶颈制约，本文提出 FlashMotion，从轨迹与单步两个层面协同压缩生成开销。实验表明其质量与效率整体最优。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：游戏、扩展现实、数字人与具身仿真需要 3D 人体运动生成，而绑定、重定向、渲染等实际管线让不损质量的超快速长时程生成对实时交互很有价值；紧推理预算下高质量长时程生成受多步采样策略与长序列每步计算内存开销两个耦合瓶颈制约。</li>
+<li>方法：提出协同设计的 FlashMotion，覆盖 text-to-motion、music-to-dance 与 speech-to-gesture；轨迹层面引入带运动学与动力学一致性约束的 3D 运动空间 MeanFlow 做少步生成，并用自适应软掩码做时序一致的运动编辑，单步层面设计轻量非自回归 BiMamba，以条件引导状态选择和基于 AdaIN 的条件融合增强跨模态对齐与长序列泛化。</li>
+<li>结果/结论：大量实验表明 FlashMotion 在文生动作、语音到手势与音乐到舞蹈生成上，质量与效率两方面整体达到当前最优。</li>
+<li>局限或适用：面向严格推理预算下的高质量长时程生成与实时交互应用，方法覆盖文生动作、语音到手势与音乐到舞蹈三类任务。</li>
+</ol>
+<a id="83-2611.13621"></a>
+<h2>83. PUMA：面向取证定位的概率约束顺序交互</h2>
+<ul>
+<li><strong>原题</strong>：PUMA: Probability-Constrained Sequential Interaction for Forensic Localization</li>
+<li><strong>作者</strong>：Zhouli Yu, Mengyuan Zhou ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13621">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13621">PDF</a></li>
+<li><strong>关键词</strong>：图像篡改定位、非平衡最优运输、语义取证融合、PUMA、质量失配</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：图像篡改定位需兼顾语义结构与取证证据，但空间对应、匹配质量与交互顺序常被混淆，现有融合方法既不保留质量失配信息、也不能自适应选择传播顺序。本文提出 PUMA，把空间约束非平衡最优运输与凸选择结合以更新噪声特征。实验显示其在多个测试集上取得强定位结果。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：图像篡改定位需联合利用语义结构与噪声敏感的取证证据，但空间对应、匹配质量与交互顺序三者的作用常被混淆，现有语义取证融合方法未显式保留空间对应中的质量失配信息，也不能自适应选择跨分支的信息传播顺序。</li>
+<li>方法：提出 PUMA（概率约束非平衡匹配与聚合），把空间约束的非平衡最优运输与两个顺序算子间经共享位置接口进行的逐位置凸选择结合；归一化前保留带符号的运输质量残差，构造行随机的跨分支与噪声分支内算子，并通过门控残差路径更新噪声特征。</li>
+<li>结果/结论：在四个测试集上取得强定位结果，其中 COVERAGE 与 NIST16 上的分数超过对比中所列代表性方法的已发表结果。</li>
+<li>局限或适用：实验支持局部匹配状态与自适应顺序交互对跨源定位及若干后处理条件的效用。</li>
+</ol>
+<a id="84-2611.13620"></a>
+<h2>84. ADE-GVC：何时开始去噪的生成式视频压缩自适应去噪起点</h2>
+<ul>
+<li><strong>原题</strong>：When to Start Denoising? Adaptive Denoising Entry for Generative Video Compression</li>
+<li><strong>作者</strong>：Zifu Zhang, Yuqiao Li, Ding Ding et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13620">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13620">PDF</a></li>
+<li><strong>关键词</strong>：生成式视频压缩、扩散模型、去噪起点、时间步感知、ADE-GVC</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：扩散类生成式视频压缩凭生成先验在极低码率下效果最好，但成效取决于压缩潜变量何时引入扩散过程，决定重建保真度与感知真实感的权衡。本文把去噪起始时间步表述为几何优化问题，提出 ADE-GVC，用轻量预测器估计自适应去噪起点。实验表明该方法在感知指标上达到最优。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：极低码率下的生成式视频压缩中，扩散类方案效果最好，但其成效关键取决于压缩潜变量何时引入扩散过程，这直接支配重建保真度与感知真实感的权衡。</li>
+<li>方法：把去噪起始时间步选择表述为几何优化问题，提出 ADE-GVC（首个时间步感知的生成式视频压缩框架），用轻量预测器从压缩潜变量估计自适应去噪起点，并用时序适配器抽取压缩感知条件注入预训练视频扩散模型。</li>
+<li>结果/结论：观察到预测时间步与原始及压缩潜变量间失真存在强定量关系，为该优化表述提供实证支持；方法在感知指标上达到当前最优并显著提升重建真实感，相比最新开源基线 GLC-Video 在 DISTS 上平均节省 40.99% 码率、在 PSNR 上节省 95.24%。</li>
+<li>局限或适用：面向极低码率约束下的生成式视频压缩，并以最新开源基线 GLC-Video 为主要比较对象。</li>
+</ol>
+<a id="85-2611.13609"></a>
+<h2>85. 混合文字乌兹别克语文本的 OCR 后校正：字节级 ByT5 与经验同形字噪声矩阵</h2>
+<ul>
+<li><strong>原题</strong>：Post-OCR Correction of Mixed-Script Uzbek Text: Byte-Level ByT5 with an Empirical Homoglyph Noise Matrix</li>
+<li><strong>作者</strong>：Mannon Ochilov, Oybek Narzullayev, Bahodir Zaripov ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CL, cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13609">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13609">PDF</a></li>
+<li><strong>关键词</strong>：OCR 后校正、乌兹别克语、同形字、ByT5、混合文字</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：乌兹别克文档中大量 OCR 错误并非源于图像质量，而是两套并用字母表里视觉相同的同形字所致，文字改革使西里尔与拉丁字母常同页混排。针对语料不得外泄、须本地执行的场景，本文把字节级 ByT5 与噪声生成器结合并配保守解码。实验表明它明显降低字符错误率、恢复绝大多数同形字。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：乌兹别克官方与技术文档的 OCR 错误大量来自西里尔与拉丁两套字母中视觉相同的同形字，而非图像质量，混排页面上的同形字错误密度接近单文字文本的五倍。</li>
+<li>方法：在工程地质与 ICT 基础设施报告语料不得外泄、全流程须在本地硬件执行的设定下，把字节级 ByT5 与噪声生成器结合，噪声采样权重由 359 个人工分类的错误事件估计，并采用 Levenshtein 有界的保守解码规则。</li>
+<li>结果/结论：在 5,204 对行组成的 Gold 集上把字符错误率从 0.0578 降到 0.0369，恢复 91.3% 的同形字，仅引入 84 个新错误。</li>
+<li>局限或适用：面向语料不得离开机构、须全流程本地硬件处理的场景，并以保守解码控制新增错误。</li>
+</ol>
+<a id="86-2611.13596"></a>
+<h2>86. 迈向可靠的 VLM 评判器：状态条件不变性与呈现感知诊断</h2>
+<ul>
+<li><strong>原题</strong>：Towards Reliable VLM Judges: State-Conditional Invariance and Presentation-Aware Diagnostics</li>
+<li><strong>作者</strong>：Qinan Zhang, Xinyu Wang, Qihang Jin et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.AI, cs.CL, cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13596">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13596">PDF</a></li>
+<li><strong>关键词</strong>：VLM 评判器、状态条件不变性、诊断基准、GridWM-Judge、因果敏感性</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：视觉语言模型常被用作多模态与具身任务的自动评判器，但准确率或一致性无法说明评判器是否因正确理由改变裁决。本文提出状态条件不变性 SCI，要求评判器对保语义的呈现变化稳定、却响应改变结果的因果干预，并构建诊断基准。评估揭示多种失效模式，主张联合报告正确性与因果敏感性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：视觉语言模型越来越多地被用作多模态与具身任务的自动评判器，但仅看总体准确率或一致性无法揭示评判器是否因正确理由改变裁决。</li>
+<li>方法：提出状态条件不变性 SCI 可靠性原则，要求评判器在保语义的呈现变化下保持稳定、同时响应改变任务结果的因果干预；并实例化为 GridWM-Judge，基于确定性 MiniGrid 轨迹构建，含对齐的 Full、证据移除与反事实变体及呈现与表示探针，五项诊断任务测试局部感知、动作条件转移、呈现稳定性、表示可交换性与 Full-CF 因果辨别。</li>
+<li>结果/结论：诊断评估揭示异质失效模式，感知控制分析表明视觉接地与目标恢复是随模型而异的重要瓶颈，结果主张联合报告正确性、呈现稳定性与因果敏感性，而非依赖单一分数。</li>
+<li>局限或适用：结论提示聚合准确率或一致性不足以刻画评判器可靠性，需同时考察对呈现变化与因果干预的响应，单一分数难以反映这些失效。</li>
+</ol>
+<a id="87-2611.13581"></a>
+<h2>87. AstroSeg-vEM：面向正常与应激超微结构状态的星形胶质细胞 3D 重建轻量框架</h2>
+<ul>
+<li><strong>原题</strong>：Lightweight Deep Learning Framework for Astrocyte-Centric 3D Reconstruction across Normal and Stress-associated Ultrastructural States</li>
+<li><strong>作者</strong>：Bowen Deng, Gwang-Jin Jeong, Seulgi Noh et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, q-bio.NC</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13581">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13581">PDF</a></li>
+<li><strong>关键词</strong>：星形胶质细胞、体电子显微镜、3D 重建、AstroSeg-vEM、形态分割</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：星形胶质细胞形态密切关联神经回路功能，但从体电子显微镜重建形态仍耗时耗力。本文提出轻量框架 AstroSeg-vEM，结合二维分割与专用后处理，直接在高分辨率切片上实现保形态分割与三维重建。实验表明其表现稳健，并可在消费级硬件上高效重建。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：星形胶质细胞形态与其支持、调节神经回路功能的能力密切相关，但从 vEM 数据重建形态仍劳动密集且计算资源密集，尽管 vEM 空间分辨率很高，仍对其推广与规模化构成障碍。</li>
+<li>方法：提出 AstroSeg-vEM，把基于 transformer 的 2D 分割与专用后处理方法结合，直接在高分辨率 EM 切片上运行，保留原始 EM 数据的全部面内分辨率，适合各向异性 vEM 数据与下游校对流程，实现保形态分割、3D 重建与定量形态分析。</li>
+<li>结果/结论：在代表正常与形态学定义的应激相关星形胶质细胞超微结构状态的四套小鼠海马数据集上表现稳健、泛化良好，在留出测试集上平均 Dice 与加权 Dice 分别为 0.92 与 0.95。</li>
+<li>局限或适用：轻量架构适合各向异性 vEM 数据与下游校对流程，能在消费级硬件上高效高保真重建，为大规模星形胶质细胞超微结构分析及未来星形胶质细胞与神经元交互研究提供可扩展、易获取的平台。</li>
+</ol>
+<a id="88-2611.13576"></a>
+<h2>88. PhyRubric：基于评分量表的文生视频物理常识诊断评估</h2>
+<ul>
+<li><strong>原题</strong>：PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation</li>
+<li><strong>作者</strong>：Huiyi Chen, Weitai Kang, Shicheng Fan et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13576">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13576">PDF</a></li>
+<li><strong>关键词</strong>：文生视频、物理常识、量表评估、PhyRubric、诊断基准</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：文生视频模型日益被定位为世界模拟器，需评估其物理常识，但现有基准凭直觉打单一分数，主观且说不清违反了哪条原理。本文提出量表驱动的诊断框架 PhyRubric，看视频前先为描述构建专属量表并由逐项判定导出分数。实证显示物理常识远未解决，所训练评判器更贴合人类判断。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：文生视频模型日益被定位为世界模拟器，需评估其视频是否符合物理常识，但现有基准由标注者凭直觉给每段视频打单一分数，主观且无法指出违反了哪条物理原理。</li>
+<li>方法：提出 PhyRubric 量表驱动诊断框架，在看任何视频前为每条描述构建专属量表，把描述分解为语义项与物理项，由带时间戳证据支撑的逐项判定导出分数；实例化为 PhyRubric-Bench，扩展到 PhyRubric-Train 并在其上微调开源 PhyRubric-Judge。</li>
+<li>结果/结论：PhyRubric-Bench 覆盖五大物理域 34 个类别，PhyRubric-Train 含 3,788 段视频；跨十个 T2V 模型的实证显示物理常识远未解决，PhyRubric-Judge 与人类判断的相关性高于现有开源评判器，并比肩前沿专有的 Gemini 4 Argon，进一步分析还提供可操作的洞见。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="89-2611.13540"></a>
+<h2>89. AgenticConflictLens：从长时交通视频到可验证的冲突证据</h2>
+<ul>
+<li><strong>原题</strong>：AgenticConflictLens: From Long Traffic Videos to Verifiable Conflict Evidence</li>
+<li><strong>作者</strong>：Boshra Khalili, Sonia Moshfeghi, Jinwoo Jang et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13540">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13540">PDF</a></li>
+<li><strong>关键词</strong>：交通视频分析、冲突检测、智能体框架、查询条件、可核验证据</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：交通摄像头能提供超越事故报告的安全证据，但冲突与险情等关键事件稀少短暂、淹没在常规画面里，现有管线又均匀处理、不随查询调整。本文提出查询条件式智能体框架，由控制器结合交通记忆与分析工具决定搜索范围并选择性核验。实验表明它以很少查验比例取得最高的冲突检测效果。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：交通摄像头能提供超越事故报告的前瞻性安全证据，但冲突、险情、不安全转弯、急刹与人行横道交互等安全关键事件稀少而短暂、淹没在数小时常规画面里，现有管线均匀处理且不随分析师查询调整，视觉语言方法又常缺少交通专属的参与者级冲突核验。</li>
+<li>方法：提出查询条件式的智能体框架 AgenticConflictLens，给定自然语言安全查询，由 Traffic-Aware Controller 结合结构化交通记忆与专用冲突分析工具决定搜索位置、要检查的道路用户以及核实或否决哪些证据；由粗到细搜索取回候选区间并选择性做细致核验。</li>
+<li>结果/结论：框架产出带精化时间区间、参与者对、语义区域、轨迹、运动证据、不确定性、否决理由与支撑片段的冲突记录；在 Bellevue 与 NYC DOT 共 96 标注小时上取得最高冲突存在 F1 与时间 IoU（Bellevue 0.84 F1 / 0.77 tIoU，NYC DOT 0.80 F1 / 0.73 tIoU），而只查验了 8.7% 与 11.9% 的视频。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="90-2611.13530"></a>
+<h2>90. UniWeaver：利用统一多模态模型实现图文交错生成</h2>
+<ul>
+<li><strong>原题</strong>：UniWeaver: Harnessing Unified Multimodal Models for Interleaved Text-Image Generation</li>
+<li><strong>作者</strong>：Hongxu Chen, Zixuan Zhong, Donghao Zhou et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13530">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13530">PDF</a></li>
+<li><strong>关键词</strong>：图文交错生成、统一多模态模型、编排框架、UniWeaver、视觉反馈</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：统一多模态模型为图文交错生成开辟新可能，但普遍缺乏原生协调两模态的能力，把粗粒度请求转成连贯编排也需显式规划。本文提出与模型无关的编排框架 UniWeaver，整合规划、生成与视觉反馈以产出连贯输出。实验表明它达到当前最优，并能在多个骨干上提升图文交错生成。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：统一多模态模型 UMM 为生成丰富的图文交错内容开辟新可能，但普遍缺乏原生协调两种模态的支持，把粗粒度用户请求转成连贯的多模态组合也需要显式规划。</li>
+<li>方法：提出结构化、模型无关的编排框架 UniWeaver，整合多模态规划、生成与视觉反馈以产出连贯的图文交错输出；构建含 20 个任务族、10,000 个任务并配有 UniWeaver 引导执行轨迹的数据集 UniWeaver-10K，以及面向任务、系统评估文本覆盖、写作质量、视觉覆盖与图文对齐的基准 UniWeaver-Bench。</li>
+<li>结果/结论：实验表明 UniWeaver 达到当前最优性能，并在多个 UMM 骨干上提升图文交错生成。</li>
+<li>局限或适用：框架与具体模型无关，可跨多个统一多模态模型骨干使用。</li>
+</ol>
+<a id="91-2611.13528"></a>
+<h2>91. GEMOR-GS：面向 3D 高斯泼溅 SLAM 的全局外参精化建图与在线重定位</h2>
+<ul>
+<li><strong>原题</strong>：GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM</li>
+<li><strong>作者</strong>：Yuchen Yang, Ming Ding, Xinyu Wu et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.RO, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13528">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13528">PDF</a></li>
+<li><strong>关键词</strong>：3DGS SLAM、外参标定、全局重建、在线重定位、GEMOR-GS</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：照片级真实且度量一致的世界表示是激光雷达惯性视觉 SLAM 的首要需求，3D 高斯泼溅使之可达。本文提出 GEMOR-GS，先离线估计外参，再以可微渲染与雷达投影交替精化位姿和高斯参数，并支持跟踪丢失后重定位。实验显示它提升几何精度、外观保真与可重入性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：照片级真实且度量一致的世界表示是激光雷达惯性视觉 SLAM 系统在机器人连续运行中的主要需求，3DGS 以显式、可渲染、可查询的场景模型使之可达，但仍需让高斯地图几何精确、全局精化并支持重新进入。</li>
+<li>方法：先用直接法在专用标定段上离线估计 LiDAR 与相机外参供后续所有在线离线流程复用；在标定几何下以门控可微渲染与 LiDAR 投影目标交替精化关键帧位姿和高斯参数，再从精化后的关键帧模式、解除所有在线约束重建全局结果；跟踪丢失后经 XFeat 旁路图、RANSAC-PnP 粗定位与 Gaussian RGB-D warp 精化从 3DGS 地图恢复位姿。</li>
+<li>结果/结论：在一套自采与五套公开序列上量化各要素，离线重建在所有配对关键帧上以 14.3 至 19.9 dB 胜过在线地图，PSNR 比 Gaussian-LIC2 高约 9 dB，留出重定位成功率达 86% 至 100% 且与外参质量相关。</li>
+<li>局限或适用：面向机器人 SLAM 生命周期中跟踪丢失后的重定位与可复入世界模型，重定位成功率与外参标定质量相关。</li>
+</ol>
+<a id="92-2611.13514"></a>
+<h2>92. 看见微小：面向视网膜病灶分割的可变形对偶 Mamba</h2>
+<ul>
+<li><strong>原题</strong>：Seeing the Small: Deformable Duality Mamba for Retinal Lesion Segmentation</li>
+<li><strong>作者</strong>：Chang Yu, Siqing Li, Yuanchen Liu et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13514">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13514">PDF</a></li>
+<li><strong>关键词</strong>：视网膜病灶分割、微动脉瘤、Mamba、状态空间对偶、D²Mamba</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：糖尿病视网膜病变病灶形状差异大，微动脉瘤往往只有几个像素。本文假设对病灶空间组织建模并结合形状自适应扫描能改善小病灶分割，为此提出结合状态空间对偶与可变形 Mamba 的方法并做消融。结果显示它取得最佳整体性能，且在最易漏检的微动脉瘤上增益最大，验证了假设。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：糖尿病视网膜病变病灶形状差异很大，微动脉瘤仅占几个像素，需要兼顾全局上下文与形状自适应扫描来分割这类最小、最易漏检且形状不规则的病灶。</li>
+<li>方法：提出 D²Mamba，把非因果状态空间对偶与可变形 Mamba 扫描结合；在 DDR 数据集上以五折交叉验证、相同训练协议与代表性分割基线比较，并对每个组件做消融。</li>
+<li>结果/结论：取得最佳整体性能，mIoU 达 33.87%，比最强基线高 2.99 个百分点；最大增益出现在最小、最易漏检的微动脉瘤上，Dice 提升 10.06 个百分点，验证了空间自适应状态空间建模有益于微小病灶分割的假设。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="93-2611.13513"></a>
+<h2>93. 带条件熵的证据深度学习用于青光眼检测</h2>
+<ul>
+<li><strong>原题</strong>：Evidential Deep Learning with conditional entropy for glaucoma detection</li>
+<li><strong>作者</strong>：Hai Siong Tan, Kuancheng Wang ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13513">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13513">PDF</a></li>
+<li><strong>关键词</strong>：青光眼检测、证据深度学习、条件熵、不确定性校准、Grad-CAM</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文为眼底图像青光眼检测的证据深度学习提出新的条件熵函数以量化预测不确定性。验证发现，以该函数正则化的模型校准误差显著低于多种传统方法。热力图分析表明该模型区分正确与错误分类的能力更强，假阴性对应偏离视盘的激活，说明框架兼具更好校准与更符合生理的可解释性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：希望在从视网膜眼底图像做青光眼检测时，为证据深度学习 EDL 提供更好的预测不确定性量化方式。</li>
+<li>方法：提出一种新的条件熵函数作为量化预测不确定性的基础并用于正则化 EDL；用 EyePACS-AIROGS-light-V2 与 RIM-ONE-DL 验证，并以表征空间集中度的聚焦指数分析 Grad-CAM 热力图考察可解释性。</li>
+<li>结果/结论：所提 EDL 模型的不确定性估计校准误差显著低于 Deep Ensembles、MC Dropout、事后校准与基于 Dempster 不确定性的传统 EDL；与其他不确定性量化方法相比，EDL 模型在正确与错误分类眼底图像的聚焦指数分布间分离更大，假阴性对应偏离视盘的局部 Grad-CAM 激活，与视盘的临床重要性一致。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="94-2611.13511"></a>
+<h2>94. TMAL：面向曲线结构分割的保拓扑多偏移亲和度学习</h2>
+<ul>
+<li><strong>原题</strong>：TMAL: Topology-preserving Multi-offset Affinity Learning for Curvilinear Structure Segmentation</li>
+<li><strong>作者</strong>：Suho Han, Soungsill Park, Kanghyun Ryu et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, physics.med-ph</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13511">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13511">PDF</a></li>
+<li><strong>关键词</strong>：曲线结构分割、拓扑保持、多偏移亲和度、TMAL、连通性</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：曲线结构分割需兼顾像素精度与结构连续性，而逐像素监督不建模连接、拓扑损失只产出普通掩码，连通性方法难以描述更大偏移的连接。本文提出 TMAL，用软亲和度在多个偏移上预测方向连接，再结合解码器特征权重兼顾局部连续性与更宽上下文。实验表明它取得最高的分割与连通性得分。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：视网膜血管与表面裂纹等曲线结构分割需要同时保证像素级精度与结构连续性，但逐像素监督不建模像素间连接，拓扑类损失仍只产出普通掩码，连通性类方法使用固定局部范围的二值连通目标，对细段与粗区给相同值且无法描述更大偏移处的连接。</li>
+<li>方法：提出保拓扑多偏移亲和度学习 TMAL，用强调边界附近细区域的软亲和度，在多个偏移上预测方向亲和度以覆盖更远连接，再把这些亲和度与来自解码器特征的权重结合以兼顾局部连续性与更宽上下文；辅助分割分支提供区域级监督以保持重叠精度。</li>
+<li>结果/结论：在视网膜血管数据集 DRIVE 与裂纹检测数据集 DeepCrack 上取得最高的 Dice、IoU 与 clDice 分数，并大幅降低连通分量误差。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="95-2611.13510"></a>
+<h2>95. 用机器学习模型检测遥感影像中的分布偏移</h2>
+<ul>
+<li><strong>原题</strong>：Distribution Shift Detection in Remote Sensing Imagery using Machine Learning Models</li>
+<li><strong>作者</strong>：Abdullah Almansour, Ozan K. Tonguz ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.LG, eess.IV, eess.SP</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13510">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13510">PDF</a></li>
+<li><strong>关键词</strong>：分布偏移检测、遥感影像、无人机、开源检测工具、时延</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：无人机遥感影像支撑广泛应用，但资源受限空中平台上的模型部署面临超越准确率的挑战，尤其部署数据偏离训练分布时。本文对多种开源检测工具做实证案例研究，用跨数据集遥感偏移评估检测有效性与计算时延。结果显示各方法在检测行为与处理开销上存在差异，凸显检测能力与响应时间的权衡。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：无人机遥感影像应用广泛，但在资源受限空中平台部署机器学习模型带来超越预测准确率的挑战，尤其部署数据分布与训练分布不一致时；地理、传感器、季节等视觉变化使遥感中的分布偏移很常见。</li>
+<li>方法：对三种开源检测工具 Alibi-Detect、NannyML 与 PyTorch-OOD 做实证案例研究，用跨数据集的遥感偏移同时评估检测有效性与计算时延。</li>
+<li>结果/结论：结果揭示不同方法与实现之间在检测行为和处理成本上的差异，凸显检测能力与响应时间之间的权衡。</li>
+<li>局限或适用：面向资源受限系统的部署监控，结论指向进一步的轻量、时延感知监控机制研究。</li>
+</ol>
+<a id="96-2611.13504"></a>
+<h2>96. 暗部至关重要：面向 SDR 到 HDR 视频重建的 VAE 感知 HDR 编码</h2>
+<ul>
+<li><strong>原题</strong>：Dark Matters: VAE-Aware HDR Encoding for SDR-to-HDR Video Reconstruction</li>
+<li><strong>作者</strong>：Donghoon Cha, Bomseok Park, Hansl von Kwon et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13504">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13504">PDF</a></li>
+<li><strong>关键词</strong>：SDR 到 HDR、VAE 编码、曝光等变、暗部坍缩、EquivFlow</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：从 SDR 到 HDR 重建需在保留内容同时恢复高光与阴影，而生成先验的成效受信号穿过预训练 VAE 的方式制约。本文发现类对数编码会压低暗部色度差异，提出曝光等变编码 EquivFlow 把曝光变化映射为加性平移且不改动 VAE。实验表明它带来一致的色度保真增益。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：SDR 到 HDR 重建是病态问题，需在保留原始内容的同时恢复裁切高光、压暗阴影与量化伪影，而潜扩散生成先验的成效受 HDR 信号如何穿过预训练 VAE 的制约。</li>
+<li>方法：发现常见类对数编码会在生成前抑制低亮度色度差异、导致冻结 VAE 潜变量出现暗部坍缩；提出紧凑、可逆、曝光等变的编码 EquivFlow，把曝光变化映射为加性平移，同时保留与尺度无关的色度分量，且不修改 VAE。</li>
+<li>结果/结论：跨多个预训练图像与视频 VAE 的编码级测试显示其曝光结构与深暗部色度传输在所测宿主上持续存在；接入 SDR 到 HDR 视频扩散后，在所测设置下带来一致的色度保真增益，同时保持有竞争力的重建保真度。</li>
+<li>局限或适用：方法不改动预训练 VAE，其曝光结构与深暗色度传输在被测图像与视频 VAE 宿主上保持一致，色度增益在所测试设置下成立。</li>
+</ol>
+<a id="97-2611.13496"></a>
+<h2>97. 面向开放词汇场景图生成的推理感知关系表征学习</h2>
+<ul>
+<li><strong>原题</strong>：Reasoning-Aware Relational Representation Learning for Open-Vocabulary Scene Graph Generation</li>
+<li><strong>作者</strong>：Jiawei Xiao, Boya Wang, Longtian Qiu et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13496">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13496">PDF</a></li>
+<li><strong>关键词</strong>：开放词汇场景图生成、思维链、对比学习、关系表征、强化学习</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对开放词汇场景图生成依赖共现模式、在长尾与定位噪声下关系表征偏倚纠缠的问题，提出 RaRe 框架，把多模态大语言模型的思维链推理依据转为结构化关系嵌入并直接优化该表征空间。实验表明其类别均衡识别优于现有基线，验证了推理衍生表征可提升关系判别性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：现有开放词汇场景图生成方法依赖数据集特有的物体—谓词共现，在长尾分布和噪声定位下产生偏倚、纠缠的关系表征，损害稀有关系识别与未见谓词泛化。</li>
+<li>方法：提出 RaRe，把 MLLM 生成的思维链推理依据转成结构化关系嵌入并直接优化该表征空间，先做自监督对比学习对齐文本化关系描述，再以面向特异性的强化学习目标优化推理生成。</li>
+<li>结果/结论：在 VG150 与 PSG 上较现有基线取得更优的类别均衡识别，验证直接优化推理衍生表征可提升关系判别性。</li>
+<li>局限或适用：学习带来的额外增益随数据集和候选框设置而变化，并非在所有设定下一致。</li>
+</ol>
+<a id="98-2611.13488"></a>
+<h2>98. 重建何时有助于事件相机的人体触发检测</h2>
+<ul>
+<li><strong>原题</strong>：When Reconstruction Helps Event-Camera Person Triggers</li>
+<li><strong>作者</strong>：Yifan Shuai ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13488">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13488">PDF</a></li>
+<li><strong>关键词</strong>：事件相机、强度重建、触发检测、E2VID、Qwen3-VL-4B</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文研究把事件相机的异步亮度变化交给通用视觉模型作录制触发时何种输入表示更有效，在成对真实事件数据上比较直接累积、时间编码与强度重建等表示，用仅在开发集标定的阈值评测。结果表明在受控输入历史下重建带来明显检测收益，但该收益需与连续触发的成本和误启动区分。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：事件相机记录异步亮度变化，需把测量转成通用视觉模型可解释的形式，才能用作录制触发器。</li>
+<li>方法：在成对真实事件数据上比较直接灰度累积、两种时间编码与两种强度重建器，阈值仅在开发数据标定，并在 192 个留出窗口上以人体检出数和背景正例数评测，辅以 96 秒探索性回放。</li>
+<li>结果/结论：E2VID 得 40/52 检出与 12/140 背景正例，统一 10% 背景正例上限下 E2VID 检出 40 而任一直接编码最多 19，FireNet+ 成本更低且固定阈值下 21 检出、零背景正例，Qwen3-VL-4B 配 E2VID 为 33/52、2/140。</li>
+<li>局限或适用：重建的检测收益成立于受控输入历史条件下，且片段捕获与录制起点对阈值选择敏感，连续触发另有成本与误启动。</li>
+</ol>
+<a id="99-2611.13486"></a>
+<h2>99. 自我中心视频中的手物接触转换检测</h2>
+<ul>
+<li><strong>原题</strong>：Hand-Object Contact Transition Detection in Egocentric Video</li>
+<li><strong>作者</strong>：Huy Anh Nguyen, Chang Dong, Feras Dayoub et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13486">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13486">PDF</a></li>
+<li><strong>关键词</strong>：自我中心视频、接触转换、事件定位、手物交互、ContactTransition</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文研究自我中心视频中的手物接触转换检测，需定位接触片段触碰与释放两个时间边界。作者提出统一框架联合建模交互的手与物体，以物体感知特征增强手中心时空表征并引入定制的事件定位形式，推理时不依赖外部检测器。实验表明方法在两类转换上均优于强的基线。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：需在自我中心视频中定位接触片段的两个时间边界，即手首次建立接触的 touch 与释放接触的 release。</li>
+<li>方法：提出统一框架联合建模交互手与物体，以从视频直接学习的物体感知特征增强手中心时空表征，并引入面向接触转换的事件定位形式，推理时不依赖外部物体或手物交互检测器。</li>
+<li>结果/结论：构建含 4,021 段视频、8,498 个 touch 与 8,077 个 release 标注及关注物体监督的 ContactTransition 数据集，方法在两类转换上持续优于强的两阶段与端到端事件定位基线，检测到的转换可作为下游自我中心手物推理的时间锚点。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="100-2611.13453"></a>
+<h2>100. Camera3R：面向异构相机模型的前馈式三维重建</h2>
+<ul>
+<li><strong>原题</strong>：Camera3R: Feed-Forward 3D Reconstruction from Heterogeneous Camera Models</li>
+<li><strong>作者</strong>：Ruxiao Duan, Yunwen Zhou, Erin Hong et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13453">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13453">PDF</a></li>
+<li><strong>关键词</strong>：前馈三维重建、异构相机、低秩适配、非透视相机、泛化</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对前馈式三维重建基础模型难以泛化到非透视图像、不便部署于任意异构相机场景的问题，提出 Camera3R 低秩适配框架，以极小重训练把透视预训练网络扩展到任意其他相机模型。实验表明它能适配非透视相机，同时完全保留原有透视输入性能。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：多种前馈三维重建基础模型虽在大规模透视数据集上以大量算力训练，仍普遍难以泛化到非透视图像，阻碍其在任意、未知且可能异构的相机模型上部署。</li>
+<li>方法：提出 Camera3R 低秩适配框架，以最小重训练高效地把透视预训练的 3R 网络扩展到任何其他相机模型，复用已有重建模型的能力。</li>
+<li>结果/结论：仅增加 0.5% 额外参数、训练不到一天，即把基础三维重建模型适配到非透视相机，同时完全保留其在透视输入上的原有性能。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="101-2611.13425"></a>
+<h2>101. Prompt2Echo：文本提示驱动的单模型多视图超声心动图分割</h2>
+<ul>
+<li><strong>原题</strong>：Prompt2Echo (P2Echo): Text-Prompted Multi-View Echocardiography Segmentation with One Model</li>
+<li><strong>作者</strong>：Moein Heidari, Alvin Kimbowa, Mahdi Tabatabaei et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13425">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13425">PDF</a></li>
+<li><strong>关键词</strong>：超声心动图、多视图分割、文本提示、DyITA、动态路由</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对多视图超声心动图分割受各声窗间解剖与外观差异困扰的问题，提出 P2Echo 统一框架，用单一模型在视图感知文本提示控制下分割多种心脏结构，并以动态图文对齐模块显式调控、随目标视图切换处理路径。实验表明它以更低计算代价追平或超过专用模型与通用模型。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：多视图超声心动图分割对全面心脏评估必不可少，但各标准声窗之间存在显著的解剖与外观差异。</li>
+<li>方法：提出 P2Echo，用结构化视图感知文本提示控制单一模型，通过 DyITA 模块整合可微路由机制与 token 差分算子，按请求的视图与目标结构动态调制解码器特征。</li>
+<li>结果/结论：在训练中见过的内部大规模数据集和三个外部数据集的留出评测上，以远低于对比方法的计算代价追平或超过视图专用模型与最先进通用模型。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="102-2611.13384"></a>
+<h2>102. 双曲视觉语言模型究竟有多双曲</h2>
+<ul>
+<li><strong>原题</strong>：How Hyperbolic Are Hyperbolic Vision-Language Models?</li>
+<li><strong>作者</strong>：Freek Byrman, Partha Das, Stijn Verdenius et al. ｜ <strong>投稿</strong>：2026-11-10 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13384">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13384">PDF</a></li>
+<li><strong>关键词</strong>：双曲视觉语言模型、指数映射、曲率、层次表征、欧氏空间</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文追问双曲视觉语言模型究竟有多双曲，聚焦曲率进入欧氏网络的唯一环节指数映射，发现多个双曲模型的该映射都近似恒等、移除后评分不变。作者以相同层次损失从零训练欧氏模型，其评测分数与径向分布都与双曲版本近乎一致，说明欧氏空间已足以承载当前的层次化学习。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：双曲视觉语言模型虽报告强零样本性能与按通用性排序半径的可解释嵌入空间，但其双曲程度在实践中是否成立尚待检验。</li>
+<li>方法：在指数映射这一曲率进入欧氏网络的唯一操作处分析映射前后的成对距离与角度及移除映射后的评测分数，并在 CC3M 上以相同层次损失从零训练欧氏 VLM 作对照。</li>
+<li>结果/结论：指数映射近似恒等、移除后分数不变；欧氏模型在约最后 90% 训练步中训练统计与双曲对应模型几乎不可区分，且复现相同评测分数与径向分布，表明欧氏空间足以承载当前实践下的层次化视觉语言学习。</li>
+<li>局限或适用：结论针对当前实践方式下的层次化视觉语言学习，作者据此呼吁能让双曲几何兑现理论优势的新范式。</li>
+</ol>
+<a id="103-2611.13330"></a>
+<h2>103. Uni-Loc：基于空间 grounding 视觉语言分类的弱监督三维 CT 病理定位</h2>
+<ul>
+<li><strong>原题</strong>：Uni-Loc: Weakly Supervised 3D CT Pathology Localization via Spatially Grounded Vision-Language Classification</li>
+<li><strong>作者</strong>：Hao-Chih Lee, Zahi A. Fayad, Xueyan Mei ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13330">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13330">PDF</a></li>
+<li><strong>关键词</strong>：三维 CT、病理定位、弱监督、视觉语言、体素级监督</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对三维 CT 异常定位难获病理专用体素级标注的问题，提出 Uni-Loc 视觉语言框架，仅用扫描级监督统一病理分类与三维定位，由病理条件化查询与图像特征的空间相似度同时导出预测与定位图。实验表明无需体素级病理监督即可实现有效的三维定位。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：三维 CT 扫描中异常的准确定位对把自动预测关联到临床相关病理发现必不可少，而病理专用的体素级监督难以获得。</li>
+<li>方法：提出 Uni-Loc，由病理条件化查询与图像特征的空间相似度导出分类预测与定位图，以 token 到体素上采样模块实现高分辨率定位，并用梯度引导阈值在无需额外学习参数下识别病理区域。</li>
+<li>结果/结论：在含 355 例标注 CT 的五个定位任务上宏平均体素级 AUROC/AUPR 达 96.1%/34.5%，优于相关性传播 80.7%/13.9% 与梯度显著性 88.7%/8.1%，分类 AUROC 在 CT-RATE 为 88.39%、RAD-ChestCT 为 78.03%，均优于匹配基线。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="104-2611.13324"></a>
+<h2>104. 目标损坏与标签噪声下的鲁棒流匹配</h2>
+<ul>
+<li><strong>原题</strong>：Robust Flow Matching under Target Corruption and Label Noise</li>
+<li><strong>作者</strong>：Mert Can Kurucu, Erik Englesson, Hossein Azizpour ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.LG, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13324">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13324">PDF</a></li>
+<li><strong>关键词</strong>：流匹配、目标损坏、标签噪声、样本加权、鲁棒生成</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对流匹配假定目标数据与标签干净、实际常被违背的问题，把训练表述为条件向量场上的时变回归，分析两类损坏对目标的影响，再把损坏专属残差分数映射为样本权重以针对性加权。实验显示该方法较标准流匹配与鲁棒训练基线都提升了鲁棒性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：流匹配因训练稳定、采样高效而强大，却假定目标数据与标签干净，该假设在实践中常被破坏。</li>
+<li>方法：把 FM 训练表述为条件向量场上的时变回归，据两类损坏的残差结构设计 TRS（强调中间到后期时刻残差幅值）与 CCS（比较观测类条件向量场与同一轨迹、速度目标下其他类条件向量场的残差），并把残差分数映射为样本权重。</li>
+<li>结果/结论：在受控损坏设置与真实噪声标签上的实验表明，所提方法较标准 FM 与鲁棒训练基线提升鲁棒性，支持以损坏专属残差结构作为鲁棒 FM 的实用基础。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="105-2611.13316"></a>
+<h2>105. 视觉分割概率模型解释早期视觉皮层动态</h2>
+<ul>
+<li><strong>原题</strong>：A probabilistic model of visual segmentation explains early visual cortical dynamics</li>
+<li><strong>作者</strong>：Tridib K. Biswas, Ruben Coen-Cagli ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：q-bio.NC, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13316">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13316">PDF</a></li>
+<li><strong>关键词</strong>：视觉皮层、神经动态、图像分割、递归反馈、规范模型</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文检验图像中的推断动态能否解释视觉皮层动态，提出生物可信的皮层计算模型，假设特征推断与分割推断相互耦合、经递归与反馈迭代在特征表征中诱发动态。模型能预测诱发反应的增益与变异性，复现经典单神经元发现，说明推断动态可解释皮层动态。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：神经动态是生物神经系统的核心特征，但视觉皮层中神经动态的功能、尤其对静态刺激的作用仍不清楚，已有基于自然图像统计的模型常忽略推断本身的动态。</li>
+<li>方法：提出生物可信模型，把特征推断与分割推断耦合，通过递归与反馈在二者间迭代，在特征表征中诱发神经动态，并推导出理论且精确的预测。</li>
+<li>结果/结论：模型预测自然图像诱发反应的增益与变异性，复现增益动态与变异性衰减等经典单神经元发现，并预测这些动态围绕推断出的分割结构组织、比先前认为的更异质，反映自然场景推断的复杂性。</li>
+<li>局限或适用：作者指出该规范模型的洞见可推广到其他实验模态的分割问题，并有助于应对人工网络中迭代计算带来的推理成本。</li>
+</ol>
+<a id="106-2611.13310"></a>
+<h2>106. ABRR：以 Wasserstein 自适应细化与精度重排改进时序语句定位</h2>
+<ul>
+<li><strong>原题</strong>：ABRR: Transforming Temporal Sentence Grounding with Wasserstein-Adaptive Refinement and Precision Ranking</li>
+<li><strong>作者</strong>：Xiang Fang, Wanlong Fang, Junhao Dong et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.MM</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13310">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13310">PDF</a></li>
+<li><strong>关键词</strong>：时序语句定位、边界细化、最优传输、2-Wasserstein 距离、重排序</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对时序语句定位中量化误差致边界错位、按语义而非定位精度排序的局限，提出免重训的后处理框架 ABRR，通过平滑分数分布、最优传输细化边界与质量驱动重排来修正预测。实验表明它在多个基准的严格阈值下取得一致增益并改善排序。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：时序语句定位要在未剪辑视频中定位与自然语言查询对应的片段，但 transformer 类方法受量化误差导致的边界错位与重语义匹配、轻定位精度的排序所限。</li>
+<li>方法：提出模型无关、免重训的后处理框架 ABRR，含用高斯核卷积平滑预测分数分布的时间分布平滑、基于 2-Wasserstein 距离与 Sinkhorn 迭代并立足 Monge-Kantorovich 最优传输理论的边界细化、以及用复合分数平衡定位精度与语义相关性的质量驱动重排。</li>
+<li>结果/结论：在 Charades-STA、ActivityNet Captions 与 QVHighlights 等基准上，于严格 IoU 阈值如 IoU=0.7 取得对最先进 TSG 模型的一致增益，并提升排序性能。</li>
+<li>局限或适用：作为免重训、模型无关的后处理，可兼容任意现有 TSG 模型，计算高效且适配真实应用。</li>
+</ol>
+<a id="107-2611.13308"></a>
+<h2>107. 从 MURA 域对抗适配到院内 X 光片以改进成人肘部骨折分类</h2>
+<ul>
+<li><strong>原题</strong>：Domain-Adversarial Adaptation from MURA to In-House Radiographs for Improved Adult Elbow Fracture Classification</li>
+<li><strong>作者</strong>：M. Bolhassani, W. Furtado, D. Duvall et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13308">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13308">PDF</a></li>
+<li><strong>关键词</strong>：域偏移、域对抗神经网络、肘部骨折、MURA、UofL</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文研究在大型公共数据集训练、部署到小型机构专属数据集时的肘部骨折分类域偏移问题，实现域对抗神经网络，用梯度反转的域头以对抗学习对齐两域特征分布。结果表明域对齐能减小域偏倚且不过拟合小目标集，优于仅源域与朴素合并基线。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：在大型公共数据集上训练、部署到小型机构专属数据集 UofL 的成人肘部骨折 X 光分类存在明显域偏移。</li>
+<li>方法：实现 DANN，将预训练卷积骨干适配灰度输入，任务头预测骨折有无，基于梯度反转的域头以对抗学习鼓励域不变特征；比较仅源域、仅目标域有限标签、朴素合并与 DANN 四种设置。</li>
+<li>结果/结论：在 UofL 测试数据上以 AUC-ROC 与准确率评测，DANN 通过减小域偏倚且不过拟合小目标集而优于仅源域与朴素合并基线。</li>
+<li>局限或适用：消融显示渐进对抗权重、数据集规模感知的域损失与域平衡采样可提升稳定性与目标性能，指明域对齐是从公共到本地数据实现稳健临床泛化的实用路径。</li>
+</ol>
+<a id="108-2611.13304"></a>
+<h2>108. DUO：扩散模型双读数用于分布外检测</h2>
+<ul>
+<li><strong>原题</strong>：DUO: Dual Readouts of Diffusion Models for OOD Detection</li>
+<li><strong>作者</strong>：Alireza Javid, Shirin Shoushtari, Nuria González Prelcic ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13304">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13304">PDF</a></li>
+<li><strong>关键词</strong>：分布外检测、扩散模型、重建误差、特征敏感度、免训练</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对扩散模型以重建误差做分布外检测时该分数可能失效的问题，提出以中间去噪特征的主导敏感度谱作为互补信号，并引入全无监督、免训练的检测器 DUO 把两类读数结合。实验表明它在重建误差具误导性时仍有效，并大幅降低推理成本。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：安全部署扩散模型需检测训练分布之外的输入，而基于重建误差的方法误假定分布内输入比分布外输入重建得更准确。</li>
+<li>方法：提出以中间去噪特征的主导敏感度谱作为互补 OOD 信号，并引入全无监督、免训练的 DUO，联合重建误差与特征敏感度进行判别。</li>
+<li>结果/结论：平均 AUROC 较最强基线提升约 6 个百分点，同时大幅降低推理成本，并在近分布外与高分辨率基准上取得最先进水平。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="109-2611.13297"></a>
+<h2>109. 面向超声心动图心衰诊断的视频基础模型域适配</h2>
+<ul>
+<li><strong>原题</strong>：Domain adaptation of a video Foundation model for Heart Failure Diagnosis from Echocardiography</li>
+<li><strong>作者</strong>：Mahyar Bolhassani, Tijana Geroski, Narayana S. Singam et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13297">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13297">PDF</a></li>
+<li><strong>关键词</strong>：视频基础模型、TimeSformer、超声心动图、射血分数降低心衰、相位感知</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文探索把预训练视频基础模型微调用于医学影像，以 TimeSformer 从心尖四腔超声视频自动诊断射血分数降低型心衰，用相位感知片段生成捕获收缩期与舒张期互补动态，并以多种策略增强有限数据下的鲁棒性。结果显示全量微调优于仅调分类器与三维卷积基线。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：基础模型已变革计算机视觉，但其在医学影像、尤其面向时空超声心动图视频的专用基础模型适配仍有限。</li>
+<li>方法：在公开 RVENet A4C 数据集上以相位感知片段生成微调预训练 TimeSformer，捕获收缩期与舒张期互补动态，并用分离时空注意力、逐层学习率衰减与多片段推理提升有限数据鲁棒性。</li>
+<li>结果/结论：全量微调优于仅调分类器与 3D CNN 基线，显示视频基础模型用于超声心动图心衰诊断的潜力。</li>
+<li>局限或适用：结论支持在有限数据条件下做域适配，并推动在医学影像中开展进一步的域适配研究。</li>
+</ol>
+<a id="110-2611.13280"></a>
+<h2>110. RetinexGS：受 Retinex 启发的高斯泼溅用于低光 RAW 重建</h2>
+<ul>
+<li><strong>原题</strong>：RetinexGS: Retinex-Inspired Gaussian Splatting for Low-Light RAW Reconstruction</li>
+<li><strong>作者</strong>：Yulang Fei, Huaiyuan Weng, Chul Min Yeum ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13280">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13280">PDF</a></li>
+<li><strong>关键词</strong>：3D 高斯泼溅、低光 RAW、Retinex、噪声建模、新视图合成</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对标准三维高斯泼溅在严重欠曝光图像上颜色不稳、暗区重建不全的问题，提出 RAW 域框架 RetinexGS，把高斯颜色分解为基色与调制场分别正则化，并结合噪声元数据加权重建损失、深度引导初始化。实验表明其重建质量优于既有方法且支持实时渲染。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：标准 3DGS 流程难以处理严重欠曝光图像，而 RAW 图像保留线性传感器测量与噪声元数据，是噪声感知重建的自然基础。</li>
+<li>方法：把高斯颜色分解为视角无关基色与共享的位置及视角相关调制场并分别正则化，用 DNG 噪声元数据为信号相关噪声加权重建损失，以失真感知渲染避免空间重采样 RAW 目标，并引入深度引导初始化应对暗区稀疏几何。</li>
+<li>结果/结论：所有方法在每场景相同 RAW 输入下训练，RetinexGS 在三个公开 RawNeRF 场景与两个自采低光 RAW 场景上的平均 sRGB PSNR 较 LE3D 高 2.18 dB、较 RawNeRF 高 2.71 dB，并支持实时新视图渲染。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="111-2611.13271"></a>
+<h2>111. RaMOD：自车运动下从原始毫米波雷达立方体检测运动目标</h2>
+<ul>
+<li><strong>原题</strong>：RaMOD: Moving-Object Detection from Raw mmWave Radar Cubes under Ego Motion</li>
+<li><strong>作者</strong>：Yuan Fang, Long Zhuang, Lingzi Xing et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.RO, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13271">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13271">PDF</a></li>
+<li><strong>关键词</strong>：毫米波雷达、RAD 立方体、运动目标检测、自车运动、多普勒解缠</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对车载感知浪费原始雷达立方体、且自车运动与多普勒缠绕干扰运动目标检测的问题，提出实时框架 RaMOD，逐帧估计自车运动以预测并抑制静态结构回波，再从剩余立方体预测目标框与速度。实验表明它在多种检测设定下均优于既有原始雷达方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：毫米波雷达具备天气鲁棒性与直接多普勒测量，但车载管线常把输出降为稀疏点云或二维投影，且自车运动与多普勒缠绕使运动目标检测和速度估计复杂化。</li>
+<li>方法：提出 RaMOD，显式估计逐帧自车运动并用估计的雷达平移速度预测世界静态结构的多普勒区域、抑制其中回波，把抑制后立方体时序编码为多尺度特征预测 RAD 空间框与类别，并在原始多普勒与解缠两种假设下预测径向与前向速度及缠绕概率。</li>
+<li>结果/结论：在 BRIDGE-Liv 数据集上于 RAD 立方体、RA 与 RD 三种检测设定下均优于所有对比的原始雷达方法，IoU 0.30 时立方体 mAP 达 80.8%、比最强 RAD 立方体基线高 15.7 个百分点，速度 MAE 为 1.128 m/s，多普勒缠绕准确率 99.87%。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="112-2611.13262"></a>
+<h2>112. 面向内存高效时序动作分割的自适应残差量化</h2>
+<ul>
+<li><strong>原题</strong>：Adaptive Residual Quantization for Memory-Efficient Temporal Action Segmentation</li>
+<li><strong>作者</strong>：Gerard Donahue, Guven Gergerli, Ayush Gupta et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13262">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13262">PDF</a></li>
+<li><strong>关键词</strong>：时序动作分割、残差量化、ARQ-VAE、特征记忆、增量学习</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对时序动作分割中预抽取特征存储与回放成为长视频和增量场景瓶颈的问题，提出 ARQ-VAE，对帧级特征做离散残差量化并逐帧自适应截断残差链，形成不依赖逐帧标签的紧凑特征记忆。实验表明其存储与性能权衡显著优于既有基线。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：时序动作分割常用大容量预抽取帧特征，存储与回放成为长视频及需保留旧任务数据的增量 TAS 的瓶颈，现有方法还依赖稠密逐帧标注与固定片段级存储结构。</li>
+<li>方法：提出 ARQ-VAE，对帧级特征学习离散残差量化并逐帧自适应截断残差链、仅保留最佳重构的残差前缀，形成无标签紧凑特征记忆，再以轻量微调提升被保留截断码的重构质量。</li>
+<li>结果/结论：在标准 TAS 基准上较既有回放与浓缩基线取得显著更优的存储—性能权衡；在 Breakfast 上把原 I3D 特征库的 28 GB 训练集存储降至 10 MB 且保持强分割性能，配 ASFormer 在监督设定下达 71.5 Edit 与 51.2 F1@50。</li>
+<li>局限或适用：同一无标签记忆可支持增量与无监督等多种 TAS 设定，作者将其定位为实用记忆表示及更广泛数据集浓缩应用的方向。</li>
+</ol>
+<a id="113-2611.13245"></a>
+<h2>113. 重思视频胶囊内镜评测：验证协议、源视频多样性与跨数据集偏移</h2>
+<ul>
+<li><strong>原题</strong>：Rethinking Evaluation for Video Capsule Endoscopy: Validation Protocol, Source-Video Diversity, and Cross-Dataset Shift</li>
+<li><strong>作者</strong>：Smriti Regmi, Debesh Jha ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13245">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13245">PDF</a></li>
+<li><strong>关键词</strong>：视频胶囊内镜、验证协议、源视频多样性、跨数据集偏移、DMSNet</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对视频胶囊内镜分类受类别不平衡与源视频多样性影响、不同验证协议下可靠性尚不清楚的问题，提出 DMSNet，并在多个代表性架构间比较不同验证协议、源视频重叠与训练源覆盖度的作用。结果表明模型排名与性能高度依赖评测协议和跨数据集偏移。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：视频胶囊内镜分类受类别不平衡、有限源视频多样性与跨数据集图像外观差异困扰，深度学习模型在不同验证协议与外部偏移下的可靠性仍缺乏理解。</li>
+<li>方法：提出 DMSNet，并在 Kvasir-Capsule 上以随机帧级与源视频不相交两种验证协议对比 18 种卷积、transformer 与预训练视觉架构，识别训练与测试划分间的源视频重叠，分别在完整测试集与源视频不相交子集评测，并以每类上限 200 帧考察源视频覆盖度影响。</li>
+<li>结果/结论：随机帧级验证下 DMSNet 在完整测试集 MCC 为 0.442 ± 0.020、源视频不相交子集为 0.456 ± 0.037；外部 CV2024 上 ConvNeXt-Tiny 以 0.207 的 MCC 最高，训练集总量固定时把最大源视频覆盖从四增至八使 19 种架构中 17 种的 MCC 提升。</li>
+<li>局限或适用：各架构在外部数据集上相对域内评测性能显著下降，模型排名与分类性能高度依赖验证协议、训练源多样性与跨数据集偏移，因此需源感知验证与严格外部评测。</li>
+</ol>
+<a id="114-2611.13213"></a>
+<h2>114. 言语之前、超越话语：评测幼儿的非言语社会推理</h2>
+<ul>
+<li><strong>原题</strong>：Before Words, Beyond Speech: Evaluating Nonverbal Social Reasoning in Early Childhood</li>
+<li><strong>作者</strong>：Marie Amale Huynh, Laura Bravo-Sánchez, Lauren Klein et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.AI, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13213">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13213">PDF</a></li>
+<li><strong>关键词</strong>：非言语社会推理、幼儿、多模态视频理解、视觉语言模型、组合式评测</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对现有多模态视频基准偏重成人对话交互、忽略幼儿非言语社会推理的问题，提出首个儿童中心基准 NEST，以组合式框架把交互线索构建为递进的社会推理层级。对先进视觉语言模型的评测揭示明显性能崩塌，为推进幼儿期社会智能提供测试平台。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：幼儿最初几年是社会学习密集期，意义经注视、手势与身体接触建立，但该环节在偏重成人对话交互的多模态视频基准中长期缺乏评测。</li>
+<li>方法：提出首个儿童中心非言语社会推理基准 NEST，含人工标注约 12 秒片段并按自然场景、文化背景与发育阶段筛选，另设组合式评测模式把原子交互线索构建为情境、行为、人际与开放式描述的递进层级，并以域适配策略评测 VLM。</li>
+<li>结果/结论：对最先进 VLM 的广泛分析显示明显性能崩塌，模型虽情境识别较强，却在解码精确行为与人际线索上存在显著差距，为推进幼儿期社会落地人工智能提供严格测试平台。</li>
+<li>局限或适用：作者把失败归因于后果落地能力弱与时间敏感性等具体偏差，粗粒度评测框架混淆基础感知与高阶推理的问题也被明确指出。</li>
+</ol>
+<a id="115-2611.13200"></a>
+<h2>115. 图像质量与织物密度测量可靠性：透过挑纱镜用手机照片数线</h2>
+<ul>
+<li><strong>原题</strong>：Image Quality and the Reliability of Fabric-Density Measurement: Counting Threads from Smartphone Photos Through a Pick Glass</li>
+<li><strong>作者</strong>：Anoubhav Agarwaal ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, eess.IV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13200">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13200">PDF</a></li>
+<li><strong>关键词</strong>：任务导向图像质量、织物密度、纱线计数、PickGlass-TPI、PG-Lattice</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文以任务导向图像质量评判透过挑纱镜拍的手机照片，以数线结果是否落在容差内定义照片合格，构建并基准评测多类计数方法。结果没有任何方法能在容差内与人工参考一致，重拍实验进一步表明真正重要的是跨重拍的计数可靠性。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：织物密度是买卖织物时买家必查的规格，无实验室仪器时检验员只能透过一英寸窗口的十倍折叠放大镜肉眼慢数，手机照片有望加快检查并留档。</li>
+<li>方法：以数线结果落在 ±5% 容差内定义照片合格，构建含 76 个工厂场景、44 块织物补丁的 PickGlass-TPI，由纺织训练标注员给出参考计数，评测前沿与开放 VLM、CNN、计数专用模型及免训练频谱计数器 PG-Lattice，并做同一补丁的两张照片重拍对比。</li>
+<li>结果/结论：无方法在容差内与参考一致，最好者仅用合成图像调过的小开放模型 Molmo2-4B 误差 25%、与最好前沿模型 GPT-6.1-sol 的 27% 相当，二者都优于非专业标注员 37%，但只有调过者还在两种误差度量上胜过以其他场景均值猜测的基线。</li>
+<li>局限或适用：参考计数跨重拍的中位差异已达 9%，单张照片尚不能证明满足 ±5%；预选的通用无参考质量分数无法排序 PG-Lattice 的误差，生成式增强虽提升感知分数却不可靠地改善计数。</li>
+</ol>
+<a id="116-2611.13198"></a>
+<h2>116. 用于多模态归因的结构化核代理模型</h2>
+<ul>
+<li><strong>原题</strong>：Structured Kernel Surrogate Models for Multimodal Attribution</li>
+<li><strong>作者</strong>：Ziniu Zhang, Zhenshuo Zhang, Jianglin Lu et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.LG, cs.AI, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13198">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13198">PDF</a></li>
+<li><strong>关键词</strong>：跨样本模态归因、结构化核、核岭回归、数据选择、多模态</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文研究跨样本模态归因，即衡量一样本中某模态如何影响其他样本的学习结果，指出既往单样本影响估计难以同时捕捉跨样本与跨模态交互，遂提出结构化核代理模型与 SKS 算法，用组合式结构化核做核岭回归。实验表明其归因与数据选择表现更优。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：多模态系统中同一模态对某样本可能冗余、对另一样本独有信息量或需组合才有效，需衡量跨样本模态归因，而既往工作只做单样本影响估计。</li>
+<li>方法：提出从样本与模态共同映射到共同训练后预测结果的结构化核代理模型，设计 SKS 用结构化组合核对个体样本与模态的选择状态做核岭回归，该核把单样本内每对数据模态的核相似度与两样本间的相似度相乘，并设计基于梯度的估计算法。</li>
+<li>结果/结论：在涵盖卫星图像、路网、文本、音频与表格数据的两个多模态基准上，SKS 与真实预测结果的相关性较既有方法高 57.8%，下游数据选择平均准确率较基线高 1.93%，被选数据训练的模型 Hessian 迹更低，且用 SKS 选卫星图像会挑出事故常发路段而非背景图像。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="117-2611.13192"></a>
+<h2>117. 基于跨模态图注意力的多模态道路封闭制图</h2>
+<ul>
+<li><strong>原题</strong>：Multimodal Road Closure Mapping via Cross-Modal Graph Attention</li>
+<li><strong>作者</strong>：Izzeddin Teeti, Vaibhav Kango, Nidhi Sridhar et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13192">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13192">PDF</a></li>
+<li><strong>关键词</strong>：道路封闭、跨模态注意力、图结构地图、路段关联、地理空间推理</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对道路封闭识别需联合推理视觉证据、空间上下文与路网拓扑、现有方法难以定位受影响路段的问题，提出统一的多模态多任务框架，以跨模态注意力整合地图、卫星与街景数据，在单一架构内联合做封闭分类与路段关联。实验表明其优于前沿视觉语言模型。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：准确及时地识别道路封闭对大规模导航与物流系统至关重要，但需联合推理视觉证据、空间上下文与路网拓扑。</li>
+<li>方法：提出在单一学习架构内联合做道路封闭分类（无、部分、完全）与路段关联的统一多模态多任务框架，用模态专属编码器与跨模态 transformer 注意力整合图结构地图数据、叠加投影街景级检测的卫星影像与街景图像。</li>
+<li>结果/结论：在近 20K 个来自大型商用车队真实场景上取得 72.7% 封闭分类准确率与 60% 路段关联准确率，分类较前沿 VLM 高逾 28 个百分点，且模型小 4000 余倍、推理快 100 倍；消融验证跨模态注意力、边感知池化与图消息传递的重要作用。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="118-2611.13191"></a>
+<h2>118. En Face OCT 图像中地理萎缩分割深度学习模型的比较评测</h2>
+<ul>
+<li><strong>原题</strong>：Comparative Evaluation of Deep Learning Models for Geographic Atrophy Segmentation in En Face OCT Images</li>
+<li><strong>作者</strong>：Utkarsh Doshi, Adarsh Gadari, Sharat Chandra Vupparaboina et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13191">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13191">PDF</a></li>
+<li><strong>关键词</strong>：地理萎缩、en face OCT、nnUnet、Dice 系数、跨设备鲁棒性</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对地理萎缩分割既有研究多用单一架构与单一设备数据集、难以洞察跨设备鲁棒性的问题，在两种设备数据上系统比较多种深度学习架构及经典基线并作统一预处理。结果显示 nnUnet 在有限数据条件下表现最可靠、精度与稳定性最佳。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：地理萎缩是晚期年龄相关性黄斑变性，会因视网膜色素上皮与光感受器进行性退化致不可逆视力丧失，其在 en face 图像上的准确分割对早诊、病程监测与个性化治疗至关重要，而既有研究受单架构单设备评测所限。</li>
+<li>方法：训练并系统比较 Nested U-Net、ResU-Net、nnUnet、Swin-Unet 与 MedSegDiff 及阈值化经典基线，使用来自两种设备的 269 个 OCT 体积派生 en face 图像，经归一化与修复三步预处理。</li>
+<li>结果/结论：在含 Cirrus 与 Spectralis 两设备的固定留出验证集上 nnUnet 以平均 Dice 0.8882 ± 0.0033 最高，其余为 Nested U-Net 0.7932 ± 0.0423、ResU-Net 0.8453 ± 0.0074、Swin-Unet 0.6886 ± 0.0294、扩散模型 0.7959 ± 0.0242。</li>
+<li>局限或适用：nnUnet 在有限数据条件下对 en face OCT 的地理萎缩分割最为可靠，在精度、稳定性与效率间提供最佳平衡。</li>
+</ol>
+<a id="119-2611.13180"></a>
+<h2>119. X 标记此处：用位置表征做扩散式图像地理定位</h2>
+<ul>
+<li><strong>原题</strong>：X Marks the Spot: Diffusion for Image Geolocalization with Location Representations</li>
+<li><strong>作者</strong>：Brian Wei, Chih-Chuan Hsu, Tianyi Gao et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13180">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13180">PDF</a></li>
+<li><strong>关键词</strong>：图像地理定位、位置编码器、位置自编码器、潜扩散、坐标预测</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对图像地理定位中既有扩散方法靠生成坐标预测位置、坐标语义不稳定的问题，改在位置编码器的表征空间中学习定位，引入位置自编码器把嵌入映射回坐标，并训练以图像特征为条件的潜扩散模型。实验表明该方法刷新参数化地理定位水平。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：图像地理定位要预测照片拍摄地点，需区分地球上物理与语义相邻的区域，而既有扩散方法靠生成坐标预测位置，坐标在空间上语义不稳定。</li>
+<li>方法：在位置编码器兼具位置与语义理解的预训练表征空间学习定位，引入位置自编码器 LAE 把冻结编码器配学习解码器将嵌入映射回坐标、达全球公里级精度，并在 LAE 空间训练以图像特征为条件把噪声输运到位置嵌入的潜扩散模型 DIG。</li>
+<li>结果/结论：DIG 持续优于基于坐标的生成模型，在 OSV-5M、Im2GPS3k 与 YFCC4k 三个基准上刷新参数化地理定位最先进水平，是首个超越检索类方法的生成模型，且作为先验还能改进检索重排系统。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="120-2611.13178"></a>
+<h2>120. 多模态评判标注、人类定夺：AI 生成商品视频广告的复核与编辑框架</h2>
+<ul>
+<li><strong>原题</strong>：Multimodal Judges Flag, Humans Decide: A Review-and-Edit Framework for AI-Generated Product Video Ads</li>
+<li><strong>作者</strong>：Anoubhav Agarwaal, Sukesh Perla, Karthikeyan Mohanraj et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.HC, cs.MM</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13178">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13178">PDF</a></li>
+<li><strong>关键词</strong>：视频广告、复核编辑框架、多模态评判、人在回路、商品一致性</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对生成流水线已能批量产出商品短视频广告、但判断其是否可用并非一次好坏判断的问题，把复核与编辑拆成可跟上生成的流程：由多模态评判逐场景标注发现、审核者接受或驳回，每个确认的问题打开匹配编辑工具。结果表明评判与人工需互补。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：生成式流水线已能把电商目录每个商品页转成短视频广告，但判断广告是否可用不是一次好坏判断，复核与编辑都需跟上生成速度。</li>
+<li>方法：审核者逐场景就商品、场景质量、发音、脚本、声音与字幕回答六问，由视觉语言、语音与语言模型评判把发现归入对应问题，审核者接受或驳回每条发现并补充遗漏，每个确认的问题再打开匹配编辑工具，问题与路由不依赖生成模型。</li>
+<li>结果/结论：在 120 条带屏显示评判发现的广告中审核者把 60% 场景标为商品错误、脚本字幕声音问题各不到 10%，其中 60 条广告里看到评判发现的审核者标 58% 商品错误，远高于隐藏评判时两位审核者的 26%；120 个盲标场景上带目录图看片段的商品评判 AUC 达 0.84。</li>
+<li>局限或适用：评判按召回调参，商品评判几乎抓出所有缺陷但也误报大量干净场景，故由审核者定夺；无评判发现时一位审核者的标注在一个会话中会逐渐衰减，二者需互补。</li>
+</ol>
+<a id="121-2611.13177"></a>
+<h2>121. GroundCascade：面向 GUI grounding 的选择性二次意见</h2>
+<ul>
+<li><strong>原题</strong>：GroundCascade: Selective Second Opinions for GUI Grounding</li>
+<li><strong>作者</strong>：Adrian Phoulady, Hady Ahmady Phoulady ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13177">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13177">PDF</a></li>
+<li><strong>关键词</strong>：GUI grounding、免训练控制器、缩放视图、二次意见、ScreenSpot-Pro</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对 GUI grounding 中放大视图能显露小目标却丢失上下文的问题，提出免训练控制器 GroundCascade，用全屏与缩放预测的一致性决定是否咨询互补模型，仅在分歧时引入第二意见。实验表明它在多项评测上提升精度，且以更少的模型调用换取增益。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：GUI grounding 要把截图与自然语言指令映射到智能体应操作的屏幕位置，而缩放视图虽能显露小目标却可能丢失识别目标所需的上下文。</li>
+<li>方法：提出免训练控制器，用 grounding 模型全屏与缩放预测的一致性决定是否咨询互补模型，在缩放预测间选择并保留被佐证的全屏位置，分歧仍在时以可选 Finalizer 从未标记联合裁剪预测（Full 模式），省略即 Selective 两阶段变体。</li>
+<li>结果/结论：在 ScreenSpot-Pro 以 Indeed-UI-32B/8B/32B 达 85.33%、在可见目标 OSWorld-G-Refined 子集以 Qwen3.6-27B/3.8-27B/3.8-27B 达 88.43%，较更强的独立两遍 grounding 分别高 2.66 与 2.35 个百分点；UI-Vision 上达 72.20% 类别均衡准确率，Selective 略高为 72.28%。</li>
+<li>局限或适用：Full 模式每次请求用 2.42 至 2.73 次调用、比无条件取两模型两遍预测少 31% 至 39%，且在相同第二模型调用预算下选择性获取优于分层随机获取；领先榜与超越 GUI 专用模型的结论受外部评测协议差异影响。</li>
+</ol>
+<a id="122-2611.13172"></a>
+<h2>122. 用几何 token 编码实现文生图的连续角度控制</h2>
+<ul>
+<li><strong>原题</strong>：Continuous Angular Control in Text-to-Image Generation via Geometric Token Encoding</li>
+<li><strong>作者</strong>：Furkan Güzelant, Basavaraj Sunagad, Aysegul Dundar et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13172">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13172">PDF</a></li>
+<li><strong>关键词</strong>：文生图、角度控制、几何 token 编码、随机定位松弛、模拟时钟</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对文生图扩散模型无法控制模拟时钟时间、也难生成指定圆形比例的问题，指出两类目标都可由角度参数化，遂提出几何 token 编码把角度特征注入提示，并以随机定位松弛免去推理端的定位输入。实验表明角度控制精度大幅优于基线。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：在四个预训练模型中不到 1% 生成的时钟把两根指针都放在请求时间的 6 度内，模型反而塌缩到 10:10 等视觉主导姿态，要求圆形物体特定比例时也返回完整或常规切分物体。</li>
+<li>方法：提出几何 token 编码，把每个角度分量编码为周期性正余弦特征并投影为角色专属 token 嵌入、在冻结文本编码器前注入提示，引入随机定位松弛把注意力监督从部件级随机放宽到物体级与无约束定位，并为时钟加入指针交换偏好目标。</li>
+<li>结果/结论：模拟时钟上 Acc@6 度达 63% 至 78%，而基线低于 1%；圆形比例生成上 Acc@0.10 达 89.5%，未见物体类别上 88.8%、未见目标值上 84.9%，预训练基线约 20%。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="123-2611.13150"></a>
+<h2>123. VIGOR：基准化多模态大语言模型的视觉理据正确性</h2>
+<ul>
+<li><strong>原题</strong>：VIGOR: Benchmarking Visual Rationale Correctness in Multimodal Large Language Models</li>
+<li><strong>作者</strong>：Yanlin Chen, Tang Li, Xi Peng ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13150">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13150">PDF</a></li>
+<li><strong>关键词</strong>：视觉理据、多模态大语言模型、像素级 grounding、组合式标注、VIGOR</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对多模态大语言模型只按答案正确性评测、无法说明输出是否有视觉证据支撑的问题，提出 VIGOR 基准，把视觉理据表示为显式概念配对像素级定位，并开发自动标注框架规模化构建。评测显示当前模型视觉理据正确性有限、存在层级化缺陷。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：多模态大语言模型通常仅以答案正确性被评测，但正确本身并不能揭示输出是否由恰当的视觉证据支撑。</li>
+<li>方法：提出 VIGOR，把视觉理据表示为显式概念加像素级 grounding，覆盖多个抽象层级，并开发自动标注框架复用既有稠密监督、对缺失概念 grounding 经基于提议的标注与保守多模态校验生成，再比较模型对每个表达概念给出的视觉证据与标注真值理据。</li>
+<li>结果/结论：结果显示当前 MLLM 的视觉理据正确性有限，并在不同概念层级上暴露出各异的 grounding 失败，VIGOR 提供了基准与可扩展数据构建流程。</li>
+<li>局限或适用：适用于检验 MLLM 输出是否由恰当视觉证据支撑，理据覆盖从低层视觉属性到高层运动与关系的多抽象层级概念。</li>
+</ol>
+<a id="124-2611.13120"></a>
+<h2>124. 纯图像 Transformer 加后期像素细化</h2>
+<ul>
+<li><strong>原题</strong>：Just Image Transformers with Late-Stage Pixel Refinement</li>
+<li><strong>作者</strong>：Denis Lukovnikov, Andreas Müller, Asja Fischer ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13120">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13120">PDF</a></li>
+<li><strong>关键词</strong>：无潜变量扩散、JiT、x 预测、像素通路、FID</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对无潜变量扩散 Transformer 中以大块建模图像导致生成质量下降的问题，重新审视 JiT 并证明在后训练阶段加入简单卷积像素通路层即可显著提升质量，且该通路只需在去噪后期启用。实验表明不用额外损失即明显改善生成质量。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：无潜变量扩散 Transformer 可避免 VAE 压缩伪影并简化训练，JiT 表明标准 Transformer 以 x 预测即可生成图像且训练效率可比潜变量模型，但把图像当作大块 patch 集合建模使质量下降。</li>
+<li>方法：在后训练阶段为 JiT 加入简单的卷积像素通路层，并验证该通路无需在早期去噪阶段激活、可晚至去噪过程最后 20% 才启用，全程不引入额外损失。</li>
+<li>结果/结论：在 ImageNet@256 上较原始 JiT 结果取得改进，FID 由修正采样下的 2.34 降至 1.78。</li>
+<li>局限或适用：像素通路只需在去噪后期启用，无需在早期去噪阶段保持激活，也不依赖额外损失。</li>
+</ol>
+<a id="125-2611.14097"></a>
+<h2>125. 风格化即扩散流形上的测地线导航</h2>
+<ul>
+<li><strong>原题</strong>：Stylization as Geodesic Navigation on Diffusion Manifolds</li>
+<li><strong>作者</strong>：Yan Li, Zehao Li, Xinlong Sun et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.14097">arXiv</a> · <a href="https://arxiv.org/pdf/2611.14097">PDF</a></li>
+<li><strong>关键词</strong>：人脸风格化、测地线、扩散流形、Stylus、身份保持</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对人脸风格化既要艺术化又要保持身份、现有免训练方法常顾此失彼的难题，提出免训练框架 Stylus，把风格迁移视作扩散模型弯曲潜流形上的测地线导航，以双控制机制细粒度调节风格强度。实验显示其身份与内容保持最强。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：人脸风格化要求精细转换，图像要明显艺术化而人物仍明显同一，现有免训练与指令驱动方法常难以提供这种控制，或偏离身份或风格化过弱。</li>
+<li>方法：提出免训练框架 Stylus，把风格迁移当作在预训练扩散模型弯曲潜流形上导航，在拉回度量下以比率加权离散测地能量细化内容—风格插值点、用雅可比秩一幂迭代近似使其可算，并由此驱动内容—风格潜插值与自注意力查询优化的双控制。</li>
+<li>结果/结论：双控制机制无需额外训练即可对风格化强度做连续细粒度调节并保留身份关键面部结构，实验显示 Stylus 在有竞争力的风格化强度下取得最强的身份与内容保持。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="126-2611.13046"></a>
+<h2>126. SpatialSR：以空间分辨率为核心的任意尺度遥感超分辨率流程</h2>
+<ul>
+<li><strong>原题</strong>：SpatialSR: Spatial Resolution-Centric Pipeline for Arbitrary-Scale Remote Sensing Super-Resolution</li>
+<li><strong>作者</strong>：Yan Zhang, Runfeng Luo, Liangke Gao et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13046">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13046">PDF</a></li>
+<li><strong>关键词</strong>：遥感超分辨率、任意尺度、空间分辨率、扩散模型、轨迹一致性</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对遥感任意尺度超分方法只依赖相对尺度因子、忽略绝对空间分辨率先验而常致空间失真的问题，提出 SpatialSR，以空间分辨率为核心先验估计缩放因子并约束重建纹理，还把迭代扩散包装成一致性损失实现单步重建。实验表明其性能领先。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：现有遥感任意尺度超分方法主要条件于相对尺度因子，未充分研究绝对空间分辨率本身作为重建先验，忽略物体固有空间上下文，常导致空间相关失真并损害下游遥感应用。</li>
+<li>方法：设计空间分辨率估计模块 SREM 估计低分辨率图 SRe 以动态确定缩放因子，用预训练 SRe 到图像扩散模型抽取 SRe 指定纹理风格码送入分辨率感知风格一致性模块 RSCM 约束纹理，并把迭代扩散过程包装为轨迹一致性 TC 损失以单步获得可比纹理质量。</li>
+<li>结果/结论：大量实验表明 SpatialSR 在常用遥感超分及下游图像分类与分割任务数据集上取得最先进性能。</li>
+<li>局限或适用：目标 SRe 通常设为 0.1m/pixel，以与常用下游任务数据集的元数据对齐；TC 损失用于克服扩散式超分固有的高计算开销。</li>
+</ol>
+<a id="127-2611.13045"></a>
+<h2>127. MICRO：手术分期视网膜图像刚性配准基准与一步式频率结构相似性配准学习</h2>
+<ul>
+<li><strong>原题</strong>：MICRO: A Surgery-Phase Retinal Image Rigid Registration Benchmark and One-Step Frequency-Structure Similarity Registration Learning</li>
+<li><strong>作者</strong>：Mingdao Gong, Yan Hu, Mingzhen Yuan et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13045">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13045">PDF</a></li>
+<li><strong>关键词</strong>：多模态视网膜配准、刚性配准、MICRO、OFS2Reg、关键点拓扑</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对多模态视网膜刚性配准缺乏覆盖各手术阶段的公开数据集、且两步式方法性能被分割质量所限的问题，提出 MICRO 基准与一步式 OFS2Reg 框架，在共享检测网络下借跨模态血管结构相似性构建关键点拓扑约束，摆脱对分割的依赖。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：精确的多模态视网膜图像刚性配准是眼科手术引导的关键，但该领域缺乏覆盖各手术阶段的公开配准数据集，且既有深度配准的两步分割再检测框架受分割质量严重制约。</li>
+<li>方法：提出含 1,365 对带标准化标注、覆盖全部眼科手术阶段的跨模态视网膜图像对的 MICRO 基准，并认为两步依赖源于对关键点拓扑约束的隐性需求，进而提出一步式 OFS2Reg，在共享检测网络下以频率引导结构保持描述子构建粗粒度约束，用跨模态血管结构相似性学习细化约束以对齐像素级血管结构。</li>
+<li>结果/结论：摘要报告了 MICRO 基准与一步式 OFS2Reg 框架的设计，主张借跨模态血管结构相似性在共享检测网络下利用关键点拓扑约束，摆脱对两步分割质量的依赖。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="128-2611.13028"></a>
+<h2>128. GTAGym：面向评测与强化学习的真实 AAA 游戏任务环境</h2>
+<ul>
+<li><strong>原题</strong>：GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning</li>
+<li><strong>作者</strong>：Jiajun Chen, Shicheng Fang, Jiahao Lu et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV, cs.AI, cs.CL</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13028">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13028">PDF</a></li>
+<li><strong>关键词</strong>：AAA 游戏、智能体评测、强化学习、GTAVBench、GTA V</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文针对 AAA 游戏任务结果难以自动验证、评测常靠人工标注且难用于强化学习的问题，提出 GTAGym 环境与框架，以网页服务器支持并行测试并用引擎状态自动判定结果，构建评测基准与可扩展任务生成器。对前沿模型的评测显示其在部分任务类别上仍明显不足。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：AAA 游戏为评测智能体感知、推理与控制提供丰富试验台，但任务结果往往难以自动验证、评测常由人工标注，更难以应用于强化学习。</li>
+<li>方法：提出 GTAGym，含由 GTA V 主线任务重构的九个任务族 103 个在线任务与 47 个图像射击狙击任务的 GTAVBench，通过网页服务器以截图与键鼠动作支持并行测试、用自动引擎状态检查判定结果；另提供在固定模板下按用户指定范围与选项集采样任务参数、生成带自动奖励与终止信号的批量环境的可扩展生成器。</li>
+<li>结果/结论：在文本指令的 GTAVBench 及指令仅出现在首张截图、由框架自动压缩交互历史的 GTAVBench-AGI 分支上评测六个前沿 LLM，最佳配置在 GTAVBench-AGI 达 70.9% 总体准确率；对 Qwen3.8-27B 做 LoRA 强化学习可提升域内表现并迁移到域外任务类别，原生 GTA V 任务从 15% 升至 23%。</li>
+<li>局限或适用：即便最佳配置下，空中导航、规避与拦截任务仍然困难。</li>
+</ol>
+<a id="129-2611.13027"></a>
+<h2>129. TypedInk：懂得何时不该绘制</h2>
+<ul>
+<li><strong>原题</strong>：TypedInk: Knowing When Not To Draw</li>
+<li><strong>作者</strong>：Weiwei Yang ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.HC, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13027">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13027">PDF</a></li>
+<li><strong>关键词</strong>：科学配图生成、证据契约、幻觉抑制、类型路由、TypedFigBench</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：科学配图生成常在证据不足时仍被要求出图，缺表格时极易凭空编造数值。TypedInk 先从不完整源材料推断图形类型，再分派给满足证据契约的渲染器，契约不满足即拒绝生成。实验表明它能守住数据完整性、避免虚构数字，而缺少门控的方案会大量造假。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：完整源插画器默认输入完整，而真实研究记录常是残缺的大纲、草稿、表格或一句意图，缺表格时绘图会凭图像模型编造测量数值。</li>
+<li>方法：TypedInk 从可能不完整的源推断图形类型 {diagram, plot, plate}，分派给能满足该类型证据契约的渲染器，契约无法满足时拒绝分派，并对类型路由器做诊断性字段消融。</li>
+<li>结果/结论：在 TypedFigBench 六个 gold plots（5 views, n=30）上，有表格时 inks 全部 12/12 个 gold table token、拒绝 12 个隐藏表格视图、把 6 个仅意图视图标记为示意且无执行失败，而总是绘制的 coder 画出 30/30 张并恢复 0 个 gold 数字，仍被两个视觉语言评分器判为可提交 17/36 次。</li>
+<li>局限或适用：评判由两个视觉语言模型而非人类完成，人类复现被列为未来工作，且仅大纲输入时类型准确率只有 0.31、chat-model planner 仍对 25% 大纲产生完整性违规。</li>
+</ol>
+<a id="130-2611.13014"></a>
+<h2>130. 当已有胸部 X 光基础模型时，CNN-Transformer 集成还值得吗</h2>
+<ul>
+<li><strong>原题</strong>：Is a CNN-Transformer Ensemble Worth It When a Chest X-Ray Foundation Model Is Available?</li>
+<li><strong>作者</strong>：Aditya Seelaboyina, Irfan Khan ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：eess.IV, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13014">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13014">PDF</a></li>
+<li><strong>关键词</strong>：胸片分类、基础模型、EVA-X-S、集成学习、AUROC</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文追问已有胸部 X 光基础模型时，卷积网络与视觉 Transformer 的集成是否仍值得成本。研究在官方测试划分上训练多个骨干与一个胸片基础模型，比较多种融合规则并用配对自助法估计差异。结果显示单个基础模型已优于集成，而集成耗时与参数开销更大。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：ImageNet 预训练卷积网络与视觉 Transformer 的集成常用于提升多标签胸片分类，本文追问当已有胸片预训练模型时该集成是否仍值得其成本。</li>
+<li>方法：在 NIH ChestX-ray14 官方按患者不相交划分（25,596 张测试图像、2,797 名患者）上以仅验证集选模训练五个 ImageNet 骨干与 EVA-X-S，比较五种融合规则，并用患者级配对自助法估计每个差异。</li>
+<li>结果/结论：EVA-X-S 单模型 test macro-AUROC 0.828，高于五模型集成的 0.814（差 -0.0136，95% CI -0.0178 至 -0.0098），后者约 7.8 倍骨干延迟和 10 倍参数；按 EVA-X-S 方案重训后的集成仍低 0.0109，三个种子下 EVA-X-S 波动至多 0.001，full-stacking 从未超过校准平均。</li>
+<li>局限或适用：结论限定于该设定与所测 ImageNet 集成，且 EVA-X-S 改用 ImageNet 模型的训练方案时会降到 0.798，说明其优势依赖自身微调配方。</li>
+</ol>
+<a id="131-2611.13010"></a>
+<h2>131. 保护文化记录：面向古籍图像复原的大规模基准与视觉先验路由网络</h2>
+<ul>
+<li><strong>原题</strong>：Preserving Cultural Records: A Large-Scale Benchmark and Visual-Prior Routing Network for Ancient Book Image Restoration</li>
+<li><strong>作者</strong>：Shumin Fan, Tianyu Song, Hongming Chen et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13010">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13010">PDF</a></li>
+<li><strong>关键词</strong>：古籍图像复原、AncBench、AncRestore、视觉先验路由、复合退化</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：古籍图像因老化与损坏存在复杂退化，现有复原基准规模小、退化模拟简化，难以反映真实情形。本文构建大规模配对基准，并提出退化感知的视觉先验路由网络，按退化特征动态整合视觉先验。实验表明该方法能抑制复合退化、保持文字结构，修复质量优于对比方法。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：古籍图像因长期老化、环境暴露与物理损坏存在复杂退化，而现有复原基准规模小且退化模拟简化，难以代表真实退化并限制模型泛化。</li>
+<li>方法：构建含 100K 对齐干净—退化图像对的合成基准 AncBench，用涵盖材料老化、纸张纹理变化、模糊、污渍、水致几何畸变与局部遮挡的管线建模复合退化，并提出 AncRestore，先学习退化表示再动态选择整合视觉先验，以专家级与区域级路由自适应调整各区域贡献。</li>
+<li>结果/结论：大量实验表明 AncRestore 有效抑制复合退化、保持文字结构、相较其他方法提升修复质量，可同时恢复全局外观与局部文字细节。</li>
+<li>局限或适用：面向文化遗产保护中的古籍图像智能修复，摘要明确点出其应用潜力与适用场景。</li>
+</ol>
+<a id="132-2611.13009"></a>
+<h2>132. 面向手术动作三元组的实例保留分级语义报告</h2>
+<ul>
+<li><strong>原题</strong>：Instance-preserving graded semantic reporting for surgical action triplets</li>
+<li><strong>作者</strong>：Yanchong Xue, Wanting Zhang, Lingtao Yu et al. ｜ <strong>投稿</strong>：2026-11-09 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13009">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13009">PDF</a></li>
+<li><strong>关键词</strong>：手术动作三元组、分级语义报告、DELTA 规则、实例保留、效用权衡</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：手术动作三元组的「完整或拒绝」报告，会在目标不确定时丢弃已正确识别的器械与动作。本文提出实例保留的分级语义报告，将实例选择与语义细节解耦，用层级分数决定报告粒度并权衡收益与错误代价。实验表明分级报告保留了大量被拒的正确部分结果，在效用与完整性之间形成显式权衡。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：手术动作三元组的「完整或拒绝」报告会在目标不确定时把已正确识别的器械与动作一并丢弃。</li>
+<li>方法：提出实例保留的分级语义报告，把实例选择与语义细节层级分离，各实例保留预测掩码与标签，用层级正确性分数决定报告器械 I、器械-动词 IV 或完整 IVT，并以效用增量规则 DELTA 权衡更细报告的期望增益与错误代价。</li>
+<li>结果/结论：在 8 个手术视频的 5,641 测试帧、三种决策规则上，DELTA 在 10% 开发校准目标下保留了被匹配基线拒绝候选中 80.0%（5,329/6,662）的正确部分报告，加入 IV 使每 100 帧加权正确报告产出较分别重校准的 I/IVT 对照提升 19.13 至 23.13。</li>
+<li>局限或适用：存在报告效用与完整性的显式权衡，加权报告风险变化 -0.77 至 +1.01 个百分点，完整正确三元组计数不变或减少。</li>
+</ol>
+<a id="133-2611.13006"></a>
+<h2>133. 眼见未必为实：反事实病灶擦除让小型医学视觉语言智能体只报告图像所见</h2>
+<ul>
+<li><strong>原题</strong>：Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to Report Only What the Image Shows</li>
+<li><strong>作者</strong>：Bhaskar Gurram ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.AI, cs.CL, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13006">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13006">PDF</a></li>
+<li><strong>关键词</strong>：医学视觉语言模型、反事实病灶擦除、ESG、MedScope-4B、证据门控</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：医学视觉语言模型常因问题点名某发现就凭空报告，脱离图像证据。本文以擦除病灶等反事实视图训练小模型 MedScope-4B，使其依据图像而非问题作答。实验显示擦除后误报显著减少，说明反事实训练带来证据门控倾向，却不改善感知，罕见关键发现仍需覆盖。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：医学视觉语言模型常因问题点名某发现就报告它，标准基准难以发现这种脱离图像的幻觉。</li>
+<li>方法：从公开分割数据集自动构建无需人工标注的反事实视图，即擦除病灶、同形状对照编辑与未编辑无病灶图，定义证据敏感度差距 ESG，并用标签派生轨迹训练 MedScope-4B（Qwen3.5-4B、LoRA、图像工具），按预注册规则选模后一次性对比九个前沿与六个开源 VLM。</li>
+<li>结果/结论：在 507 例内部病例、五种成像类型上 ESG 达 0.758、擦除病灶后误报率 9.6%，优于前沿模型的 0.27-0.47 与 41-62%（均 p&lt;0.001）且真实病灶准确率无显著下降，移除反事实视图后 ESG 降至 0.279±0.107（三个种子）。</li>
+<li>局限或适用：方法不改善感知、罕见关键发现需要覆盖，在全新外部测试中 MedScope-4B 对 48 张气胸片检出 0 例，净效用低于 gemini-4-argon（-0.36 [-0.50, -0.23]）。</li>
+</ol>
+<a id="134-2611.13004"></a>
+<h2>134. G-STAR：面向深度压缩自回归生成的组缩放 token 容量</h2>
+<ul>
+<li><strong>原题</strong>：G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation</li>
+<li><strong>作者</strong>：Xu Huang, Ye Huang, Xiaotong Li et al. ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13004">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13004">PDF</a></li>
+<li><strong>关键词</strong>：自回归图像生成、乘积量化、空间压缩、半自回归解码、推理加速</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：离散自回归图像生成面临序列长则慢、压缩狠则容量降的权衡。本文基于乘积量化提出组规模随压缩程度缩放的原则，构建 GSTAR 在深度压缩下保持生成质量，并用半自回归解码器建模组内依赖。实验表明高度压缩模型在文生图任务上与领先方法相当，且生成明显加速。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：离散自回归图像生成面临长 token 序列保表示质量但拖慢生成、激进空间压缩又降低表示容量的根本权衡。</li>
+<li>方法：基于乘积量化证明在固定标称信息预算下组大小应随每轴空间压缩因子二次方缩放，据此提出空间—组协同缩放框架 GSTAR 实现 32× 乃至有效 64× 压缩，并引入结合并行特征计算与轻量因果建模的半自回归解码器以高效建模更大组带来的组内依赖。</li>
+<li>结果/结论：高度压缩模型在 GenEval、DPG-Bench、PRISM、LongText-Bench、Qwen-Image-Bench 五个文生图基准上与领先模型表现相当，在 1024×1024 分辨率下较先前离散自回归模型加速 20×，单张 NVIDIA H200 上每图 2.5 秒。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="135-2611.13000"></a>
+<h2>135. PhysMoE：模态解耦 VLM 中基于单 token 坐标表示的快速空间定位</h2>
+<ul>
+<li><strong>原题</strong>：PhysMoE: Fast Spatial Grounding with Single-Token Coordinate Representation in Modality-Decoupled VLMs</li>
+<li><strong>作者</strong>：Ruimeng Liu, Denan Liang, Ruofei Bai et al. ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV, cs.AI, cs.RO</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.13000">arXiv</a> · <a href="https://arxiv.org/pdf/2611.13000">PDF</a></li>
+<li><strong>关键词</strong>：具身 VLM、空间定位、PhysMoE、单 token 坐标、SDF 监督</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：具身视觉语言模型的坐标预测里，离散分词解码慢，点回归又难应对不规则目标。PhysMoE 按物理模态把上层路由到空间与语言专家，并复用视觉位置嵌入把坐标编码为单 token。实验显示其相较基础模型在空间定位上取得明显增益与吞吐提升，并保持文本理解推理。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：具身 VLM 的坐标预测里，离散分词破坏空间连续性且解码延迟高，标准点回归又难处理多接触可供性与不规则形状目标。</li>
+<li>方法：PhysMoE 共享低层编码多模态上下文、上层按物理模态路由到空间（像素）与语言（文本）专家以消除梯度干扰，复用视觉编码器位置嵌入把每个坐标编码为单 token 并注入 2D 空间先验，在指向任务上用可微 SDF 监督适配可供性与不规则几何、免去昂贵掩码解码器。</li>
+<li>结果/结论：相较基础模型，在 9 个基于坐标的 grounding 基准（轨迹、可供性、定位）上取得 15.7% 平均增益与 8.31× 吞吐加速，并在 11 个基于文本的具身基准上保持多模态理解与推理。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="136-2611.12997"></a>
+<h2>136. TIB：超越对齐假设、用于多模态归因的样本级缓和信息瓶颈</h2>
+<ul>
+<li><strong>原题</strong>：TIB: Sample-wise Tempered Information Bottleneck for Multimodal Attribution beyond Alignment Assumption</li>
+<li><strong>作者</strong>：Qiming Huang, Peixi Liu, Jianbo Jiao ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV, cs.AI, cs.MM</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12997">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12997">PDF</a></li>
+<li><strong>关键词</strong>：多模态归因、信息瓶颈、TIB、语义错配、NeurIPS</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：多模态归因与信息瓶颈方法多默认图文对语义对齐，而真实数据常因语义错配违背该假设。本文理论证明错配下这类目标会诱发后验过度收缩与强制解释，据此提出样本级 TIB，按跨模态可靠性自适应调节归因强度。实验验证了方法有效性，也证实了所识别的失败模式。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：现有多模态归因及信息瓶颈方法隐含假设图文对语义对齐，而真实数据集常因部分语义错配与不可靠跨模态对应违背该假设。</li>
+<li>方法：理论分析证明错配下 IB 归因目标因假定所有代理监督信号同等可靠而诱发后验过度收缩与强制解释，据此提出样本级 TIB 框架，按跨模态可靠性自适应调节归因强度，不再假设语义对齐。</li>
+<li>结果/结论：在受控基准与大规模数据集上的大量实验验证了 TIB 的有效性，并证实了所识别的失败模式。</li>
+<li>局限或适用：适用于图文语义部分错配、跨模态对应不可靠的真实多模态数据，摘要以突破对齐假设为出发点。</li>
+</ol>
+<a id="137-2611.12981"></a>
+<h2>137. 面向弥漫性囊性肺病诊断的证据接地迭代推理</h2>
+<ul>
+<li><strong>原题</strong>：Evidence-Grounded Iterative Reasoning for the Diagnosis of Diffuse Cystic Lung Diseases</li>
+<li><strong>作者</strong>：Haoqing Li, Jun Shi, Tou Li et al. ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12981">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12981">PDF</a></li>
+<li><strong>关键词</strong>：弥漫性囊性肺病、证据接地推理、DCLDs-EIR、知识图谱、多中心评估</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：弥漫性囊性肺病影像表现重叠、标注有限，多模态大语言模型的推理又缺乏容积感知与疾病证据支撑。本文提出 DCLDs-EIR，把诊断假设细化与多模态证据获取、验证耦合，以累积证据迭代修订诊断状态。多中心评估显示其准确率持续优于基线，且推理过程可追溯。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：弥漫性囊性肺病影像表现重叠使鉴别诊断困难、标注数据有限，且多模态大语言模型的推理受不完整容积感知与疾病特异证据接地不足限制。</li>
+<li>方法：DCLDs-EIR 把诊断假设细化与多模态证据获取、验证耦合，用肺与囊肿分割的多视图渲染刻画全局囊肿分布并初始化鉴别诊断，由竞争性假设引导轴向 CT 检查找局部发现，结合临床上下文从疾病特异知识图谱检索，再以累积患者观察与检索知识联合评估支持与反驳来迭代修订诊断状态。</li>
+<li>结果/结论：多中心评估显示 DCLDs-EIR 相对基线持续提升诊断准确率，并通过诊断假设、患者观察与疾病特异知识之间的显式链接实现可追溯的鉴别诊断。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="138-2611.12978"></a>
+<h2>138. 面向一步生成的轨迹正则化分布蒸馏</h2>
+<ul>
+<li><strong>原题</strong>：Trajectory-Regularized Distribution Distillation for One-Step Generation</li>
+<li><strong>作者</strong>：An Zhao, Yixiang Zhou, Zejian Li et al. ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV, cs.AI</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12978">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12978">PDF</a></li>
+<li><strong>关键词</strong>：一步生成、流匹配蒸馏、TRD、分布匹配、轨迹对齐</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：流匹配模型的一步蒸馏里，轨迹对齐在小采样预算下退化，分布匹配又需额外网络。本文提出 TRD，用单次前向得到的动量混合策略统一分布级与轨迹级监督，省去第二个可训练网络。实验显示其在一步与少步生成的质量和效率上优于代表性基线，代价是样本多样性取舍。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：流匹配模型的一步蒸馏中，轨迹对齐在极小采样预算下性能退化，分布匹配估计反向 KL 梯度又通常需要单独网络跟踪不断演化的学生 score。</li>
+<li>方法：TRD 通过单次学生前向预测出的动量混合策略把分布级与轨迹级监督结合，该策略同时充当一步生成器、学生边缘速度估计器（从而省去分布匹配中的第二个可训练网络）以及沿教师 ODE 轨迹受监督的闭式时变速度场。</li>
+<li>结果/结论：在 SANA-1.6B 与 Stable Diffusion 3.5 上，TRD 在一步与少步生成的生成质量和训练效率上均优于代表性一致性模型与分布匹配基线。</li>
+<li>局限或适用：换来质量与效率提升的同时存在样本多样性上的取舍。</li>
+</ol>
+<a id="139-2611.12977"></a>
+<h2>139. 选择性手术动作中心定位：用监督式打分守住定位增益</h2>
+<ul>
+<li><strong>原题</strong>：Selective Surgical Action-Center Localization:Retaining Localization Gains through Supervised Scoring</li>
+<li><strong>作者</strong>：Yanchong Xue, Wanting Zhang, Lingtao Yu et al. ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12977">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12977">PDF</a></li>
+<li><strong>关键词</strong>：手术动作中心定位、选择性报告、监督式打分、热图与坐标监督、容差</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：手术动作中心定位既要准确参考点又要决定是否报告，定位改进的收益取决于哪些正确候选能在选择中存活。本文提出选择性定位流程，结合热图与坐标监督及逻辑回归打分器识别可报告的预测。实验显示该方法保留的正确输出多于基线，说明选择规则会守住或侵蚀定位增益。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：手术动作中心定位既需准确参考点又需决定是否报告，当带与不带可报告中心的帧混合时，定位改进的收益取决于哪些正确候选能在选择中存活。</li>
+<li>方法：提出选择性定位流程，结合热图与坐标监督及逻辑回归打分器，让打分器学会识别具有可报告中心且定位误差落在指定容差内的预测，并用匹配比较跟踪正确候选及其被拒情况。</li>
+<li>结果/结论：内部评估用 50 个手术来源的 5,000 帧、五个按来源分组折与两个随机种子，在每来源 80% 接受配额、容差 0.10 倍图像对角线时保留每 100 输入 46.08 个正确输出，高于同打分方案基线定位器的 44.20，增益 1.88（描述性 95% 来源配对 bootstrap 区间 0.94 到 2.79）。</li>
+<li>局限或适用：收益依赖选择规则是否保留正确候选，基于熵的选择下对正确预测拒绝的增加平均会抵消正确预测供给的提升；对坐标监督定位器，监督式打分把每 100 输入的拒绝由 6.15 降到 2.99。</li>
+</ol>
+<a id="140-2611.12976"></a>
+<h2>140. 分区、细化与检测：在开放词汇目标检测中保留新类容量</h2>
+<ul>
+<li><strong>原题</strong>：Partition, Refine, and Detect: Preserving Novel Category Capacity in Open-Vocabulary Object Detection</li>
+<li><strong>作者</strong>：Wei Zhang, Zhu Teng, Zhixiang Chi et al. ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12976">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12976">PDF</a></li>
+<li><strong>关键词</strong>：开放词汇检测、PR-OVD、分区细化、Structure Prompt、新类容量</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：开放词汇检测依赖视觉语言嵌入，但表示偏向基类、压缩新类语义，导致语义坍塌与置信度失准。本文提出分区-细化框架 PR-OVD，先划分全局分区阻断无关嵌入泄漏，再在分区内细化决策边界并为新类提供视觉锚点。实验显示其新类表现优于现有方法，并能推广到其他开放词汇任务。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：开放词汇检测依赖 CLIP 式视觉语言嵌入，但学习空间偏向基类、压缩新类语义，导致语义坍塌与推理时置信度校准失当。</li>
+<li>方法：PR-OVD 先在视觉与文本模态为基类、新类及显式背景建立粗粒度全局分区以阻断物体无关嵌入泄漏，再在各分区内做类别级细化锐化决策边界，并设计编码自我中心属性与他者中心上下文的 Structure Prompt 为新类提供可靠视觉锚点。</li>
+<li>结果/结论：两个 OVD 基准上的大量实验显示 PR-OVD 在新类上相对当前最先进方法取得平均 6.5% 的比例提升，并惠及分割与分类等其他开放词汇任务。</li>
+<li>局限或适用：框架可无缝集成到不同检测器架构，且经验证对分割、分类等开放词汇任务同样有效，具有通用性。</li>
+</ol>
+<a id="141-2611.12975"></a>
+<h2>141. 面向广义类别发现的属性证据学习与多模态提示</h2>
+<ul>
+<li><strong>原题</strong>：Attribute-Evidence Learning with Multimodal Prompt for Generalized Category Discovery</li>
+<li><strong>作者</strong>：Wei Zhang, Zhu Teng, Zhixiang Chi et al. ｜ <strong>投稿</strong>：2026-11-08 ｜ <strong>分类</strong>：cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12975">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12975">PDF</a></li>
+<li><strong>关键词</strong>：广义类别发现、AptM-GCD、属性证据学习、多模态提示、类别不平衡</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：广义类别发现借少量标注发现新类，已有文本方法常把全局标签与局部属性纠缠在共享表示里，使属性线索不可靠。本文提出 AptM-GCD，把属性当作局部视觉证据，再把文本证据转成视觉提示经上下文推理增强判别。实验显示其在多类基准上达到当前最优，并具有良好泛化能力。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：广义类别发现要借旧类少量标注从未标注数据发现新类，而已有引入文本的方法常把全局标签与局部属性纠缠在共享全局图像表示里，使属性线索不可靠甚至误导模型预测。</li>
+<li>方法：AptM-GCD 用属性证据学习（AEL）把属性视作局部化视觉证据，通过属性嵌入与 patch 级视觉 token 交互识别可靠属性区域并提取判别性局部证据，再用多模态提示学习（MPL）把细粒度文本证据转成视觉提示注入多模态提示 transformer，经上下文推理增强类别判别而不强制模态间全局对齐。</li>
+<li>结果/结论：六个数据集上的大量实验显示 AptM-GCD 在细粒度与通用基准上持续达到当前最优性能。</li>
+<li>局限或适用：框架展现强泛化能力，在单模态与类别不平衡的 GCD 设定下都带来一致增益。</li>
+</ol>
+<a id="142-2611.12969"></a>
+<h2>142. 历史手稿字体分类的评估协议：手稿级泄漏的代价与软标签的作用</h2>
+<ul>
+<li><strong>原题</strong>：Evaluation protocols for historical script classification: the cost of manuscript-level leakage and the role of soft labels</li>
+<li><strong>作者</strong>：Daniil I. Naryzhnyi, Roman A. Popkov, Daniil A. Bakalin ｜ <strong>投稿</strong>：2026-11-07 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12969">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12969">PDF</a></li>
+<li><strong>关键词</strong>：历史手稿字体分类、手稿级划分、数据泄漏、软标签、校准误差</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：本文考察古文字字体分类中在训练手稿其他页上测试造成的准确率虚高。研究比较页级与手稿级划分，并检验专家软标签等校准手段。结果显示按页划分明显高估准确率、模型在未见手稿上过度自信，而软标签让预测分布更接近专家却不改变准确率，据此提出按手稿划分的评估建议。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：古文字学家把字体类型分类器用于未见手稿，本文测量在训练手稿的其他页上测试会把准确率虚高多少。</li>
+<li>方法：在 VML-HP-ext（715 页、171 份希伯来文手稿、14 类字体）上比较页级与手稿级划分，并检验专家软标签、标签平滑与温度缩放对准确率、校准误差及与专家分歧的影响。</li>
+<li>结果/结论：页级准确率从 97% 降到 54%（手稿级 59%），官方盲测集仅 39%，patch、页与手稿级 40 到 47 个百分点的差距统计显著且用 ResNet18 可复现；未见手稿上平均置信度 70% 对 54% 正确页、patch 级 ECE 由 0.065 升至 0.444，软标签未显示准确率差异但使预测分布更接近专家。</li>
+<li>局限或适用：软标签准确率点估计比硬标签低 16.5 到 23.7 个百分点，但因仅有 16 份手稿，该损失既不能确认也不能排除，页级小幅损失同样无法排除。</li>
+</ol>
+<a id="143-2611.12934"></a>
+<h2>143. EarthRecord：用多模态智能体把四十年卫星影像从像素推向土地变化</h2>
+<ul>
+<li><strong>原题</strong>：EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery</li>
+<li><strong>作者</strong>：Haoran Zhang, Huizhen Sun, Hanbin Wen et al. ｜ <strong>投稿</strong>：2026-11-06 ｜ <strong>分类</strong>：cs.AI, cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12934">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12934">PDF</a></li>
+<li><strong>关键词</strong>：EarthRecord、卫星影像、土地变化、多模态智能体、基准</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：多模态智能体已能做复杂分析，但把长时序卫星影像转为可靠土地变化分析的能力尚未被测量。本文提出 EarthRecord 基准，基于多年原始卫星记录，把云掩膜与跨传感器协调留给智能体并设对照。评估显示领先智能体能完成多数分析，却在需要从影像映射时失手。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：多模态智能体已能用工具做复杂数据分析，但把数十年卫星影像转成可靠土地变化分析的能力尚未被测量，现有基准多在精选图像或预处理输入上提问，略过了原始多传感器档案。</li>
+<li>方法：构建基于 56 个站点四十年 Landsat、MODIS、VIIRS 与 Sentinel-2 原始记录的 EarthRecord 基准，把云掩膜与跨传感器协调留给智能体，设 238 个土地变化问题跨十类分析任务，按全球产品留出的参考、方法间一致性与目视解译评分，并以 closed book 移除记录、instrument pairs 改动单颗卫星数据作对照。</li>
+<li>结果/结论：对 12 个多模态智能体的评估显示领先者能端到端完成多数分析，却在答案需要从影像映射时失手，记录把答案从先验知识推向像素但尚未推向地面真实变化。</li>
+<li>局限或适用：当一颗卫星数据被改动时有一半正确答案随之改变，说明当前智能体仍未真正落到地面变化，EarthRecord 提供了衡量并推进这一能力的平台。</li>
+</ol>
+<a id="144-2611.12932"></a>
+<h2>144. URL-Sim：面向动态驾驶场景高保真重建的统一受调控 LiDAR 仿真</h2>
+<ul>
+<li><strong>原题</strong>：URL-Sim: Unified and Regulated LiDAR Simulation for High-Fidelity Reconstruction of Dynamic Driving Scenes</li>
+<li><strong>作者</strong>：Kefei Qian, Xipeng Feng, Jie Li et al. ｜ <strong>投稿</strong>：2026-11-06 ｜ <strong>分类</strong>：cs.CV</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12932">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12932">PDF</a></li>
+<li><strong>关键词</strong>：LiDAR 仿真、URL-Sim、动态高斯场景图、受调控致密化、自动驾驶</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：从真实驾驶日志重建高保真 LiDAR 仿真场景对安全验证很关键，但现有方法渲染慢且多限于刚性车辆。本文提出 URL-Sim，用动态高斯场景图解耦各类交通参与者，并按重要性把高斯分配到关键区域、控制基元总数。实验显示其在同等基元预算下精度与视觉质量优于基线。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：从真实驾驶日志重建高保真 LiDAR 仿真场景对自动驾驶低成本安全验证至关重要，而 NeRF 仿真器渲染慢、现有 3DGS 方法又多局限于刚性车辆并因无约束致密化产生冗余基元。</li>
+<li>方法：URL-Sim 构建动态高斯场景图解耦车辆、行人、骑行者等交通参与者的建模，在单一框架内准确重建异构动态物体，并引入受调控的高斯致密化策略，用多维重要性分数排序基元、把高斯分配到最关键区域同时保持基元总数有界。</li>
+<li>结果/结论：在 Waymo 与 KITTI-360 数据集上，URL-Sim 在可比基元预算下较现有基线取得更高的定量精度与视觉质量，并准确恢复多样动态交通参与者的几何与位姿。</li>
+<li>局限或适用：摘要未说明</li>
+</ol>
+<a id="145-2611.12930"></a>
+<h2>145. 面向全六面体网格化的拓扑感知强化学习 CAD 分解</h2>
+<ul>
+<li><strong>原题</strong>：Topology-Aware Reinforcement Learning for CAD Decomposition toward All-Hexahedral Meshing</li>
+<li><strong>作者</strong>：Jiaming Peng, Zhihao Zheng, Rui Wang et al. ｜ <strong>投稿</strong>：2026-11-05 ｜ <strong>分类</strong>：cs.GR, cs.CV, cs.LG</li>
+<li><strong>链接</strong>：<a href="https://arxiv.org/abs/2611.12930">arXiv</a> · <a href="https://arxiv.org/pdf/2611.12930">PDF</a></li>
+<li><strong>关键词</strong>：全六面体网格、CAD 分解、DecompRL、拓扑感知内部切分、强化学习</li>
+</ul>
+<p><strong>摘用（可直接引用）</strong>：复杂 CAD 模型的全六面体网格化长期被视作网格生成的圣杯，难点是特征错配需先分解为可网格化的块，现有表面切分又常无效。本文提出强化学习框架 DecompRL，用拓扑感知的内部切分分离错配特征，并以几何奖励引导学习。实验显示其成功率领先所评方法，网格质量也有竞争力。</p>
+<p><strong>要点</strong>：</p>
+<ol>
+<li>问题/动机：复杂 CAD 模型的自动全六面体网格生成长期被视为网格生成的「圣杯」，其根本挑战是正交或相互作用特征共存造成的特征错配，必须先分解为更简单可网格化的块，而现有分解方法的动作空间多局限于基于表面的切分、常产生无效或不可网格化的分解。</li>
+<li>方法：提出面向六面体网格化的 CAD 分解深度强化学习框架 DecompRL，设计一组同时利用全局拓扑结构与局部几何性质的拓扑感知内部切分动作来有效分离错配特征，并引入几何奖励与可网格化反馈，引导学习走向有效分解与高质量网格。</li>
+<li>结果/结论：在 ABC、Fusion360、NIST 与 DeepCAD 上的大量实验显示 DecompRL 在四个基准中的三个上取得所评估基于学习方法里最高的成功率，同时保持有竞争力的网格质量，最大成功率提升出现在 Fusion360，达到 59.6%。</li>
+<li>局限或适用：测得的 LMFF 与 DecompRL 运行时间比最高达两个数量级，但该比较是完整 LMFF 流程对仅 DecompRL 分解（不含后续网格生成），且最高成功率只在四个基准中的三个上成立。</li>
+</ol>
+</div>
+<div class="card" style="margin-top:20px;padding:18px 28px">
+  <h2 style="margin-top:0;border:0;padding:0">历史中文摘用</h2>
+  <nav><a href="最新-2026-11-12.html">2026-11-12</a></nav>
+</div>
+<footer>本地定时任务每日更新 · GitHub 私有仓库仅作云端备份</footer>
+</div>
+</body>
+</html>

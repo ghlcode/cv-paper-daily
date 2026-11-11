@@ -345,8 +345,8 @@ def update_readme(papers: list[dict], top_n: int, total: int, now: datetime) -> 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--max-results", type=int, default=800,
-                        help="how many recent arXiv entries to request, paged (default: 800)")
+    parser.add_argument("--max-results", type=int, default=2000,
+                        help="how many recent arXiv entries to request, paged (default: 2000)")
     parser.add_argument("--lookback-days", type=int, default=7,
                         help="calendar-day window for unseen papers (default: 7)")
     parser.add_argument("--top-n", type=int, default=20,

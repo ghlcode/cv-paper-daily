@@ -2,7 +2,7 @@
 
 
 <!-- LATEST:LINK:START -->
-> 最新一期：[最新-2026-11-11.html（HTML，双击打开）](最新-2026-11-11.html) ｜ [最新-2026-11-11.md（Markdown）](最新-2026-11-11.md) ｜ 2026-11-11：今日新增 16 篇，以下为逐篇独立中文摘用。
+> 最新一期：[最新-2026-11-12.html（HTML，双击打开）](最新-2026-11-12.html) ｜ [最新-2026-11-12.md（Markdown）](最新-2026-11-12.md) ｜ 2026-11-12：今日新增 145 篇，以下为逐篇独立中文摘用。
 <!-- LATEST:LINK:END -->
 
 每天自动抓取 arXiv `cs.CV`（计算机视觉与模式识别）分类的最新投稿，按日期归档并更新本页榜单。内容为论文标题、作者、摘要、分类与原文链接，适合快速扫一眼当天 CV / 深度学习视觉方向的新工作。
@@ -17,30 +17,30 @@
 
 <!-- PAPERS:START -->
 
-> 共收录 **976** 篇 · 最近更新 2026-11-11 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
+> 共收录 **1121** 篇 · 最近更新 2026-11-12 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
 
 | 投稿日期 | 标题 | 作者 | 分类 | 链接 |
 | --- | --- | --- | --- | --- |
-| 2026-11-09 | Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning | Haozhi Yuan, Handong Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12886) · [pdf](https://arxiv.org/pdf/2611.12886) |
-| 2026-11-09 | World In-Context Learning for Agentic Robot Manipulation | Heng Fang, Zehui Guo et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12885) · [pdf](https://arxiv.org/pdf/2611.12885) |
-| 2026-11-09 | Guiding Data Allocation for Robust Subpopulation Generalization | Zhaoying Pan, Yipei Wang et al. | cs.LG | [abs](https://arxiv.org/abs/2611.12884) · [pdf](https://arxiv.org/pdf/2611.12884) |
-| 2026-11-09 | Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs | Zhaoying Pan, Shenyu Lu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12883) · [pdf](https://arxiv.org/pdf/2611.12883) |
-| 2026-11-09 | Grasping the Future: Joint 3D Hand-Object Forecasting From Internet Videos | Rustin Soraki, Matthew Wallingford et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12879) · [pdf](https://arxiv.org/pdf/2611.12879) |
-| 2026-11-09 | Click3R: Interactive Stereo 3D Reconstruction with Sparse Correspondence Clicks | Hao Gu, Jin Yao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12875) · [pdf](https://arxiv.org/pdf/2611.12875) |
-| 2026-11-09 | SWAM: Scaling World Action Models with Cross-Modal Alignment | Yu Zhou, Xinyuan Xia et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12870) · [pdf](https://arxiv.org/pdf/2611.12870) |
-| 2026-11-09 | AI-based characterization of lymphoid structures and the tumor microenvironment reveals lower mature tertiary lymphoid structures, lymph-node follicles, and plasma cells after neoadjuvant therapy in lung squamous cell carcinoma | Arne Schmidt, Justin Nieder et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12855) · [pdf](https://arxiv.org/pdf/2611.12855) |
-| 2026-11-09 | What kills $v$-prediction? A Patch-wise PCA Perspective on Pixel-Space Flow Matching | Tianze Luo, Haofeng Huang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12852) · [pdf](https://arxiv.org/pdf/2611.12852) |
-| 2026-11-09 | 2D Gum-Net: Unsupervised Dense Elastic Image Registration via Symmetric Correlation and Spectral Pooling | Aarya Bhave, Anushka Ajay Bhave | cs.CV | [abs](https://arxiv.org/abs/2611.12805) · [pdf](https://arxiv.org/pdf/2611.12805) |
-| 2026-11-09 | Complementarity-Driven Dual-Teacher Hierarchical Alignment for Zero-Shot EEG-to-Image Retrieval | Lukun Wu, Jie Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12798) · [pdf](https://arxiv.org/pdf/2611.12798) |
-| 2026-11-09 | Anchor Behavior, Not Parameters: Rehearsal-Free Continual Learning with a Single Shared Prompt | Duy-Cuong Bui, Trung-Anh Dang et al. | cs.LG | [abs](https://arxiv.org/abs/2611.12777) · [pdf](https://arxiv.org/pdf/2611.12777) |
-| 2026-11-09 | Plant Orbiter: 3D Plant Reconstruction and Generation with Video Diffusion Orbit Cameras and 3D Gaussian Splatting | Zane K. J. Hartley, Yong En Kok et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12739) · [pdf](https://arxiv.org/pdf/2611.12739) |
-| 2026-11-09 | OptiCover: A Scalable and Multi-Surface Framework for Cold-Start Visual Optimization under Semantic Constraints | Guillaume Guy, Mihajlo Grbovic et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12727) · [pdf](https://arxiv.org/pdf/2611.12727) |
-| 2026-11-09 | Spaghetti Splatting: Differentiating Curvilinear Dirac Masses via Convolution | George Shramko, Shrisudhan Govindarajan et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12716) · [pdf](https://arxiv.org/pdf/2611.12716) |
-| 2026-11-09 | GeoScope: Training-Free Program Execution beyond the Counting Horizon for Ultra-High-Resolution Remote Sensing Question Answering | Guohui Deng, Yuhang Jiang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12699) · [pdf](https://arxiv.org/pdf/2611.12699) |
-| 2026-11-09 | Differentiable Inverse Rendering Recovers Intrinsic Properties from Intravascular Optical Coherence Tomography | Ajay Manicka, Karim Kadry et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12686) · [pdf](https://arxiv.org/pdf/2611.12686) |
-| 2026-11-09 | A four-step validation protocol for radiomic survival analysis in small cohorts: a body composition case study | Mariela Talavera-Muñoz, Cecilia Diana-Albelda et al. | eess.IV | [abs](https://arxiv.org/abs/2611.12682) · [pdf](https://arxiv.org/pdf/2611.12682) |
-| 2026-11-09 | National-Scale Crop Type Mapping in Morocco Using Google AlphaEarth Foundations Embeddings and the Fields of the World Field Boundary Map | Walid Elbarz, Mohamed Bourriz et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12681) · [pdf](https://arxiv.org/pdf/2611.12681) |
-| 2026-11-09 | What Breaks Scribble-Supervised Segmentation? An Audit-Informed Benchmark for Scribble Annotation Robustness | Minheng Wu, Di Wen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.12674) · [pdf](https://arxiv.org/pdf/2611.12674) |
+| 2026-11-10 | Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training | Emre Kutlusan, Yongmin Li | cs.CV | [abs](https://arxiv.org/abs/2611.14519) · [pdf](https://arxiv.org/pdf/2611.14519) |
+| 2026-11-10 | Toward Foundation Detection Models via Example-Based Grounding in EM-DETR | Sheethal Bhat, Bogdan Georgescu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14518) · [pdf](https://arxiv.org/pdf/2611.14518) |
+| 2026-11-10 | Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion | Alexandre Garcia-Duran, Alejandro Rodriguez-Garcia et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14498) · [pdf](https://arxiv.org/pdf/2611.14498) |
+| 2026-11-10 | RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval | Tanishq Rachamalla, Srishti Kaushik et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14496) · [pdf](https://arxiv.org/pdf/2611.14496) |
+| 2026-11-10 | Mechanistic Interpretability Needs a Logic of Inference | Zhimin Hu, Chen Jiang et al. | cs.CL | [abs](https://arxiv.org/abs/2611.14483) · [pdf](https://arxiv.org/pdf/2611.14483) |
+| 2026-11-10 | BoviShift: A Six-Year Multi-Attribute Audit of Visual Cattle Phenotyping Across Animals and Time | Mobasshir Bhuiya Shagor, Nilambar Halder Tonmoy et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14476) · [pdf](https://arxiv.org/pdf/2611.14476) |
+| 2026-11-10 | TanCRAFT: Context-Reasoned Anticipatory Feedback for Assembly Tasks | Sassan Mokhtar, Lars Doorenbos et al. | cs.RO | [abs](https://arxiv.org/abs/2611.14470) · [pdf](https://arxiv.org/pdf/2611.14470) |
+| 2026-11-10 | C$^2$-Routing: Complementary Cropping and Compression for Efficient Vision-Language Inference | Guorui Lu, Qinyu Chen | cs.CV | [abs](https://arxiv.org/abs/2611.14469) · [pdf](https://arxiv.org/pdf/2611.14469) |
+| 2026-11-10 | A Lightweight Differentiable Method for Real-Time Skin Rendering and Digitization | Mario Marquez-Balduque, Carlos Rodriguez-Pardo et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14451) · [pdf](https://arxiv.org/pdf/2611.14451) |
+| 2026-11-10 | UGG: Unified Generative Geometry Model | Amani Kiruga, Zhiyi Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14440) · [pdf](https://arxiv.org/pdf/2611.14440) |
+| 2026-11-10 | Metric-Aligned Group Relative Policy Optimization for Explainable Deepfake Detection | Luka Dragar, Peter Peer et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14436) · [pdf](https://arxiv.org/pdf/2611.14436) |
+| 2026-11-10 | One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge | Ilia Larchenko, Gleb Zarin et al. | cs.RO | [abs](https://arxiv.org/abs/2611.14432) · [pdf](https://arxiv.org/pdf/2611.14432) |
+| 2026-11-10 | OnlyAct: Extracting Action Representations from Foundation Models for World Models | Runjia Li, Minghao Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14420) · [pdf](https://arxiv.org/pdf/2611.14420) |
+| 2026-11-10 | What Factors Matter for Collection-Level Counting with Human-AI Collaboration? | Seoyun Jeong, Logan Lawrence et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14380) · [pdf](https://arxiv.org/pdf/2611.14380) |
+| 2026-11-10 | From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models | Guoqiang Liang, Yiqi Lin et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14365) · [pdf](https://arxiv.org/pdf/2611.14365) |
+| 2026-11-10 | Multimodal Abstention That Preserves Acquired Correct Answers | Jinyuan Zhang | cs.AI | [abs](https://arxiv.org/abs/2611.14311) · [pdf](https://arxiv.org/pdf/2611.14311) |
+| 2026-11-10 | TaoMate-R1: Temporal Role Specialization for Streaming Multi-Reference Video Generation | Qijun Gan, Chenwei Zhang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14307) · [pdf](https://arxiv.org/pdf/2611.14307) |
+| 2026-11-10 | ForeseeDrive: Future-Token Conditioning for Anticipatory Generative Driving | Shaokai Wu, Xunchu Zhou et al. | cs.RO | [abs](https://arxiv.org/abs/2611.14286) · [pdf](https://arxiv.org/pdf/2611.14286) |
+| 2026-11-10 | UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks | Jianlong He, Liang Liao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14281) · [pdf](https://arxiv.org/pdf/2611.14281) |
+| 2026-11-10 | AutoThreshold: Joint Confusion-Profile Learning for Adaptive Mask Binarization | Shaokai Wu, Xunchu Zhou et al. | cs.CV | [abs](https://arxiv.org/abs/2611.14279) · [pdf](https://arxiv.org/pdf/2611.14279) |
 
 <!-- PAPERS:END -->
 
@@ -50,6 +50,7 @@
 
 <!-- ARCHIVE:START -->
 
+- [2026-11-12](data/2026-11-12.md)
 - [2026-11-11](data/2026-11-11.md)
 - [2026-11-10](data/2026-11-10.md)
 - [2026-11-09](data/2026-11-09.md)
