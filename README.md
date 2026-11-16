@@ -2,7 +2,7 @@
 
 
 <!-- LATEST:LINK:START -->
-> 最新一期：[最新-2026-11-16.html（HTML，双击打开）](最新-2026-11-16.html) ｜ [最新-2026-11-16.md（Markdown）](最新-2026-11-16.md) ｜ 2026-11-16：今日新增 196 篇，以下为逐篇独立中文摘用。
+> 最新一期：[最新-2026-11-17.html（HTML，双击打开）](最新-2026-11-17.html) ｜ [最新-2026-11-17.md（Markdown）](最新-2026-11-17.md) ｜ 2026-11-17：今日新增 91 篇，以下为逐篇独立中文摘用。
 <!-- LATEST:LINK:END -->
 
 每天自动抓取 arXiv `cs.CV`（计算机视觉与模式识别）分类的最新投稿，按日期归档并更新本页榜单。内容为论文标题、作者、摘要、分类与原文链接，适合快速扫一眼当天 CV / 深度学习视觉方向的新工作。
@@ -17,30 +17,30 @@
 
 <!-- PAPERS:START -->
 
-> 共收录 **1317** 篇 · 最近更新 2026-11-16 08:08 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
+> 共收录 **1408** 篇 · 最近更新 2026-11-17 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
 
 | 投稿日期 | 标题 | 作者 | 分类 | 链接 |
 | --- | --- | --- | --- | --- |
-| 2026-11-12 | Back to Pixels: Lifting Latent Video Diffusion into Pixel Space | Yanke Song, Shuo Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17336) · [pdf](https://arxiv.org/pdf/2611.17336) |
-| 2026-11-12 | Unbundling Multimodal Vision Encoding | Ellis Brown, Chris Hoang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17334) · [pdf](https://arxiv.org/pdf/2611.17334) |
-| 2026-11-12 | TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models | Chin-Yang Lin, Ryo Hachiuma et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17331) · [pdf](https://arxiv.org/pdf/2611.17331) |
-| 2026-11-12 | ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation | Guangyuan Sui, Yunzhong Hou et al. | cs.RO | [abs](https://arxiv.org/abs/2611.17330) · [pdf](https://arxiv.org/pdf/2611.17330) |
-| 2026-11-12 | K2V: Generative Keyframing For Physically Plausible Video Generation | Felix O'Mahony, Daniel Olmeda Reino et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17324) · [pdf](https://arxiv.org/pdf/2611.17324) |
-| 2026-11-12 | BrickFlow: Connectivity-Guided Brick Reconstruction | Peter Kulits, Cordelia Schmid | cs.CV | [abs](https://arxiv.org/abs/2611.17321) · [pdf](https://arxiv.org/pdf/2611.17321) |
-| 2026-11-12 | Spatial Foundry: A Multimodal Dataset for Spatial Intelligence | Ethan Lin, Yang Song | cs.CV | [abs](https://arxiv.org/abs/2611.17318) · [pdf](https://arxiv.org/pdf/2611.17318) |
-| 2026-11-12 | FLEX-LBP: Learning Local Binary Patterns with Exact Binary Inference for Texture Classification | Mohamed Alimoussa, Amal El Kaid | cs.CV | [abs](https://arxiv.org/abs/2611.17302) · [pdf](https://arxiv.org/pdf/2611.17302) |
-| 2026-11-12 | Consistent Video-to-Video Translation via Explicit Correspondences | Gaurav Parmar, Zhengqi Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17298) · [pdf](https://arxiv.org/pdf/2611.17298) |
-| 2026-11-12 | Objects as Addresses: Instance Binding in Vision Transformer Attention | Khalil Sabri, Guillaume-Alexandre Bilodeau et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17240) · [pdf](https://arxiv.org/pdf/2611.17240) |
-| 2026-11-12 | MALNISI-Infused Graph Construction and Weighted Contrastive Loss based GAT for Unsupervised Representation Learning in HSI | Soumi Sarkar, Subhadip Boral et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17199) · [pdf](https://arxiv.org/pdf/2611.17199) |
-| 2026-11-12 | eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation | Tong Zhao, Xianfang Zeng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17194) · [pdf](https://arxiv.org/pdf/2611.17194) |
-| 2026-11-12 | Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes | Robert Fonod, Nikolas Geroliminis | cs.CV | [abs](https://arxiv.org/abs/2611.17190) · [pdf](https://arxiv.org/pdf/2611.17190) |
-| 2026-11-12 | Neural Render Proxies for Interactive and Differentiable Lighting | Sergio Sancho, Alexander Rath et al. | cs.GR | [abs](https://arxiv.org/abs/2611.17185) · [pdf](https://arxiv.org/pdf/2611.17185) |
-| 2026-11-12 | Validation-Guided Prompt Selection for Differential Morphing Attack Detection | Raghavendra Ramachandra, Hailin Li | cs.CV | [abs](https://arxiv.org/abs/2611.17176) · [pdf](https://arxiv.org/pdf/2611.17176) |
-| 2026-11-12 | SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery | Anit Upadhyaya, Ata Akbari Asanjan et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17172) · [pdf](https://arxiv.org/pdf/2611.17172) |
-| 2026-11-12 | UAV-Flow++: A Unified Suite for Benchmarking and Learning Language-Guided UAV Flight | Donglin Yang, Xiangyu Wang et al. | cs.RO | [abs](https://arxiv.org/abs/2611.17163) · [pdf](https://arxiv.org/pdf/2611.17163) |
-| 2026-11-12 | HiVE-VQA: Hierarchical Interaction via Volumetric Embedding for Video Quality Assessment | Robbie Hamilton, Fan Zhang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17146) · [pdf](https://arxiv.org/pdf/2611.17146) |
-| 2026-11-12 | STeP-C: Real-Time Neural Compression for Distributed Fiber-Optic Sensing at Scale | Tingfeng Li, Ming-Fang Huang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.17126) · [pdf](https://arxiv.org/pdf/2611.17126) |
-| 2026-11-12 | Spatiotemporal learning improves quantification of pore-space evolution and fluid displacement | Zhuangzhuang Ma, Rukuan Chai et al. | physics.flu-dyn | [abs](https://arxiv.org/abs/2611.17111) · [pdf](https://arxiv.org/pdf/2611.17111) |
+| 2026-11-13 | BAL: Bidirectional Autoregression in Latent Space for Learning Human Movement Representations | Genki Kinoshita, Ko Nishino | cs.CV | [abs](https://arxiv.org/abs/2611.18559) · [pdf](https://arxiv.org/pdf/2611.18559) |
+| 2026-11-13 | Restoring Diversity in Distilled Image and Video Generators by Probing Activations | Furkan Horoz, Ozgur Kara et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18550) · [pdf](https://arxiv.org/pdf/2611.18550) |
+| 2026-11-13 | JVT: Just Video Transformer makes pixel-space video diffusion simple | Jianjun Zhou, Hua Geng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18549) · [pdf](https://arxiv.org/pdf/2611.18549) |
+| 2026-11-13 | Understanding Contextual Bias in Agricultural CNNs Through Hidden-Neuron Concept Induction | Abhilekha Dalal, Avishek Das et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18530) · [pdf](https://arxiv.org/pdf/2611.18530) |
+| 2026-11-13 | EventSpikeSeg: Memory-Aware Mixed-Signal Architecture for Event-Camera Spiking Segmentation | Amir Mohammad Khadem Hosseini, Sattar Mirzakuchaki | cs.AR | [abs](https://arxiv.org/abs/2611.18524) · [pdf](https://arxiv.org/pdf/2611.18524) |
+| 2026-11-13 | Box-conditional Hypothesis Testing for Out-of-Distribution Object Detection | Donghoon Lee, Jusung Park et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18519) · [pdf](https://arxiv.org/pdf/2611.18519) |
+| 2026-11-13 | StreamEmbed: Real-Time Indexing from Pixels for Screenshot Retrieval | Dayoon Ko, Yichuan Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18516) · [pdf](https://arxiv.org/pdf/2611.18516) |
+| 2026-11-13 | MMFlash: Faster Speculative Decoding for Vision-Language Models | Sicheng Feng, Zigeng Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18482) · [pdf](https://arxiv.org/pdf/2611.18482) |
+| 2026-11-13 | Toward On-Device Markerless 6DoF Tracking of a Physical Manipulative on a Mixed-Reality Headset: A Preliminary Study | Guangxi Feng, Philip Yasskin et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18438) · [pdf](https://arxiv.org/pdf/2611.18438) |
+| 2026-11-13 | Do Underwater Image Quality Metrics Agree with Human Perception? A Benchmark with Human Choices, Simple Edits and Generative Drift | Rishii Kumar Singh, Abhinav Rajput et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18429) · [pdf](https://arxiv.org/pdf/2611.18429) |
+| 2026-11-13 | CoPre-MoE: Consolidating and Preserving MoE for Multimodal Continual Instruction Tuning | Tao Hu, Ling-Xiang Zhang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18417) · [pdf](https://arxiv.org/pdf/2611.18417) |
+| 2026-11-13 | Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent | Run Luo, Kuan Zhang et al. | cs.CL | [abs](https://arxiv.org/abs/2611.18397) · [pdf](https://arxiv.org/pdf/2611.18397) |
+| 2026-11-13 | AI-Based Multi-View Echocardiographic Image Synthesis using Dynamic Shape Control | João Freitas, Anca Balinisteanu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18375) · [pdf](https://arxiv.org/pdf/2611.18375) |
+| 2026-11-13 | Adaptable Watermarking: Transforming Image Watermarking Models via Lightweight Adapters | Mehrdad Saberi, Vishal Asnani et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18363) · [pdf](https://arxiv.org/pdf/2611.18363) |
+| 2026-11-13 | Envisioning Agentic Robotics: A New Era of Robotic Systems | Grid Robotics, : et al. | cs.RO | [abs](https://arxiv.org/abs/2611.18359) · [pdf](https://arxiv.org/pdf/2611.18359) |
+| 2026-11-13 | MaskSCD: Bitemporal Mask Classification for Semantic Change Detection in Remote Sensing Images | Weikang Yu, Pedram Ghamisi | cs.CV | [abs](https://arxiv.org/abs/2611.18350) · [pdf](https://arxiv.org/pdf/2611.18350) |
+| 2026-11-13 | VLAN: Vision-Language Accessible Navigation | Jie Hu, Yu Zheng et al. | cs.AI | [abs](https://arxiv.org/abs/2611.18346) · [pdf](https://arxiv.org/pdf/2611.18346) |
+| 2026-11-13 | DIRT: Depth-completed Image-based Rendering using Two-band Blending for Live Novel-view Synthesis | Mathias Harrer, Laura Fink et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18340) · [pdf](https://arxiv.org/pdf/2611.18340) |
+| 2026-11-13 | Unlocking Cross-Attention in Label-Scarce Regimes: A Weakly Supervised Approach for Video Semantic Segmentation | Andrea Marelli, Alessandro Ardenghi et al. | cs.CV | [abs](https://arxiv.org/abs/2611.18324) · [pdf](https://arxiv.org/pdf/2611.18324) |
+| 2026-11-13 | TetraCoder: Adaptive Tetrahedral Encoding for Neural Fields | Daniele Della Pietra, Antonella Rech et al. | cs.GR | [abs](https://arxiv.org/abs/2611.18267) · [pdf](https://arxiv.org/pdf/2611.18267) |
 
 <!-- PAPERS:END -->
 
@@ -50,6 +50,7 @@
 
 <!-- ARCHIVE:START -->
 
+- [2026-11-17](data/2026-11-17.md)
 - [2026-11-16](data/2026-11-16.md)
 - [2026-11-13](data/2026-11-13.md)
 - [2026-11-12](data/2026-11-12.md)
