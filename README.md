@@ -2,7 +2,7 @@
 
 
 <!-- LATEST:LINK:START -->
-> 最新一期：[最新-2026-11-18.html（HTML，双击打开）](最新-2026-11-18.html) ｜ [最新-2026-11-18.md（Markdown）](最新-2026-11-18.md) ｜ 2026-11-18：今日新增 301 篇，以下为逐篇独立中文摘用。
+> 最新一期：[最新-2026-11-19.html（HTML，双击打开）](最新-2026-11-19.html) ｜ [最新-2026-11-19.md（Markdown）](最新-2026-11-19.md) ｜ 2026-11-19：今日新增 205 篇，以下为逐篇独立中文摘用。
 <!-- LATEST:LINK:END -->
 
 每天自动抓取 arXiv `cs.CV`（计算机视觉与模式识别）分类的最新投稿，按日期归档并更新本页榜单。内容为论文标题、作者、摘要、分类与原文链接，适合快速扫一眼当天 CV / 深度学习视觉方向的新工作。
@@ -17,30 +17,30 @@
 
 <!-- PAPERS:START -->
 
-> 共收录 **1709** 篇 · 最近更新 2026-11-18 05:21 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
+> 共收录 **1914** 篇 · 最近更新 2026-11-19 05:21 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
 
 | 投稿日期 | 标题 | 作者 | 分类 | 链接 |
 | --- | --- | --- | --- | --- |
-| 2026-11-16 | ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization | Huawei Lin, Jinting Liu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21605) · [pdf](https://arxiv.org/pdf/2611.21605) |
-| 2026-11-16 | FaceJev: Direct Visual Decisions for Face Forgery Detection | Siran Peng, Tianshuo Zhang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21604) · [pdf](https://arxiv.org/pdf/2611.21604) |
-| 2026-11-16 | How VLMs Plan What's Next | Rohit Gandikota, Arnab Sen Sharma et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21600) · [pdf](https://arxiv.org/pdf/2611.21600) |
-| 2026-11-16 | When Do Histology Foundation Models Need Geometric Test-Time Augmentation? | Lars Chen, Valentino F. Foit et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21565) · [pdf](https://arxiv.org/pdf/2611.21565) |
-| 2026-11-16 | Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment | Yu-Hsuan Ho, Yiming Xiao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21563) · [pdf](https://arxiv.org/pdf/2611.21563) |
-| 2026-11-16 | Reference Forcing: Long Video Generation with Region-Guided Drift Correction | Sheng Zhao, Haitian Zheng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21559) · [pdf](https://arxiv.org/pdf/2611.21559) |
-| 2026-11-16 | BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents | Kanchana Ranasinghe, Honglu Zhou et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21553) · [pdf](https://arxiv.org/pdf/2611.21553) |
-| 2026-11-16 | Seen but Unsaid: Locating and Repairing Cross-Image Comparison in Vision-Language Models | Zhaoning Zhang | cs.CV | [abs](https://arxiv.org/abs/2611.21539) · [pdf](https://arxiv.org/pdf/2611.21539) |
-| 2026-11-16 | How Much Does Saliency Accuracy Matter for Saliency-Guided 360-degree Image Compression? | Sakib Ahmed, Sidi-Mohammed Senouci et al. | eess.IV | [abs](https://arxiv.org/abs/2611.21532) · [pdf](https://arxiv.org/pdf/2611.21532) |
-| 2026-11-16 | DuoFlow: Towards Synchronized Speech and Motion Generation with Fine-Grained Control | Jun Dong, Ronghui Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21530) · [pdf](https://arxiv.org/pdf/2611.21530) |
-| 2026-11-16 | GHySSeg: Real-Time Geometric Ground and Road Segmentation for Hybrid Solid-State LiDAR | Martín Palos, Fernando García | cs.RO | [abs](https://arxiv.org/abs/2611.21507) · [pdf](https://arxiv.org/pdf/2611.21507) |
-| 2026-11-16 | Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits | Henry Zheng, Weibo Gong et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21485) · [pdf](https://arxiv.org/pdf/2611.21485) |
-| 2026-11-16 | LynnReal-Hand: Unlocking World Interaction with Hand Control | Shaohao Rui, Chaoyang Zhang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21479) · [pdf](https://arxiv.org/pdf/2611.21479) |
-| 2026-11-16 | Event-Triggered Visual Perception for Real-Time Harvest Outcome Estimation in Mechanical Blueberry Harvesting | Nicolas Miroslav Husár, Jelle Driessen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21472) · [pdf](https://arxiv.org/pdf/2611.21472) |
-| 2026-11-16 | Balanced Twin Weight Factorization for Efficient MLLMs | Bryan A. Plummer, Shan Lu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21459) · [pdf](https://arxiv.org/pdf/2611.21459) |
-| 2026-11-16 | Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing | Meng Tang, Siyuan Du et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21457) · [pdf](https://arxiv.org/pdf/2611.21457) |
-| 2026-11-16 | [CLS] and [EOS] Tokens are not Enough for CLIP-based Class-Incremental Learning | Hao Sun, Tao Hu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21440) · [pdf](https://arxiv.org/pdf/2611.21440) |
-| 2026-11-16 | Power Line Detection in Point Clouds with Point-SAM and RANSAC | Christoph Dalitz, Oskar Waedt et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21438) · [pdf](https://arxiv.org/pdf/2611.21438) |
-| 2026-11-16 | Quality and Similarity Indicators for Video-Based Heart Rate and Respiratory Rate Fusion: A Controlled Evaluation | Nhi Nguyen, Le Nguyen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21419) · [pdf](https://arxiv.org/pdf/2611.21419) |
-| 2026-11-16 | Flexible Multi-Stack Super-Resolution of Clinical Brain MRI Using Hetero-Orientation Variational Encoding: Expert Reader Evaluation in a Nigerian Cohort | Kabir Hamzah Muhammad, Lorena Garcia-Foncillas Macias et al. | cs.CV | [abs](https://arxiv.org/abs/2611.21412) · [pdf](https://arxiv.org/pdf/2611.21412) |
+| 2026-11-17 | Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models | Rui Ning, Om Chabra et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23228) · [pdf](https://arxiv.org/pdf/2611.23228) |
+| 2026-11-17 | FastFrames: Video Generation at Interactive Latency | Gene Chou, Guandao Yang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23226) · [pdf](https://arxiv.org/pdf/2611.23226) |
+| 2026-11-17 | EviSlide-MIL: Multi-Query Pooling and Shared Prediction for Class-Incremental Whole-Slide Image Classification | Zhouhan Qian, Sicheng Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23212) · [pdf](https://arxiv.org/pdf/2611.23212) |
+| 2026-11-17 | Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving | John Gideon, Anshul Gupta et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23211) · [pdf](https://arxiv.org/pdf/2611.23211) |
+| 2026-11-17 | Learning Grounded Reasoning from Human Gaze | Gabriel Sarch, Declan Campbell et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23209) · [pdf](https://arxiv.org/pdf/2611.23209) |
+| 2026-11-17 | Distortion-Free Semantic Watermarks for Black-Box Generative Models | Aviv Yossef, Or Patashnik et al. | cs.LG | [abs](https://arxiv.org/abs/2611.23208) · [pdf](https://arxiv.org/pdf/2611.23208) |
+| 2026-11-17 | Reading Scene States: Uncovering Safety Failures in Vision-Language Models | Tongxi Wu, Yuyang Cheng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23206) · [pdf](https://arxiv.org/pdf/2611.23206) |
+| 2026-11-17 | Retrieval-Augmented Correction for Generalist Medical Image Segmentation | Vincenzo Marcianò, Xiaoming Zhang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23189) · [pdf](https://arxiv.org/pdf/2611.23189) |
+| 2026-11-17 | Any2Building: Unifying Point Clouds and Images for Building Reconstruction via Shared Spatial Queries | Hongye Hou, Zhuoxiao Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23187) · [pdf](https://arxiv.org/pdf/2611.23187) |
+| 2026-11-17 | Say Less, Hallucinate Less? Diagnosing and Restoring Object Coverage in Preference-Optimized Vision-Language Models | Hansang Lee | cs.CV | [abs](https://arxiv.org/abs/2611.23179) · [pdf](https://arxiv.org/pdf/2611.23179) |
+| 2026-11-17 | Déjà View: A Shared Working-Memory Model for Visual Tasks | Mranmay Shetty, Gabriel Kreiman | cs.CV | [abs](https://arxiv.org/abs/2611.23177) · [pdf](https://arxiv.org/pdf/2611.23177) |
+| 2026-11-17 | Attribution Through the Decoder: Prediction-Space Explanations for Structured Outputs | Zaer Bin Zaqy, Brinnae Bent | cs.CV | [abs](https://arxiv.org/abs/2611.23161) · [pdf](https://arxiv.org/pdf/2611.23161) |
+| 2026-11-17 | TextSphere: Efficient Text-to-Image Generation via Shared Hyperspherical Alignment and Uniformity | Yixia Zhang, Girish A. Koushik et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23155) · [pdf](https://arxiv.org/pdf/2611.23155) |
+| 2026-11-17 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | Chengqian Ma, Yuanze Zeng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23153) · [pdf](https://arxiv.org/pdf/2611.23153) |
+| 2026-11-17 | $π^4$: A Foundation Model for 4D Scene Geometry and Motion | Yifan Wang, Weiguang Zhao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23144) · [pdf](https://arxiv.org/pdf/2611.23144) |
+| 2026-11-17 | TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation | Haosong Peng, Xiangyang Liu et al. | cs.RO | [abs](https://arxiv.org/abs/2611.23143) · [pdf](https://arxiv.org/pdf/2611.23143) |
+| 2026-11-17 | GameRealm: Grounding Visual Learning in Interactive Games | Weiguang Zhao, Yifan Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23140) · [pdf](https://arxiv.org/pdf/2611.23140) |
+| 2026-11-17 | The Illusion of Grounding: Do Vision-Language Models Weigh Retrieved Text and Images Like an Ideal Observer? | Basavaraj R M, Harshal Chandel | cs.LG | [abs](https://arxiv.org/abs/2611.23127) · [pdf](https://arxiv.org/pdf/2611.23127) |
+| 2026-11-17 | Nunchi: Ears Help Eyes in Multi-Party Conversations | JunYeong Park, Shijing Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23115) · [pdf](https://arxiv.org/pdf/2611.23115) |
+| 2026-11-17 | LUTBench: Benchmarking Text-Driven Photographic Look Transfer | Chuanzhi Xu, Boyu Wei et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23113) · [pdf](https://arxiv.org/pdf/2611.23113) |
 
 <!-- PAPERS:END -->
 
@@ -50,6 +50,7 @@
 
 <!-- ARCHIVE:START -->
 
+- [2026-11-19](data/2026-11-19.md)
 - [2026-11-18](data/2026-11-18.md)
 - [2026-11-17](data/2026-11-17.md)
 - [2026-11-16](data/2026-11-16.md)
