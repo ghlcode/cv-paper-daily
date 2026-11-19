@@ -2,7 +2,7 @@
 
 
 <!-- LATEST:LINK:START -->
-> 最新一期：[最新-2026-11-19.html（HTML，双击打开）](最新-2026-11-19.html) ｜ [最新-2026-11-19.md（Markdown）](最新-2026-11-19.md) ｜ 2026-11-19：今日新增 205 篇，以下为逐篇独立中文摘用。
+> 最新一期：[最新-2026-11-20.html（HTML，双击打开）](最新-2026-11-20.html) ｜ [最新-2026-11-20.md（Markdown）](最新-2026-11-20.md) ｜ 2026-11-20：今日新增 222 篇，以下为逐篇独立中文摘用。
 <!-- LATEST:LINK:END -->
 
 每天自动抓取 arXiv `cs.CV`（计算机视觉与模式识别）分类的最新投稿，按日期归档并更新本页榜单。内容为论文标题、作者、摘要、分类与原文链接，适合快速扫一眼当天 CV / 深度学习视觉方向的新工作。
@@ -17,30 +17,30 @@
 
 <!-- PAPERS:START -->
 
-> 共收录 **1914** 篇 · 最近更新 2026-11-19 05:21 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
+> 共收录 **2136** 篇 · 最近更新 2026-11-20 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
 
 | 投稿日期 | 标题 | 作者 | 分类 | 链接 |
 | --- | --- | --- | --- | --- |
-| 2026-11-17 | Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models | Rui Ning, Om Chabra et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23228) · [pdf](https://arxiv.org/pdf/2611.23228) |
-| 2026-11-17 | FastFrames: Video Generation at Interactive Latency | Gene Chou, Guandao Yang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23226) · [pdf](https://arxiv.org/pdf/2611.23226) |
-| 2026-11-17 | EviSlide-MIL: Multi-Query Pooling and Shared Prediction for Class-Incremental Whole-Slide Image Classification | Zhouhan Qian, Sicheng Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23212) · [pdf](https://arxiv.org/pdf/2611.23212) |
-| 2026-11-17 | Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving | John Gideon, Anshul Gupta et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23211) · [pdf](https://arxiv.org/pdf/2611.23211) |
-| 2026-11-17 | Learning Grounded Reasoning from Human Gaze | Gabriel Sarch, Declan Campbell et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23209) · [pdf](https://arxiv.org/pdf/2611.23209) |
-| 2026-11-17 | Distortion-Free Semantic Watermarks for Black-Box Generative Models | Aviv Yossef, Or Patashnik et al. | cs.LG | [abs](https://arxiv.org/abs/2611.23208) · [pdf](https://arxiv.org/pdf/2611.23208) |
-| 2026-11-17 | Reading Scene States: Uncovering Safety Failures in Vision-Language Models | Tongxi Wu, Yuyang Cheng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23206) · [pdf](https://arxiv.org/pdf/2611.23206) |
-| 2026-11-17 | Retrieval-Augmented Correction for Generalist Medical Image Segmentation | Vincenzo Marcianò, Xiaoming Zhang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23189) · [pdf](https://arxiv.org/pdf/2611.23189) |
-| 2026-11-17 | Any2Building: Unifying Point Clouds and Images for Building Reconstruction via Shared Spatial Queries | Hongye Hou, Zhuoxiao Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23187) · [pdf](https://arxiv.org/pdf/2611.23187) |
-| 2026-11-17 | Say Less, Hallucinate Less? Diagnosing and Restoring Object Coverage in Preference-Optimized Vision-Language Models | Hansang Lee | cs.CV | [abs](https://arxiv.org/abs/2611.23179) · [pdf](https://arxiv.org/pdf/2611.23179) |
-| 2026-11-17 | Déjà View: A Shared Working-Memory Model for Visual Tasks | Mranmay Shetty, Gabriel Kreiman | cs.CV | [abs](https://arxiv.org/abs/2611.23177) · [pdf](https://arxiv.org/pdf/2611.23177) |
-| 2026-11-17 | Attribution Through the Decoder: Prediction-Space Explanations for Structured Outputs | Zaer Bin Zaqy, Brinnae Bent | cs.CV | [abs](https://arxiv.org/abs/2611.23161) · [pdf](https://arxiv.org/pdf/2611.23161) |
-| 2026-11-17 | TextSphere: Efficient Text-to-Image Generation via Shared Hyperspherical Alignment and Uniformity | Yixia Zhang, Girish A. Koushik et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23155) · [pdf](https://arxiv.org/pdf/2611.23155) |
-| 2026-11-17 | VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs | Chengqian Ma, Yuanze Zeng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23153) · [pdf](https://arxiv.org/pdf/2611.23153) |
-| 2026-11-17 | $π^4$: A Foundation Model for 4D Scene Geometry and Motion | Yifan Wang, Weiguang Zhao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23144) · [pdf](https://arxiv.org/pdf/2611.23144) |
-| 2026-11-17 | TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation | Haosong Peng, Xiangyang Liu et al. | cs.RO | [abs](https://arxiv.org/abs/2611.23143) · [pdf](https://arxiv.org/pdf/2611.23143) |
-| 2026-11-17 | GameRealm: Grounding Visual Learning in Interactive Games | Weiguang Zhao, Yifan Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23140) · [pdf](https://arxiv.org/pdf/2611.23140) |
-| 2026-11-17 | The Illusion of Grounding: Do Vision-Language Models Weigh Retrieved Text and Images Like an Ideal Observer? | Basavaraj R M, Harshal Chandel | cs.LG | [abs](https://arxiv.org/abs/2611.23127) · [pdf](https://arxiv.org/pdf/2611.23127) |
-| 2026-11-17 | Nunchi: Ears Help Eyes in Multi-Party Conversations | JunYeong Park, Shijing Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23115) · [pdf](https://arxiv.org/pdf/2611.23115) |
-| 2026-11-17 | LUTBench: Benchmarking Text-Driven Photographic Look Transfer | Chuanzhi Xu, Boyu Wei et al. | cs.CV | [abs](https://arxiv.org/abs/2611.23113) · [pdf](https://arxiv.org/pdf/2611.23113) |
+| 2026-11-18 | UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation | Jingzhi Bao, Xiaohe Ma et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24941) · [pdf](https://arxiv.org/pdf/2611.24941) |
+| 2026-11-18 | $Z$-sight: Unifying Vision-Language-Action and Latent World Modeling | Junjie Ye, Yiqi Zhao et al. | cs.RO | [abs](https://arxiv.org/abs/2611.24940) · [pdf](https://arxiv.org/pdf/2611.24940) |
+| 2026-11-18 | Unified Law for Visual Tasks (The Four Laws of Computer Vision) | Sen Fang, Yalin Feng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24917) · [pdf](https://arxiv.org/pdf/2611.24917) |
+| 2026-11-18 | PrismRestore: A Compact Restoration Toolbox for Agentic Image Restoration | Zhaocheng Yu, Kui Jiang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24915) · [pdf](https://arxiv.org/pdf/2611.24915) |
+| 2026-11-18 | ShadowTransfer: A Geographic Transfer Benchmark for Overhead Shadow Detection | Shagun Mittal, Raymond A. Yeh et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24904) · [pdf](https://arxiv.org/pdf/2611.24904) |
+| 2026-11-18 | NereidVLA: Learning to Understand and Navigate the Underwater World | Chenjie Zhao, Zhiliang Zhu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24864) · [pdf](https://arxiv.org/pdf/2611.24864) |
+| 2026-11-18 | Gaspard: Expressive unified speech and gesture synthesis with continuous autoregressive flow-matching and decoupled classifier-free guidance | Téo Guichoux, Théodor Lemerle et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24862) · [pdf](https://arxiv.org/pdf/2611.24862) |
+| 2026-11-18 | Does the Action Matter? Probing Action-Conditioned Semantic Forecasting as a World Model for Autonomous Driving | Binay Kumar Singh, Niels Da Vitoria Lobo | cs.CV | [abs](https://arxiv.org/abs/2611.24840) · [pdf](https://arxiv.org/pdf/2611.24840) |
+| 2026-11-18 | Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping | Ege Artan, Shuo Chen et al. | cs.LG | [abs](https://arxiv.org/abs/2611.24827) · [pdf](https://arxiv.org/pdf/2611.24827) |
+| 2026-11-18 | ReCoCo: From Patches to Compositions for Visual Representation Learning | Juan Gutiérrez, Saman Zadtootaghaj et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24806) · [pdf](https://arxiv.org/pdf/2611.24806) |
+| 2026-11-18 | Edge-Efficient Joint RAW Image Compression and Restoration for Smart Wearable Devices | Yunong Sun, Sicheng Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24805) · [pdf](https://arxiv.org/pdf/2611.24805) |
+| 2026-11-18 | Ultimate3D: Teaching Multimodal LLMs 3D Camera-Object Relations by Large-Scale Visual Instruction Data | Liu He, Yizhi Song et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24795) · [pdf](https://arxiv.org/pdf/2611.24795) |
+| 2026-11-18 | The Elephant in the Question: Unified Models Picture the Concepts Behind Their Answers | Tobias Braun, Marcus Rohrbach et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24793) · [pdf](https://arxiv.org/pdf/2611.24793) |
+| 2026-11-18 | Training-free motion statistics match self-supervised behavior encoders | Ziwen Chen | cs.CV | [abs](https://arxiv.org/abs/2611.24792) · [pdf](https://arxiv.org/pdf/2611.24792) |
+| 2026-11-18 | Read Together, Answer Apart: How Earlier Questions Help Vision-Language Models Look | Xinyi Guo, Kaile Huang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24785) · [pdf](https://arxiv.org/pdf/2611.24785) |
+| 2026-11-18 | Counterfactual World Models: JEPAs That Reason About "What If" | Randall Balestriero, Yann LeCun et al. | cs.LG | [abs](https://arxiv.org/abs/2611.24778) · [pdf](https://arxiv.org/pdf/2611.24778) |
+| 2026-11-18 | 4D-TEMPO: Differentiable 4D-STEM ptychography via fast Physics Optimizers | Ramani Duraiswami, Yichao Zhang | physics.ins-det | [abs](https://arxiv.org/abs/2611.24776) · [pdf](https://arxiv.org/pdf/2611.24776) |
+| 2026-11-18 | A$^3$Bench: Compositional Reasoning over Aggressive Interactions in Videos | Austin C Baker, Raiyaan Abdullah et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24762) · [pdf](https://arxiv.org/pdf/2611.24762) |
+| 2026-11-18 | Jeveration: System One Models Now Generate | Yuhe Liu, Qi Li et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24738) · [pdf](https://arxiv.org/pdf/2611.24738) |
+| 2026-11-18 | HandWorldBench: A Unified Benchmark for Hand-Centric World Models | Zhaolu Wang, Jiacheng Xu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.24731) · [pdf](https://arxiv.org/pdf/2611.24731) |
 
 <!-- PAPERS:END -->
 
@@ -50,6 +50,7 @@
 
 <!-- ARCHIVE:START -->
 
+- [2026-11-20](data/2026-11-20.md)
 - [2026-11-19](data/2026-11-19.md)
 - [2026-11-18](data/2026-11-18.md)
 - [2026-11-17](data/2026-11-17.md)
