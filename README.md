@@ -2,7 +2,7 @@
 
 
 <!-- LATEST:LINK:START -->
-> 最新一期：[最新-2026-11-23.html（HTML，双击打开）](最新-2026-11-23.html) ｜ [最新-2026-11-23.md（Markdown）](最新-2026-11-23.md) ｜ 2026-11-23：今日（2026-11-23）没有新增收录论文。以下继续展示最近一期 2026-11-21 的 212 篇中文摘用（往期内容，非今日新增）；往期全部归档见下方「历史中文摘用」。
+> 最新一期：[最新-2026-11-24.html（HTML，双击打开）](最新-2026-11-24.html) ｜ [最新-2026-11-24.md（Markdown）](最新-2026-11-24.md) ｜ 2026-11-24：今日新增 171 篇，以下为逐篇独立中文摘用。
 <!-- LATEST:LINK:END -->
 
 每天自动抓取 arXiv `cs.CV`（计算机视觉与模式识别）分类的最新投稿，按日期归档并更新本页榜单。内容为论文标题、作者、摘要、分类与原文链接，适合快速扫一眼当天 CV / 深度学习视觉方向的新工作。
@@ -17,30 +17,30 @@
 
 <!-- PAPERS:START -->
 
-> 共收录 **2348** 篇 · 最近更新 2026-11-23 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
+> 共收录 **2519** 篇 · 最近更新 2026-11-24 05:21 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
 
 | 投稿日期 | 标题 | 作者 | 分类 | 链接 |
 | --- | --- | --- | --- | --- |
-| 2026-11-19 | Posterior Matching Distillation | Hidir Yesiltepe, Julius Berner et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26629) · [pdf](https://arxiv.org/pdf/2611.26629) |
-| 2026-11-19 | RL Post-Training in Diffusion Transformers Is Activation Steering | Tuna Han Salih Meral, Kaan Oktay et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26627) · [pdf](https://arxiv.org/pdf/2611.26627) |
-| 2026-11-19 | PlayCraft: Designing Engaging Games from Agent Play Experience | Weihao Cheng | cs.AI | [abs](https://arxiv.org/abs/2611.26624) · [pdf](https://arxiv.org/pdf/2611.26624) |
-| 2026-11-19 | One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning | Yuxin Jiang, Wenqiang Sun et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26617) · [pdf](https://arxiv.org/pdf/2611.26617) |
-| 2026-11-19 | ScaleWorld: High-Resolution World Generation through Shared Prediction and Refinement | Yansong Qu, Wesker Zheng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26615) · [pdf](https://arxiv.org/pdf/2611.26615) |
-| 2026-11-19 | AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control | Yiyang Du, Yuxuan Kuang et al. | cs.RO | [abs](https://arxiv.org/abs/2611.26613) · [pdf](https://arxiv.org/pdf/2611.26613) |
-| 2026-11-19 | Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth | Peiyun Hu, Marko Mihajlovic et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26603) · [pdf](https://arxiv.org/pdf/2611.26603) |
-| 2026-11-19 | Coda-DaVinci: Reimagining Video Generation with Code2Video | Yiyan Ji, Qixun Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26595) · [pdf](https://arxiv.org/pdf/2611.26595) |
-| 2026-11-19 | Probing the "Conscious" Mind: Selective Access and Global Workspace in Vision-Language Models | Jiahao Huang, Jun Wang | cs.AI | [abs](https://arxiv.org/abs/2611.26590) · [pdf](https://arxiv.org/pdf/2611.26590) |
-| 2026-11-19 | Text-Aware, Vision-Blind: How Multimodal Image Editing Systems Handle Unsafe Inputs | Ziqing Yang, Yixin Wu et al. | cs.CR | [abs](https://arxiv.org/abs/2611.26569) · [pdf](https://arxiv.org/pdf/2611.26569) |
-| 2026-11-19 | Multi-institutional grading of Barrett's esophagus dysplasia without stain normalization using a pathology foundation model and multiple instance learning | Amirali Khosravi, Jaidip M. Jagtap et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26562) · [pdf](https://arxiv.org/pdf/2611.26562) |
-| 2026-11-19 | AURA: AUdio-dRiven streaming Avatar | Nathaniel Cohen, Nicolas Dufour et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26540) · [pdf](https://arxiv.org/pdf/2611.26540) |
-| 2026-11-19 | Deterministic Temporal Embedding for Calcium Imaging Trace Extraction | Qi Gao, Julius Beichert et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26522) · [pdf](https://arxiv.org/pdf/2611.26522) |
-| 2026-11-19 | Plan4D: Generative Plannable 4D Worlds | Hangwei Zhang, Rujing Dang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26516) · [pdf](https://arxiv.org/pdf/2611.26516) |
-| 2026-11-19 | Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain | Shuang Wu, Jiachen Qian et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26511) · [pdf](https://arxiv.org/pdf/2611.26511) |
-| 2026-11-19 | Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs | Haocheng Mei, Yuchuan Tian et al. | cs.CR | [abs](https://arxiv.org/abs/2611.26508) · [pdf](https://arxiv.org/pdf/2611.26508) |
-| 2026-11-19 | SGAR: Feed-Forward 3D Reconstruction via Sparse Geometry-Guided Attention | Aoxiang Fan, Maria Pilligua et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26493) · [pdf](https://arxiv.org/pdf/2611.26493) |
-| 2026-11-19 | SHUSH: Emission-Aware Reward Design for Proactive Video Assistants | Shawn Liang, Soamar Homsi et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26478) · [pdf](https://arxiv.org/pdf/2611.26478) |
-| 2026-11-19 | Fixing the Last Mile: Failure-Aware Image Restoration with Region-Specific Guidance | Hongyu An, Fanghua Yu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.26456) · [pdf](https://arxiv.org/pdf/2611.26456) |
-| 2026-11-19 | Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation | Yuzhi Huang, Jie Wu et al. | cs.RO | [abs](https://arxiv.org/abs/2611.26444) · [pdf](https://arxiv.org/pdf/2611.26444) |
+| 2026-11-20 | Non-penetrating World Models | Yuhang Dai, Yinwei Wu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27963) · [pdf](https://arxiv.org/pdf/2611.27963) |
+| 2026-11-20 | DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval | Mohammad Alijanpour Shalmani, Alale Rezvani Boroujeni et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27931) · [pdf](https://arxiv.org/pdf/2611.27931) |
+| 2026-11-20 | ESSI: Computationally Efficient Semantic Search for Sparse Autoencoder Concepts | James Baker | cs.CV | [abs](https://arxiv.org/abs/2611.27921) · [pdf](https://arxiv.org/pdf/2611.27921) |
+| 2026-11-20 | Augmentation of cardiovascular flow measurements with generative diffusion models | Fabio Guglietta, Tianyi Li et al. | physics.flu-dyn | [abs](https://arxiv.org/abs/2611.27917) · [pdf](https://arxiv.org/pdf/2611.27917) |
+| 2026-11-20 | StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning | Chi Yan, Guoyang Zhao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27915) · [pdf](https://arxiv.org/pdf/2611.27915) |
+| 2026-11-20 | Star Panoptic Quality: Selectively Evaluating Split and Merged Instances | Erik Großkopf, Paula Tamara Buzduga et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27913) · [pdf](https://arxiv.org/pdf/2611.27913) |
+| 2026-11-20 | AnimalFarm: Auditing the Generation and Detection of Hateful Images Featuring Anthropomorphic Characters | Junjie Chu, Ye Leng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27905) · [pdf](https://arxiv.org/pdf/2611.27905) |
+| 2026-11-20 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | Zunhai Su, Keyu Fan et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27901) · [pdf](https://arxiv.org/pdf/2611.27901) |
+| 2026-11-20 | Interpretable Tissue Architecture Complements Pathology Foundation Models | Zeeshan Shahid, Hammam M. AlGhamdi | cs.CV | [abs](https://arxiv.org/abs/2611.27881) · [pdf](https://arxiv.org/pdf/2611.27881) |
+| 2026-11-20 | LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT | Maximilian Rokuss, Jeya Maria Jose Valanarasu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27876) · [pdf](https://arxiv.org/pdf/2611.27876) |
+| 2026-11-20 | OpenAHBU: Open-sourced Automatic Human Behaviour Understanding Toolkit Through Facial Behaviour Analysis | Zijian Wu, Yupeng Huo et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27862) · [pdf](https://arxiv.org/pdf/2611.27862) |
+| 2026-11-20 | ENC-QA: A Diagnostic Benchmark for Vision-Language Models on Electronic Navigational Charts | Jiyoon Pyo, Jacob Arndt et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27858) · [pdf](https://arxiv.org/pdf/2611.27858) |
+| 2026-11-20 | Anchors That Move Without Collapsing: Exclusive-Region Anchor Routing for Vision Transformers | Aadi Gupta | cs.CV | [abs](https://arxiv.org/abs/2611.27855) · [pdf](https://arxiv.org/pdf/2611.27855) |
+| 2026-11-20 | DGC-Net: A Depth-Geometric Conditioning Network for Projection-Supervised OCTA Segmentation | Lucas Santiago, Bisheng Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27854) · [pdf](https://arxiv.org/pdf/2611.27854) |
+| 2026-11-20 | Underwater Spectral Recovery via Multi-View Hyperspectral Imaging | Jonathan Sterckx, Alice James et al. | eess.IV | [abs](https://arxiv.org/abs/2611.27822) · [pdf](https://arxiv.org/pdf/2611.27822) |
+| 2026-11-20 | Redesigning Neural Networks to Not be Confidently Wrong even to Strong Adversarial Attacks | Michael W. Spratling, Heiko H. Schütt | cs.CV | [abs](https://arxiv.org/abs/2611.27811) · [pdf](https://arxiv.org/pdf/2611.27811) |
+| 2026-11-20 | Refrain: Learning Multi-Shot Consistency from Inconsistent References for A$^2$O Video Generation | Hongru Yan, Yue Wu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27806) · [pdf](https://arxiv.org/pdf/2611.27806) |
+| 2026-11-20 | $\varepsilon$-SegFormer: Multi-Resolution Vision Transformers for Sparsely Supervised Segmentation in Electron Microscopy | Erfan Amidi, Sheida RahnamaiKordasiabi et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27796) · [pdf](https://arxiv.org/pdf/2611.27796) |
+| 2026-11-20 | Feasibility of Multifrequency Neural Network-Based Wave Inversion in Ultrasound Time-Harmonic Elastography | Héloïse Bustin, Tom Meyer et al. | eess.IV | [abs](https://arxiv.org/abs/2611.27792) · [pdf](https://arxiv.org/pdf/2611.27792) |
+| 2026-11-20 | When Does Looking Closer Pay Off? Simple Foveated ViTs for Fine-Grained Recognition | Boris Kriuk, Mohamed Sobhy | cs.CV | [abs](https://arxiv.org/abs/2611.27788) · [pdf](https://arxiv.org/pdf/2611.27788) |
 
 <!-- PAPERS:END -->
 
@@ -50,6 +50,7 @@
 
 <!-- ARCHIVE:START -->
 
+- [2026-11-24](data/2026-11-24.md)
 - [2026-11-23](data/2026-11-23.md)
 - [2026-11-22](data/2026-11-22.md)
 - [2026-11-21](data/2026-11-21.md)
