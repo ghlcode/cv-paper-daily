@@ -2,7 +2,7 @@
 
 
 <!-- LATEST:LINK:START -->
-> 最新一期：[最新-2026-11-24.html（HTML，双击打开）](最新-2026-11-24.html) ｜ [最新-2026-11-24.md（Markdown）](最新-2026-11-24.md) ｜ 2026-11-24：今日新增 171 篇，以下为逐篇独立中文摘用。
+> 最新一期：[最新-2026-11-25.html（HTML，双击打开）](最新-2026-11-25.html) ｜ [最新-2026-11-25.md（Markdown）](最新-2026-11-25.md) ｜ 2026-11-25：今日新增 478 篇，以下为逐篇独立中文摘用。
 <!-- LATEST:LINK:END -->
 
 每天自动抓取 arXiv `cs.CV`（计算机视觉与模式识别）分类的最新投稿，按日期归档并更新本页榜单。内容为论文标题、作者、摘要、分类与原文链接，适合快速扫一眼当天 CV / 深度学习视觉方向的新工作。
@@ -17,30 +17,30 @@
 
 <!-- PAPERS:START -->
 
-> 共收录 **2519** 篇 · 最近更新 2026-11-24 05:21 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
+> 共收录 **2997** 篇 · 最近更新 2026-11-25 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
 
 | 投稿日期 | 标题 | 作者 | 分类 | 链接 |
 | --- | --- | --- | --- | --- |
-| 2026-11-20 | Non-penetrating World Models | Yuhang Dai, Yinwei Wu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27963) · [pdf](https://arxiv.org/pdf/2611.27963) |
-| 2026-11-20 | DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval | Mohammad Alijanpour Shalmani, Alale Rezvani Boroujeni et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27931) · [pdf](https://arxiv.org/pdf/2611.27931) |
-| 2026-11-20 | ESSI: Computationally Efficient Semantic Search for Sparse Autoencoder Concepts | James Baker | cs.CV | [abs](https://arxiv.org/abs/2611.27921) · [pdf](https://arxiv.org/pdf/2611.27921) |
-| 2026-11-20 | Augmentation of cardiovascular flow measurements with generative diffusion models | Fabio Guglietta, Tianyi Li et al. | physics.flu-dyn | [abs](https://arxiv.org/abs/2611.27917) · [pdf](https://arxiv.org/pdf/2611.27917) |
-| 2026-11-20 | StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning | Chi Yan, Guoyang Zhao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27915) · [pdf](https://arxiv.org/pdf/2611.27915) |
-| 2026-11-20 | Star Panoptic Quality: Selectively Evaluating Split and Merged Instances | Erik Großkopf, Paula Tamara Buzduga et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27913) · [pdf](https://arxiv.org/pdf/2611.27913) |
-| 2026-11-20 | AnimalFarm: Auditing the Generation and Detection of Hateful Images Featuring Anthropomorphic Characters | Junjie Chu, Ye Leng et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27905) · [pdf](https://arxiv.org/pdf/2611.27905) |
-| 2026-11-20 | QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers | Zunhai Su, Keyu Fan et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27901) · [pdf](https://arxiv.org/pdf/2611.27901) |
-| 2026-11-20 | Interpretable Tissue Architecture Complements Pathology Foundation Models | Zeeshan Shahid, Hammam M. AlGhamdi | cs.CV | [abs](https://arxiv.org/abs/2611.27881) · [pdf](https://arxiv.org/pdf/2611.27881) |
-| 2026-11-20 | LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT | Maximilian Rokuss, Jeya Maria Jose Valanarasu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27876) · [pdf](https://arxiv.org/pdf/2611.27876) |
-| 2026-11-20 | OpenAHBU: Open-sourced Automatic Human Behaviour Understanding Toolkit Through Facial Behaviour Analysis | Zijian Wu, Yupeng Huo et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27862) · [pdf](https://arxiv.org/pdf/2611.27862) |
-| 2026-11-20 | ENC-QA: A Diagnostic Benchmark for Vision-Language Models on Electronic Navigational Charts | Jiyoon Pyo, Jacob Arndt et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27858) · [pdf](https://arxiv.org/pdf/2611.27858) |
-| 2026-11-20 | Anchors That Move Without Collapsing: Exclusive-Region Anchor Routing for Vision Transformers | Aadi Gupta | cs.CV | [abs](https://arxiv.org/abs/2611.27855) · [pdf](https://arxiv.org/pdf/2611.27855) |
-| 2026-11-20 | DGC-Net: A Depth-Geometric Conditioning Network for Projection-Supervised OCTA Segmentation | Lucas Santiago, Bisheng Wang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27854) · [pdf](https://arxiv.org/pdf/2611.27854) |
-| 2026-11-20 | Underwater Spectral Recovery via Multi-View Hyperspectral Imaging | Jonathan Sterckx, Alice James et al. | eess.IV | [abs](https://arxiv.org/abs/2611.27822) · [pdf](https://arxiv.org/pdf/2611.27822) |
-| 2026-11-20 | Redesigning Neural Networks to Not be Confidently Wrong even to Strong Adversarial Attacks | Michael W. Spratling, Heiko H. Schütt | cs.CV | [abs](https://arxiv.org/abs/2611.27811) · [pdf](https://arxiv.org/pdf/2611.27811) |
-| 2026-11-20 | Refrain: Learning Multi-Shot Consistency from Inconsistent References for A$^2$O Video Generation | Hongru Yan, Yue Wu et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27806) · [pdf](https://arxiv.org/pdf/2611.27806) |
-| 2026-11-20 | $\varepsilon$-SegFormer: Multi-Resolution Vision Transformers for Sparsely Supervised Segmentation in Electron Microscopy | Erfan Amidi, Sheida RahnamaiKordasiabi et al. | cs.CV | [abs](https://arxiv.org/abs/2611.27796) · [pdf](https://arxiv.org/pdf/2611.27796) |
-| 2026-11-20 | Feasibility of Multifrequency Neural Network-Based Wave Inversion in Ultrasound Time-Harmonic Elastography | Héloïse Bustin, Tom Meyer et al. | eess.IV | [abs](https://arxiv.org/abs/2611.27792) · [pdf](https://arxiv.org/pdf/2611.27792) |
-| 2026-11-20 | When Does Looking Closer Pay Off? Simple Foveated ViTs for Fine-Grained Recognition | Boris Kriuk, Mohamed Sobhy | cs.CV | [abs](https://arxiv.org/abs/2611.27788) · [pdf](https://arxiv.org/pdf/2611.27788) |
+| 2026-11-23 | Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action | Seongchan Kim, Soowon Son et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31240) · [pdf](https://arxiv.org/pdf/2611.31240) |
+| 2026-11-23 | Lyris: Layout-Guided Long Video Generation with Persistent 3D Memory | Chen Wang, Jiahui Huang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31239) · [pdf](https://arxiv.org/pdf/2611.31239) |
+| 2026-11-23 | Modern Self-Supervised Vision Transformers Are Pareidolic | Zihang Lin, Huaiyuan Qin et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31238) · [pdf](https://arxiv.org/pdf/2611.31238) |
+| 2026-11-23 | Let Vision-Language Models Generate Images through Their Representations | JB Kim, Byungwoo Jeon et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31237) · [pdf](https://arxiv.org/pdf/2611.31237) |
+| 2026-11-23 | TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming | Hani Alomari, Md Atabuzzaman et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31233) · [pdf](https://arxiv.org/pdf/2611.31233) |
+| 2026-11-23 | Self-Supervised Dataset Distillation via Mutual Information Maximization | Mohammad Hossein Moslemi, Mahdi Beitollahi et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31225) · [pdf](https://arxiv.org/pdf/2611.31225) |
+| 2026-11-23 | CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans | Mohammed Baharoon, Sung Eun Kim et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31222) · [pdf](https://arxiv.org/pdf/2611.31222) |
+| 2026-11-23 | LeJEPA Features Are Not Isotropic, and Should Not Be | Richeek Das, Pratik Chaudhari | cs.CV | [abs](https://arxiv.org/abs/2611.31216) · [pdf](https://arxiv.org/pdf/2611.31216) |
+| 2026-11-23 | WorldLatent: A Unified 4D Latent Space for World Perception and Generation | Jingxi Chen, Yujia Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31209) · [pdf](https://arxiv.org/pdf/2611.31209) |
+| 2026-11-23 | ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents | Rui Sun, Junhua Huang et al. | cs.CL | [abs](https://arxiv.org/abs/2611.31198) · [pdf](https://arxiv.org/pdf/2611.31198) |
+| 2026-11-23 | On-Policy Codec Distillation for Efficient All-in-One Video Generation | Boyang Wang, Kevin Blackburn-Matzen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31184) · [pdf](https://arxiv.org/pdf/2611.31184) |
+| 2026-11-23 | SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning | Kangping Hu, Akshay Mehra et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31163) · [pdf](https://arxiv.org/pdf/2611.31163) |
+| 2026-11-23 | Analyzing and Improving FlowMap Distillation of Autoregressive Video Models | Yong-Hyun Park, Guande He et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31164) · [pdf](https://arxiv.org/pdf/2611.31164) |
+| 2026-11-23 | Tokens as Locality-Preserving Anchors: Scalable Novel View Synthesis with Target-Adaptive Token Routing | Sagnik Ghosh, Aswin C. Sankaranarayanan | cs.CV | [abs](https://arxiv.org/abs/2611.31156) · [pdf](https://arxiv.org/pdf/2611.31156) |
+| 2026-11-23 | Head Anything: Correspondence-Guided Joint Generation of 3D Heads from Few Images | Umut Kocasari, Bartłomiej Baranowski et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31143) · [pdf](https://arxiv.org/pdf/2611.31143) |
+| 2026-11-23 | HoloSplat: Real-Time Token Streaming for Feed-Forward Human Reconstruction | Chaofan Li, Qihan Ding et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31140) · [pdf](https://arxiv.org/pdf/2611.31140) |
+| 2026-11-23 | SRCWDNet: Semantic-Relational Cross-Window Dual-Graph Network for Multi-Label Remote Sensing Scene Classification | Fareeha Amir | cs.CV | [abs](https://arxiv.org/abs/2611.31135) · [pdf](https://arxiv.org/pdf/2611.31135) |
+| 2026-11-23 | CrownFusion: 3D Dental Crown Generation Using Geometry Images and Latent Diffusion | Johan Ziruo Ye, Xingguang Yan et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31128) · [pdf](https://arxiv.org/pdf/2611.31128) |
+| 2026-11-23 | WeaveVLA: 3D Relational Grounding for Vision-Language-Action Models | Zien Wang, Yuhao Pan et al. | cs.RO | [abs](https://arxiv.org/abs/2611.31126) · [pdf](https://arxiv.org/pdf/2611.31126) |
+| 2026-11-23 | RUIBench: What Makes a Good Robot-Use Interface? | Yanzhe Chen, Zhijun Cao et al. | cs.RO | [abs](https://arxiv.org/abs/2611.31115) · [pdf](https://arxiv.org/pdf/2611.31115) |
 
 <!-- PAPERS:END -->
 
@@ -50,6 +50,7 @@
 
 <!-- ARCHIVE:START -->
 
+- [2026-11-25](data/2026-11-25.md)
 - [2026-11-24](data/2026-11-24.md)
 - [2026-11-23](data/2026-11-23.md)
 - [2026-11-22](data/2026-11-22.md)
@@ -63,7 +64,6 @@
 - [2026-11-12](data/2026-11-12.md)
 - [2026-11-11](data/2026-11-11.md)
 - [2026-11-10](data/2026-11-10.md)
-- [2026-11-09](data/2026-11-09.md)
 
 <!-- ARCHIVE:END -->
 
