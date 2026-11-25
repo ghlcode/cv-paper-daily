@@ -2,7 +2,7 @@
 
 
 <!-- LATEST:LINK:START -->
-> 最新一期：[最新-2026-11-25.html（HTML，双击打开）](最新-2026-11-25.html) ｜ [最新-2026-11-25.md（Markdown）](最新-2026-11-25.md) ｜ 2026-11-25：今日新增 478 篇，以下为逐篇独立中文摘用。
+> 最新一期：[最新-2026-11-26.html（HTML，双击打开）](最新-2026-11-26.html) ｜ [最新-2026-11-26.md（Markdown）](最新-2026-11-26.md) ｜ 2026-11-26：今日新增 299 篇，以下为逐篇独立中文摘用。
 <!-- LATEST:LINK:END -->
 
 每天自动抓取 arXiv `cs.CV`（计算机视觉与模式识别）分类的最新投稿，按日期归档并更新本页榜单。内容为论文标题、作者、摘要、分类与原文链接，适合快速扫一眼当天 CV / 深度学习视觉方向的新工作。
@@ -17,30 +17,30 @@
 
 <!-- PAPERS:START -->
 
-> 共收录 **2997** 篇 · 最近更新 2026-11-25 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
+> 共收录 **3296** 篇 · 最近更新 2026-11-26 05:22 (UTC+8) · 每天 08:23 (UTC+8) 自动更新
 
 | 投稿日期 | 标题 | 作者 | 分类 | 链接 |
 | --- | --- | --- | --- | --- |
-| 2026-11-23 | Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action | Seongchan Kim, Soowon Son et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31240) · [pdf](https://arxiv.org/pdf/2611.31240) |
-| 2026-11-23 | Lyris: Layout-Guided Long Video Generation with Persistent 3D Memory | Chen Wang, Jiahui Huang et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31239) · [pdf](https://arxiv.org/pdf/2611.31239) |
-| 2026-11-23 | Modern Self-Supervised Vision Transformers Are Pareidolic | Zihang Lin, Huaiyuan Qin et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31238) · [pdf](https://arxiv.org/pdf/2611.31238) |
-| 2026-11-23 | Let Vision-Language Models Generate Images through Their Representations | JB Kim, Byungwoo Jeon et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31237) · [pdf](https://arxiv.org/pdf/2611.31237) |
-| 2026-11-23 | TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming | Hani Alomari, Md Atabuzzaman et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31233) · [pdf](https://arxiv.org/pdf/2611.31233) |
-| 2026-11-23 | Self-Supervised Dataset Distillation via Mutual Information Maximization | Mohammad Hossein Moslemi, Mahdi Beitollahi et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31225) · [pdf](https://arxiv.org/pdf/2611.31225) |
-| 2026-11-23 | CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans | Mohammed Baharoon, Sung Eun Kim et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31222) · [pdf](https://arxiv.org/pdf/2611.31222) |
-| 2026-11-23 | LeJEPA Features Are Not Isotropic, and Should Not Be | Richeek Das, Pratik Chaudhari | cs.CV | [abs](https://arxiv.org/abs/2611.31216) · [pdf](https://arxiv.org/pdf/2611.31216) |
-| 2026-11-23 | WorldLatent: A Unified 4D Latent Space for World Perception and Generation | Jingxi Chen, Yujia Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31209) · [pdf](https://arxiv.org/pdf/2611.31209) |
-| 2026-11-23 | ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents | Rui Sun, Junhua Huang et al. | cs.CL | [abs](https://arxiv.org/abs/2611.31198) · [pdf](https://arxiv.org/pdf/2611.31198) |
-| 2026-11-23 | On-Policy Codec Distillation for Efficient All-in-One Video Generation | Boyang Wang, Kevin Blackburn-Matzen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31184) · [pdf](https://arxiv.org/pdf/2611.31184) |
-| 2026-11-23 | SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning | Kangping Hu, Akshay Mehra et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31163) · [pdf](https://arxiv.org/pdf/2611.31163) |
-| 2026-11-23 | Analyzing and Improving FlowMap Distillation of Autoregressive Video Models | Yong-Hyun Park, Guande He et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31164) · [pdf](https://arxiv.org/pdf/2611.31164) |
-| 2026-11-23 | Tokens as Locality-Preserving Anchors: Scalable Novel View Synthesis with Target-Adaptive Token Routing | Sagnik Ghosh, Aswin C. Sankaranarayanan | cs.CV | [abs](https://arxiv.org/abs/2611.31156) · [pdf](https://arxiv.org/pdf/2611.31156) |
-| 2026-11-23 | Head Anything: Correspondence-Guided Joint Generation of 3D Heads from Few Images | Umut Kocasari, Bartłomiej Baranowski et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31143) · [pdf](https://arxiv.org/pdf/2611.31143) |
-| 2026-11-23 | HoloSplat: Real-Time Token Streaming for Feed-Forward Human Reconstruction | Chaofan Li, Qihan Ding et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31140) · [pdf](https://arxiv.org/pdf/2611.31140) |
-| 2026-11-23 | SRCWDNet: Semantic-Relational Cross-Window Dual-Graph Network for Multi-Label Remote Sensing Scene Classification | Fareeha Amir | cs.CV | [abs](https://arxiv.org/abs/2611.31135) · [pdf](https://arxiv.org/pdf/2611.31135) |
-| 2026-11-23 | CrownFusion: 3D Dental Crown Generation Using Geometry Images and Latent Diffusion | Johan Ziruo Ye, Xingguang Yan et al. | cs.CV | [abs](https://arxiv.org/abs/2611.31128) · [pdf](https://arxiv.org/pdf/2611.31128) |
-| 2026-11-23 | WeaveVLA: 3D Relational Grounding for Vision-Language-Action Models | Zien Wang, Yuhao Pan et al. | cs.RO | [abs](https://arxiv.org/abs/2611.31126) · [pdf](https://arxiv.org/pdf/2611.31126) |
-| 2026-11-23 | RUIBench: What Makes a Good Robot-Use Interface? | Yanzhe Chen, Zhijun Cao et al. | cs.RO | [abs](https://arxiv.org/abs/2611.31115) · [pdf](https://arxiv.org/pdf/2611.31115) |
+| 2026-11-24 | OmniAct: One Policy, One Million Embodiments | Xiang Fan, Yuheng Wang et al. | cs.RO | [abs](https://arxiv.org/abs/2611.33158) · [pdf](https://arxiv.org/pdf/2611.33158) |
+| 2026-11-24 | PointX: Multi-View Consistent Intrinsics by Querying Surface Points | Miguel Farinha, Sam Sartor et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33157) · [pdf](https://arxiv.org/pdf/2611.33157) |
+| 2026-11-24 | DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning | Binfei Ji, Zhiwen Cao et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33153) · [pdf](https://arxiv.org/pdf/2611.33153) |
+| 2026-11-24 | BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles | Yuwei Yang, Xiaoxiao Sun et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33151) · [pdf](https://arxiv.org/pdf/2611.33151) |
+| 2026-11-24 | One Take, Many Cameras: Audio-Grounded Shot Synthesis for Dialogue Re-Cinematography | Anthony Chen, Naomi Ken Korem et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33147) · [pdf](https://arxiv.org/pdf/2611.33147) |
+| 2026-11-24 | Lost on Campus: Evaluating Embodied Spatial Reasoning of Vision-Language Models in the Wild | Zehan Zheng, Yanyuan Chen et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33145) · [pdf](https://arxiv.org/pdf/2611.33145) |
+| 2026-11-24 | ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification | Xingjian Ran, Xiaoye Mo et al. | cs.RO | [abs](https://arxiv.org/abs/2611.33143) · [pdf](https://arxiv.org/pdf/2611.33143) |
+| 2026-11-24 | iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction | Vansh Kapoor, Max Sobol Mark et al. | cs.RO | [abs](https://arxiv.org/abs/2611.33141) · [pdf](https://arxiv.org/pdf/2611.33141) |
+| 2026-11-24 | Physicl Scenes: An Artist-created 3D Dataset for Learning Perception and Action | Yueh-Cheng Liu, Snehal Jauhri et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33137) · [pdf](https://arxiv.org/pdf/2611.33137) |
+| 2026-11-24 | BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation | Nadav Magar, Amir Hertz et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33135) · [pdf](https://arxiv.org/pdf/2611.33135) |
+| 2026-11-24 | Read My Lips: Context-aware Lip Reading Using Language and Audio-Visual Models | Amir Razlighi, Zhuo Ning et al. | cs.GR | [abs](https://arxiv.org/abs/2611.33117) · [pdf](https://arxiv.org/pdf/2611.33117) |
+| 2026-11-24 | EventDiffusion: Learning Native Event Stream Distribution from Videos | Karthik Sundar Senthilkumar, Christopher Thirgood et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33096) · [pdf](https://arxiv.org/pdf/2611.33096) |
+| 2026-11-24 | The Radar-based Activities of Daily Living (R-ADL) Dataset | Dominique Regli, Brian C. Williams | cs.CV | [abs](https://arxiv.org/abs/2611.33088) · [pdf](https://arxiv.org/pdf/2611.33088) |
+| 2026-11-24 | SUPRA: Synthesizing Amyloid PET from MRI and Plasma Biomarkers with an Explicit Regional SUVR Prior | Hanwen Li, Fadi Deek et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33061) · [pdf](https://arxiv.org/pdf/2611.33061) |
+| 2026-11-24 | Spectrify: Framework for Hyperspectral Image Generation Using Computer Graphics | Yasin Mamedov, Daniil Vladimirov et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33042) · [pdf](https://arxiv.org/pdf/2611.33042) |
+| 2026-11-24 | Linear Probes Can Guide: Training-Free Control of Representation Generators | Pengwei Wang, José Morano et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33037) · [pdf](https://arxiv.org/pdf/2611.33037) |
+| 2026-11-24 | SHARPnP: Self-Supervised and Plug-and-Play Hyperspectral Super-Resolution from Real Noisy Unaligned Camera Measurements | Mohamad Jouni, Brayan Monroy et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33032) · [pdf](https://arxiv.org/pdf/2611.33032) |
+| 2026-11-24 | GRAPE-Bench: When Vision Degrades, Does Video Reasoning Hold? | Ce Zhang, Junyi He et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33020) · [pdf](https://arxiv.org/pdf/2611.33020) |
+| 2026-11-24 | E-MAPS: Event-Based Promptable Video Segmentation with Memory-as-Prompt | Adonay Demewez Gebremedhin, Mohamad Alansari et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33017) · [pdf](https://arxiv.org/pdf/2611.33017) |
+| 2026-11-24 | RePix-VFI: Re-rendering Observed Pixels for Video Frame Interpolation with Generative Priors from One-Step Diffusion | Dayeon Kim, Jeonghyeok Do et al. | cs.CV | [abs](https://arxiv.org/abs/2611.33016) · [pdf](https://arxiv.org/pdf/2611.33016) |
 
 <!-- PAPERS:END -->
 
@@ -50,6 +50,7 @@
 
 <!-- ARCHIVE:START -->
 
+- [2026-11-26](data/2026-11-26.md)
 - [2026-11-25](data/2026-11-25.md)
 - [2026-11-24](data/2026-11-24.md)
 - [2026-11-23](data/2026-11-23.md)
@@ -63,7 +64,6 @@
 - [2026-11-13](data/2026-11-13.md)
 - [2026-11-12](data/2026-11-12.md)
 - [2026-11-11](data/2026-11-11.md)
-- [2026-11-10](data/2026-11-10.md)
 
 <!-- ARCHIVE:END -->
 
